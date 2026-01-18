@@ -11,7 +11,7 @@ R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_forbidde
 R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_unauthorized_15817684.js")
 R.c("server/chunks/ssr/messages_8c18831a._.js")
 R.c("server/chunks/ssr/node_modules_b53ef7bb._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__8c18944c._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__a9781107._.js")
 R.c("server/chunks/ssr/src_app_[locale]_not-found_tsx_0a2ff8c9._.js")
 R.c("server/chunks/ssr/_next-internal_server_app_[locale]_transport_page_actions_9793816c.js")
 R.m(13323)

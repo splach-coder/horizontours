@@ -123,7 +123,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Users/apple/Desktop/projects/next_boiler_plate",
+    "outputFileTracingRoot": "/Users/apple/Desktop/projects/horizon-tours",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -316,11 +316,11 @@
       "resolveAlias": {
         "next-intl/config": "./src/i18n/request.ts"
       },
-      "root": "/Users/apple/Desktop/projects/next_boiler_plate"
+      "root": "/Users/apple/Desktop/projects/horizon-tours"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "/Users/apple/Desktop/projects/next_boiler_plate",
+  "appDir": "/Users/apple/Desktop/projects/horizon-tours",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",

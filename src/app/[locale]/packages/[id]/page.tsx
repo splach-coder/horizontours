@@ -15,7 +15,7 @@ interface PageProps {
 export default function PackageDetailPage({ params }: PageProps) {
     const { id, locale } = use(params);
 
-    const item = siteData.packages.find(p => p.id === id);
+    const item = (siteData.packages as any[]).find(p => p.id === id);
 
     if (!item) {
         return notFound();
