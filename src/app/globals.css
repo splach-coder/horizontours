@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #D97706;
+    /* Warm Orange/Terracotta */
+    --secondary: #FFF7ED;
+    /* Sand/Beige */
+    --accent: #E11D48;
+    /* Deep Rose/Red (optional accent) or keep Gold #F59E0B */
+    /* Let's stick to the plan: Primary=Terracotta, Secondary=Sand/DeepBlue? */
+    /* Re-evaluating: Primary should be the brand color (Orange). Secondary often used for bg? Existing was #F2F2F2 */
+    /* Let's use: */
+    /* Colors extracted/inspired by 'Horizon' logo & theme */
+    --primary: #C05621;
+    /* Earthy Terracotta */
+    --primary-light: #DD6B20;
+    --primary-dark: #9C4221;
+
+    --secondary: #2D3748;
+    /* Dark Slate/Horizon Blue-Grey */
+    --secondary-light: #4A5568;
+    --secondary-dark: #1A202C;
+
+    --accent: #F6AD55;
+    /* Sunset Gold */
+
+    --surface: #FFFFFF;
+    --surface-off: #FAF9F6;
+    /* Warm White */
+
+    --neutral-dark: #1F2937;
+    --neutral-light: #F3F4F6;
+  }
+}
+
+@theme {
+  --font-poppins: var(--font-poppins);
+  --font-inter: var(--font-inter);
+
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-light: var(--secondary-light);
+  --color-secondary-dark: var(--secondary-dark);
+
+  --color-accent: var(--accent);
+
+  --color-neutral-dark: var(--neutral-dark);
+  --color-neutral-light: var(--neutral-light);
+  --color-surface: var(--surface);
+  --color-surface-off: var(--surface-off);
+}
+
+@layer base {
+  * {
+    border-color: var(--gray-200);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    color: var(--neutral-dark);
+    font-family: var(--font-inter), sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-poppins), sans-serif;
+    color: var(--neutral-dark);
+  }
+}
