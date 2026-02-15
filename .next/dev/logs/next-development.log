@@ -1,322 +1,446 @@
-[00:00:06.345] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:06.739] Server  LOG      ✓ Ready in 5.6s
-[00:00:34.293] Server  LOG      ○ Compiling /[locale] ...
-[00:00:42.268] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:43.008] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[00:00:43.008] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:01:53.595] Server  LOG      ✓ Compiled in 188ms
-[00:01:55.591] Server  LOG      ✓ Compiled in 157ms
-[00:01:57.805] Server  LOG      ✓ Compiled in 121ms
-[00:01:59.606] Server  LOG      ✓ Compiled in 116ms
-[00:04:22.714] Server  LOG      ✓ Compiled in 179ms
-[00:04:24.709] Server  LOG      ✓ Compiled in 231ms
-[00:09:35.030] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:35.550] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[00:09:35.550] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:09:41.571] Server  LOG      ✓ Compiled in 104ms
-[00:09:48.996] Server  LOG      ✓ Compiled in 101ms
-[00:10:27.027] Server  LOG      ✓ Compiled in 258ms
-[00:13:47.910] Server  LOG      ✓ Compiled in 83ms
-[00:13:53.073] Server  LOG      ✓ Compiled in 144ms
-[00:14:05.029] Server  LOG      ✓ Compiled in 106ms
-[00:14:14.623] Server  LOG      ✓ Compiled in 157ms
-[00:14:29.800] Server  LOG      ✓ Compiled in 89ms
-[00:14:46.976] Server  LOG      ✓ Compiled in 249ms
-[00:15:57.433] Server  LOG      ✓ Compiled in 180ms
-[00:17:39.698] Server  LOG      ✓ Compiled in 424ms
-[00:20:00.138] Server  LOG      ✓ Compiled in 380ms
-[00:22:12.617] Server  LOG      ✓ Compiled in 104ms
-[00:26:15.536] Server  LOG      ✓ Compiled in 335ms
-[00:26:16.261] Browser WARN    Image with src "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:26:16.261] Browser WARN    Image with src "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:27:47.767] Server  LOG      ✓ Compiled in 662ms
-[00:29:00.137] Server  LOG      ✓ Compiled in 120ms
-[00:29:02.259] Server  LOG      ✓ Compiled in 105ms
-[00:29:04.235] Server  LOG      ✓ Compiled in 113ms
-[00:29:06.244] Server  LOG      ✓ Compiled in 99ms
-[00:29:08.543] Server  LOG      ✓ Compiled in 93ms
-[00:29:10.520] Server  LOG      ✓ Compiled in 100ms
-[00:29:28.945] Server  LOG      ✓ Compiled in 188ms
-[00:29:59.439] Server  LOG      ✓ Compiled in 567ms
-[00:30:00.992] Server  LOG      ✓ Compiled in 166ms
-[00:30:03.012] Server  LOG      ✓ Compiled in 156ms
-[00:30:05.055] Server  LOG      ✓ Compiled in 166ms
-[00:30:07.120] Server  LOG      ✓ Compiled in 165ms
-[00:30:09.415] Server  LOG      ✓ Compiled in 259ms
-[00:30:11.269] Server  LOG      ✓ Compiled in 131ms
-[00:36:21.689] Server  LOG      ✓ Compiled in 472ms
-[00:37:25.363] Server  LOG      ✓ Compiled in 322ms
-[00:38:24.622] Server  LOG      ✓ Compiled in 389ms
-[00:39:32.046] Server  LOG      ✓ Compiled in 399ms
-[00:40:39.318] Server  LOG      ✓ Compiled in 381ms
-[00:41:25.692] Server  LOG      ✓ Compiled in 349ms
-[00:42:32.386] Server  LOG      ✓ Compiled in 614ms
-[00:44:03.589] Server  LOG      ✓ Compiled in 381ms
-[00:44:06.065] Server  LOG      ✓ Compiled in 149ms
-[00:44:14.160] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:44:16.261] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:00.674] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:00.749] Server  LOG      ✓ Ready in 580ms
+[00:00:02.820] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.000] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:03.000] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:16:01.770] Server  LOG      ✓ Compiled in 32ms
+[00:19:13.288] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:21:52.798] Server  LOG      ✓ Compiled in 57ms
+[00:21:53.882] Browser ERROR   ./src/components/AboutPageContent.tsx:37:25
+Parsing ecmascript source code failed
+  35 |     return (
+  36 |         src = "/images/fes/hazy-momo-YSTtLgsvRa8-unsplash.jpg"
+> 37 |                         alt = "About Trust Drivers"
+     |                         ^^^
+  38 |     fill
+  39 |     className = "object-cover"
+  40 |     priority
 
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
+Expected ',', got 'alt'
 
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+Import trace:
+  Server Component:
+    ./src/components/AboutPageContent.tsx
+    ./src/app/[locale]/about/page.tsx
+[00:22:16.886] Browser ERROR   ./src/components/AboutPageContent.tsx:37:25
+Parsing ecmascript source code failed
+  35 |     return (
+  36 |         src = "/images/fes/hazy-momo-YSTtLgsvRa8-unsplash.jpg"
+> 37 |                         alt = "About Trust Drivers"
+     |                         ^^^
+  38 |     fill
+  39 |     className = "object-cover"
+  40 |     priority
 
-%s%s https://react.dev/link/hydration-mismatch 
+Expected ',', got 'alt'
 
-  ...
-    <HTTPAccessFallbackErrorBoundary pathname="/en" notFound={<SegmentViewNode>} forbidden={undefined} ...>
-      <RedirectBoundary>
-        <RedirectErrorBoundary router={{...}}>
-          <InnerLayoutRouter url="/en" tree={[...]} params={{locale:"en"}} cacheNode={{lazyData:null, ...}} ...>
-            <SegmentViewNode type="page" pagePath="[locale]/p...">
-              <SegmentTrieNode>
-              <Home>
-                <main className="flex flex-...">
-                  <HeroSearch>
-                  <AboutPreview>
-                  <PopularDestinations>
-                  <WhyTravelWithUs>
-                  <ReviewsSlider>
-                  <GalleryPreview locale="en">
-                    <section className="py-12 bg-n...">
-                      <div>
-                      <div className="relative o...">
-                        <div className="flex justi...">
-                          <motion.div initial={{opacity:0, ...}} whileInView={{opacity:1,scale:1, ...}} ...>
-                            <div className="relative -..." style={{zIndex:0,opacity:0, ...}} ...>
-                              <div>
-                              <div
-                                className="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-amber-100/80 opacity-60"
-                                style={{
-+                                 transform: "translateX(-50%) rotate(0.9979016020712868deg)"
--                                 transform: "translateX(-50%) rotate(2.48638deg)"
-                                }}
-                              >
-                          <motion.div initial={{opacity:0, ...}} whileInView={{opacity:1,scale:1, ...}} ...>
-                            <div className="relative -..." style={{zIndex:1,opacity:0, ...}} ...>
-                              <div>
-                              <div
-                                className="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-amber-100/80 opacity-60"
-                                style={{
-+                                 transform: "translateX(-50%) rotate(-2.7206972960866356deg)"
--                                 transform: "translateX(-50%) rotate(1.90975deg)"
-                                }}
-                              >
-                          <motion.div initial={{opacity:0, ...}} whileInView={{opacity:1,scale:1, ...}} ...>
-                            <div className="relative -..." style={{zIndex:2,opacity:0, ...}} ...>
-                              <div>
-                              <div
-                                className="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-amber-100/80 opacity-60"
-                                style={{
-+                                 transform: "translateX(-50%) rotate(2.849917421720302deg)"
--                                 transform: "translateX(-50%) rotate(1.2155deg)"
-                                }}
-                              >
-                          <motion.div initial={{opacity:0, ...}} whileInView={{opacity:1,scale:1, ...}} ...>
-                            <div className="relative -..." style={{zIndex:3,opacity:0, ...}} ...>
-                              <div>
-                              <div
-                                className="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-amber-100/80 opacity-60"
-                                style={{
-+                                 transform: "translateX(-50%) rotate(-1.9376007044233894deg)"
--                                 transform: "translateX(-50%) rotate(-1.33159deg)"
-                                }}
-                              >
-                          <motion.div initial={{opacity:0, ...}} whileInView={{opacity:1,scale:1, ...}} ...>
-                            <div className="relative -..." style={{zIndex:4,opacity:0, ...}} ...>
-                              <div>
-                              <div
-                                className="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-amber-100/80 opacity-60"
-                                style={{
-+                                 transform: "translateX(-50%) rotate(-2.816384679360108deg)"
--                                 transform: "translateX(-50%) rotate(0.99255deg)"
-                                }}
-                              >
-                          <motion.div initial={{opacity:0, ...}} whileInView={{opacity:1,scale:1, ...}} ...>
-                            <div className="relative -..." style={{zIndex:5,opacity:0, ...}} ...>
-                              <div>
-                              <div
-                                className="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-amber-100/80 opacity-60"
-                                style={{
-+                                 transform: "translateX(-50%) rotate(1.0179415995274468deg)"
--                                 transform: "translateX(-50%) rotate(-2.6019deg)"
-                                }}
-                              >
-                          <motion.div initial={{opacity:0, ...}} whileInView={{opacity:1,scale:1, ...}} ...>
-                            <div className="relative -..." style={{zIndex:6,opacity:0, ...}} ...>
-                              <div>
-                              <div
-                                className="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-amber-100/80 opacity-60"
-                                style={{
-+                                 transform: "translateX(-50%) rotate(2.4944839072383482deg)"
--                                 transform: "translateX(-50%) rotate(-1.53134deg)"
-                                }}
-                              >
-                      ...
-                  ...
-            ...
-          ...
-
-[00:44:16.262] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:44:19.101] Server  LOG      ✓ Compiled in 129ms
-[00:44:21.892] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[00:46:16.321] Server  LOG      ✓ Compiled in 568ms
-[00:48:03.363] Server  LOG      ✓ Compiled in 187ms
-[00:52:56.922] Server  LOG      ✓ Compiled in 340ms
-[00:54:01.559] Server  LOG      ✓ Compiled in 787ms
-[00:54:52.371] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:55:05.447] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `ServicesPage.duration_5_days` in messages for locale `en`."}
-[00:55:05.447] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `ServicesPage.duration_3_days` in messages for locale `en`."}
-[00:55:05.447] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `ServicesPage.duration_8_days` in messages for locale `en`."}
-[00:55:05.447] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `ServicesPage.duration_5_days` in messages for locale `en`."}
-[00:55:05.447] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `ServicesPage.duration_3_days` in messages for locale `en`."}
-[00:55:05.447] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `ServicesPage.duration_8_days` in messages for locale `en`."}
-[00:58:13.358] Server  LOG      ✓ Compiled in 386ms
-[01:01:24.144] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `ListingPage.duration_5_days` in messages for locale `en`."}
-[01:01:24.144] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `ListingPage.duration_3_days` in messages for locale `en`."}
-[01:01:24.144] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `ListingPage.duration_8_days` in messages for locale `en`."}
-[01:14:00.794] Server  LOG      ✓ Compiled in 206ms
-[01:15:06.928] Server  LOG      ✓ Compiled in 286ms
-[01:17:38.322] Server  LOG      ✓ Compiled in 400ms
-[04:48:49.569] Server  LOG      ✓ Compiled in 200ms
-[04:48:59.242] Server  LOG      ✓ Compiled in 137ms
-[04:49:01.917] Server  LOG      ✓ Compiled in 143ms
-[04:49:04.063] Server  LOG      ✓ Compiled in 114ms
-[04:49:06.007] Server  LOG      ✓ Compiled in 123ms
-[04:49:29.135] Server  LOG      ✓ Compiled in 171ms
-[05:00:52.299] Server  LOG      ✓ Compiled in 200ms
-[05:00:52.654] Server  LOG      ✓ Compiled in 0ms
-[05:17:12.859] Server  LOG      ✓ Compiled in 645ms
-[05:19:58.878] Server  LOG      ✓ Compiled in 235ms
-[05:24:13.828] Server  LOG      ✓ Compiled in 0ms
-[05:24:16.512] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[05:24:18.390] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[05:24:57.376] Server  LOG      ✓ Compiled in 248ms
-[05:25:56.127] Browser WARN    Image with src "/images/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Import trace:
+  Server Component:
+    ./src/components/AboutPageContent.tsx
+    ./src/app/[locale]/about/page.tsx
+[00:22:40.446] Server  LOG      ✓ Compiled in 30ms
+[00:24:49.929] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:50.076] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:25:33.926] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:25:33.926] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:28:11.239] Server  LOG      ✓ Compiled in 77ms
+[00:28:11.873] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `GalleryPage` in messages for locale `fr`."}
+[00:28:11.873] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `GalleryPage` in messages for locale `fr`."}
+[00:28:11.873] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `GalleryPage` in messages for locale `fr`."}
+[00:28:11.873] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `GalleryPage` in messages for locale `fr`."}
+[00:28:11.874] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `GalleryPage` in messages for locale `fr`."}
+[00:28:11.874] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `GalleryPage` in messages for locale `fr`."}
+[02:29:29.920] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:29:30.145] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[02:29:30.145] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:31:42.518] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:31:42.735] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[02:31:42.735] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:32:31.782] Server  LOG      ✓ Compiled in 146ms
+[02:33:01.123] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[02:35:49.542] Server  LOG      ✓ Compiled in 53ms
+[02:35:58.524] Server  LOG      ✓ Compiled in 50ms
+[02:36:18.797] Server  LOG      ✓ Compiled in 53ms
+[02:38:14.912] Server  LOG      ✓ Compiled in 101ms
+[02:38:54.286] Server  LOG      ✓ Compiled in 51ms
+[02:39:10.531] Server  LOG      ✓ Compiled in 37ms
+[02:39:23.518] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:39:23.677] Server  ERROR   C:\Users\Ultrapc\Desktop\Websites\horizontours\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[02:39:23.678] Server  ERROR   C:\Users\Ultrapc\Desktop\Websites\horizontours\.next\dev\server\chunks\ssr\[root-of-the-server]__d3fb55f0._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[02:39:23.682] Server  ERROR    ⨯ Error: Cannot find module '../../../messages/favicon.ico.json'
+[02:39:25.984] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:39:26.150] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:39:26.770] Browser WARN    Image with src "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[05:26:02.621] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[05:26:02.621] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[05:26:05.995] Server  LOG      ✓ Compiled in 230ms
-[05:26:25.937] Server  LOG      ✓ Compiled in 213ms
-[05:27:50.065] Server  LOG      ✓ Compiled in 147ms
-[05:34:32.673] Server  LOG      ✓ Compiled in 281ms
-[05:35:01.448] Server  LOG      ✓ Compiled in 498ms
-[05:40:06.860] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[05:40:07.443] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[02:39:29.963] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[02:39:53.669] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:39:56.165] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:39:56.413] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:39:56.413] Browser WARN    Image with src "/images/merzouga/merzouga1.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:39:56.782] Browser WARN    Image with src "/images/fes/hazy-momo-YSTtLgsvRa8-unsplash.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:40:00.378] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:40:01.796] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:40:02.018] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:40:02.018] Browser WARN    Image with src "/images/merzouga/merzouga1.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:40:06.538] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[02:40:27.185] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:41:50.266] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:41:52.329] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:41:52.550] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:41:52.550] Browser WARN    Image with src "/images/merzouga/merzouga1.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:41:53.108] Browser WARN    Image with src "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:41:57.948] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[02:43:20.134] Server  ERROR    ⨯ ./src/data/getSiteData.ts:2:1
+Module not found: Can't resolve './siteDataFr'
+  1 | import { siteData } from './siteData';
+> 2 | import { siteDataFr } from './siteDataFr';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | /**
+  5 |  * Get site data based on locale
 
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
 
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
-%s%s https://react.dev/link/hydration-mismatch 
+Import traces:
+  Client Component Browser:
+    ./src/data/getSiteData.ts [Client Component Browser]
+    ./src/app/[locale]/tours/[id]/page.tsx [Client Component Browser]
+    ./src/app/[locale]/tours/[id]/page.tsx [Server Component]
 
-  ...
-    <HTTPAccessFallbackErrorBoundary pathname="/en" notFound={<SegmentViewNode>} forbidden={undefined} ...>
-      <RedirectBoundary>
-        <RedirectErrorBoundary router={{...}}>
-          <InnerLayoutRouter url="/en" tree={[...]} params={{locale:"en"}} cacheNode={{lazyData:null, ...}} ...>
-            <SegmentViewNode type="page" pagePath="[locale]/p...">
-              <SegmentTrieNode>
-              <Home>
-                <main className="flex flex-...">
-                  <HeroSearch>
-                  <AboutPreview>
-                  <PopularDestinations>
-                  <WhyTravelWithUs>
-                  <ReviewsSlider>
-                  <GalleryPreview locale="en">
-                    <section className="py-12 bg-n...">
-                      <div>
-                      <div className="relative o...">
-                        <div className="flex justi...">
-                          <motion.div initial={{opacity:0, ...}} whileInView={{opacity:1,scale:1, ...}} ...>
-                            <div className="relative -..." style={{zIndex:0,opacity:0, ...}} ...>
-                              <div>
-                              <div
-                                className="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-amber-100/80 opacity-60"
-                                style={{
-+                                 transform: "translateX(-50%) rotate(-0.331155073520327deg)"
--                                 transform: "translateX(-50%) rotate(-0.925445deg)"
-                                }}
-                              >
-                          <motion.div initial={{opacity:0, ...}} whileInView={{opacity:1,scale:1, ...}} ...>
-                            <div className="relative -..." style={{zIndex:1,opacity:0, ...}} ...>
-                              <div>
-                              <div
-                                className="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-amber-100/80 opacity-60"
-                                style={{
-+                                 transform: "translateX(-50%) rotate(-2.6747595257312033deg)"
--                                 transform: "translateX(-50%) rotate(-2.79561deg)"
-                                }}
-                              >
-                          <motion.div initial={{opacity:0, ...}} whileInView={{opacity:1,scale:1, ...}} ...>
-                            <div className="relative -..." style={{zIndex:2,opacity:0, ...}} ...>
-                              <div>
-                              <div
-                                className="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-amber-100/80 opacity-60"
-                                style={{
-+                                 transform: "translateX(-50%) rotate(-2.6029927074693084deg)"
--                                 transform: "translateX(-50%) rotate(0.683713deg)"
-                                }}
-                              >
-                          <motion.div initial={{opacity:0, ...}} whileInView={{opacity:1,scale:1, ...}} ...>
-                            <div className="relative -..." style={{zIndex:3,opacity:0, ...}} ...>
-                              <div>
-                              <div
-                                className="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-amber-100/80 opacity-60"
-                                style={{
-+                                 transform: "translateX(-50%) rotate(0.4596001316253506deg)"
--                                 transform: "translateX(-50%) rotate(-0.921652deg)"
-                                }}
-                              >
-                          <motion.div initial={{opacity:0, ...}} whileInView={{opacity:1,scale:1, ...}} ...>
-                            <div className="relative -..." style={{zIndex:4,opacity:0, ...}} ...>
-                              <div>
-                              <div
-                                className="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-amber-100/80 opacity-60"
-                                style={{
-+                                 transform: "translateX(-50%) rotate(2.807202426709952deg)"
--                                 transform: "translateX(-50%) rotate(0.0754439deg)"
-                                }}
-                              >
-                          <motion.div initial={{opacity:0, ...}} whileInView={{opacity:1,scale:1, ...}} ...>
-                            <div className="relative -..." style={{zIndex:5,opacity:0, ...}} ...>
-                              <div>
-                              <div
-                                className="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-amber-100/80 opacity-60"
-                                style={{
-+                                 transform: "translateX(-50%) rotate(2.6501945851907234deg)"
--                                 transform: "translateX(-50%) rotate(1.05987deg)"
-                                }}
-                              >
-                          <motion.div initial={{opacity:0, ...}} whileInView={{opacity:1,scale:1, ...}} ...>
-                            <div className="relative -..." style={{zIndex:6,opacity:0, ...}} ...>
-                              <div>
-                              <div
-                                className="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-amber-100/80 opacity-60"
-                                style={{
-+                                 transform: "translateX(-50%) rotate(1.6671701128312186deg)"
--                                 transform: "translateX(-50%) rotate(-1.32762deg)"
-                                }}
-                              >
-                      ...
-                  ...
-            ...
-          ...
+  Client Component SSR:
+    ./src/data/getSiteData.ts [Client Component SSR]
+    ./src/app/[locale]/tours/[id]/page.tsx [Client Component SSR]
+    ./src/app/[locale]/tours/[id]/page.tsx [Server Component]
 
-[05:40:07.443] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[05:40:07.443] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[05:40:46.045] Server  LOG      ✓ Compiled in 275ms
-[05:41:37.042] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[05:42:03.995] Server  LOG      ✓ Compiled in 98ms
-[05:42:13.542] Server  LOG      ✓ Compiled in 375ms
-[05:47:14.135] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[05:47:14.650] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[05:49:18.346] Server  LOG      ✓ Compiled in 0ms
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:43:20.135] Server  ERROR    ⨯ ./src/data/getSiteData.ts:2:1
+Module not found: Can't resolve './siteDataFr'
+  1 | import { siteData } from './siteData';
+> 2 | import { siteDataFr } from './siteDataFr';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | /**
+  5 |  * Get site data based on locale
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/data/getSiteData.ts [Client Component Browser]
+    ./src/app/[locale]/tours/[id]/page.tsx [Client Component Browser]
+    ./src/app/[locale]/tours/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/data/getSiteData.ts [Client Component SSR]
+    ./src/app/[locale]/tours/[id]/page.tsx [Client Component SSR]
+    ./src/app/[locale]/tours/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:43:20.136] Server  ERROR    ⨯ ./src/data/getSiteData.ts:2:1
+Module not found: Can't resolve './siteDataFr'
+  1 | import { siteData } from './siteData';
+> 2 | import { siteDataFr } from './siteDataFr';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | /**
+  5 |  * Get site data based on locale
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/data/getSiteData.ts [Client Component Browser]
+    ./src/app/[locale]/tours/[id]/page.tsx [Client Component Browser]
+    ./src/app/[locale]/tours/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/data/getSiteData.ts [Client Component SSR]
+    ./src/app/[locale]/tours/[id]/page.tsx [Client Component SSR]
+    ./src/app/[locale]/tours/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:43:20.138] Server  ERROR    ⨯ ./src/data/getSiteData.ts:2:1
+Module not found: Can't resolve './siteDataFr'
+  1 | import { siteData } from './siteData';
+> 2 | import { siteDataFr } from './siteDataFr';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | /**
+  5 |  * Get site data based on locale
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/data/getSiteData.ts [Client Component Browser]
+    ./src/app/[locale]/tours/[id]/page.tsx [Client Component Browser]
+    ./src/app/[locale]/tours/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/data/getSiteData.ts [Client Component SSR]
+    ./src/app/[locale]/tours/[id]/page.tsx [Client Component SSR]
+    ./src/app/[locale]/tours/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:43:20.878] Browser ERROR   ./src/data/getSiteData.ts:2:1
+Module not found: Can't resolve './siteDataFr'
+  1 | import { siteData } from './siteData';
+> 2 | import { siteDataFr } from './siteDataFr';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | /**
+  5 |  * Get site data based on locale
+
+Import traces:
+  Client Component Browser:
+    ./src/data/getSiteData.ts [Client Component Browser]
+    ./src/app/[locale]/tours/[id]/page.tsx [Client Component Browser]
+    ./src/app/[locale]/tours/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/data/getSiteData.ts [Client Component SSR]
+    ./src/app/[locale]/tours/[id]/page.tsx [Client Component SSR]
+    ./src/app/[locale]/tours/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:43:36.575] Server  LOG      ✓ Compiled in 81ms
+[02:44:16.690] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:44:16.854] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:49:22.240] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:49:22.426] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:50:32.439] Server  LOG      ✓ Compiled in 85ms
+[02:50:32.881] Browser ERROR   ./src/components/PopularDestinations.tsx:8:1
+Export siteDataFr doesn't exist in target module
+   6 | import Image from 'next/image';
+   7 | import { ArrowRight, Clock, MapPin } from 'lucide-react';
+>  8 | import { siteData, siteDataFr } from '@/data/siteData';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { useTranslations } from 'next-intl';
+  10 |
+  11 | export const PopularDestinations = ({ locale, dict }: { locale: string, dict: any }) => {
+
+The export siteDataFr was not found in module [project]/src/data/siteData.ts [app-client] (ecmascript).
+Did you mean to import siteData?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/PopularDestinations.tsx
+    ./src/app/[locale]/page.tsx
+[02:50:32.881] Browser ERROR   ./src/components/PopularDestinations.tsx:8:1
+Export siteDataFr doesn't exist in target module
+   6 | import Image from 'next/image';
+   7 | import { ArrowRight, Clock, MapPin } from 'lucide-react';
+>  8 | import { siteData, siteDataFr } from '@/data/siteData';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { useTranslations } from 'next-intl';
+  10 |
+  11 | export const PopularDestinations = ({ locale, dict }: { locale: string, dict: any }) => {
+
+The export siteDataFr was not found in module [project]/src/data/siteData.ts [app-ssr] (ecmascript).
+Did you mean to import siteData?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/PopularDestinations.tsx
+    ./src/app/[locale]/page.tsx
+[02:50:50.877] Browser ERROR   ./src/components/PopularDestinations.tsx:8:1
+Export siteDataFr doesn't exist in target module
+   6 | import Image from 'next/image';
+   7 | import { ArrowRight, Clock, MapPin } from 'lucide-react';
+>  8 | import { siteData, siteDataFr } from '@/data/siteData';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { useTranslations } from 'next-intl';
+  10 |
+  11 | export const PopularDestinations = ({ locale, dict }: { locale: string, dict: any }) => {
+
+The export siteDataFr was not found in module [project]/src/data/siteData.ts [app-client] (ecmascript).
+Did you mean to import siteData?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/PopularDestinations.tsx
+    ./src/app/[locale]/page.tsx
+[02:50:50.877] Browser ERROR   ./src/components/PopularDestinations.tsx:8:1
+Export siteDataFr doesn't exist in target module
+   6 | import Image from 'next/image';
+   7 | import { ArrowRight, Clock, MapPin } from 'lucide-react';
+>  8 | import { siteData, siteDataFr } from '@/data/siteData';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { useTranslations } from 'next-intl';
+  10 |
+  11 | export const PopularDestinations = ({ locale, dict }: { locale: string, dict: any }) => {
+
+The export siteDataFr was not found in module [project]/src/data/siteData.ts [app-ssr] (ecmascript).
+Did you mean to import siteData?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/PopularDestinations.tsx
+    ./src/app/[locale]/page.tsx
+[02:51:14.679] Server  LOG      ✓ Compiled in 90ms
+[02:51:14.880] Browser ERROR   ./src/components/PopularDestinations.tsx:8:1
+Export siteDataFr doesn't exist in target module
+   6 | import Image from 'next/image';
+   7 | import { ArrowRight, Clock, MapPin } from 'lucide-react';
+>  8 | import { siteData, siteDataFr } from '@/data/siteData';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { useTranslations } from 'next-intl';
+  10 |
+  11 | export const PopularDestinations = ({ locale, dict }: { locale: string, dict: any }) => {
+
+The export siteDataFr was not found in module [project]/src/data/siteData.ts [app-client] (ecmascript).
+Did you mean to import siteData?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/PopularDestinations.tsx
+    ./src/app/[locale]/page.tsx
+[02:51:14.880] Browser ERROR   ./src/components/PopularDestinations.tsx:8:1
+Export siteDataFr doesn't exist in target module
+   6 | import Image from 'next/image';
+   7 | import { ArrowRight, Clock, MapPin } from 'lucide-react';
+>  8 | import { siteData, siteDataFr } from '@/data/siteData';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { useTranslations } from 'next-intl';
+  10 |
+  11 | export const PopularDestinations = ({ locale, dict }: { locale: string, dict: any }) => {
+
+The export siteDataFr was not found in module [project]/src/data/siteData.ts [app-ssr] (ecmascript).
+Did you mean to import siteData?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/PopularDestinations.tsx
+    ./src/app/[locale]/page.tsx
+[02:51:31.878] Browser ERROR   ./src/components/PopularDestinations.tsx:8:1
+Export siteDataFr doesn't exist in target module
+   6 | import Image from 'next/image';
+   7 | import { ArrowRight, Clock, MapPin } from 'lucide-react';
+>  8 | import { siteData, siteDataFr } from '@/data/siteData';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { useTranslations } from 'next-intl';
+  10 |
+  11 | export const PopularDestinations = ({ locale, dict }: { locale: string, dict: any }) => {
+
+The export siteDataFr was not found in module [project]/src/data/siteData.ts [app-client] (ecmascript).
+Did you mean to import siteData?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/PopularDestinations.tsx
+    ./src/app/[locale]/page.tsx
+[02:51:31.878] Browser ERROR   ./src/components/PopularDestinations.tsx:8:1
+Export siteDataFr doesn't exist in target module
+   6 | import Image from 'next/image';
+   7 | import { ArrowRight, Clock, MapPin } from 'lucide-react';
+>  8 | import { siteData, siteDataFr } from '@/data/siteData';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { useTranslations } from 'next-intl';
+  10 |
+  11 | export const PopularDestinations = ({ locale, dict }: { locale: string, dict: any }) => {
+
+The export siteDataFr was not found in module [project]/src/data/siteData.ts [app-ssr] (ecmascript).
+Did you mean to import siteData?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/PopularDestinations.tsx
+    ./src/app/[locale]/page.tsx
+[02:51:46.876] Browser ERROR   ./src/components/PopularDestinations.tsx:8:1
+Export siteDataFr doesn't exist in target module
+   6 | import Image from 'next/image';
+   7 | import { ArrowRight, Clock, MapPin } from 'lucide-react';
+>  8 | import { siteData, siteDataFr } from '@/data/siteData';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { useTranslations } from 'next-intl';
+  10 |
+  11 | export const PopularDestinations = ({ locale, dict }: { locale: string, dict: any }) => {
+
+The export siteDataFr was not found in module [project]/src/data/siteData.ts [app-client] (ecmascript).
+Did you mean to import siteData?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/PopularDestinations.tsx
+    ./src/app/[locale]/page.tsx
+[02:51:46.876] Browser ERROR   ./src/components/PopularDestinations.tsx:8:1
+Export siteDataFr doesn't exist in target module
+   6 | import Image from 'next/image';
+   7 | import { ArrowRight, Clock, MapPin } from 'lucide-react';
+>  8 | import { siteData, siteDataFr } from '@/data/siteData';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { useTranslations } from 'next-intl';
+  10 |
+  11 | export const PopularDestinations = ({ locale, dict }: { locale: string, dict: any }) => {
+
+The export siteDataFr was not found in module [project]/src/data/siteData.ts [app-ssr] (ecmascript).
+Did you mean to import siteData?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/PopularDestinations.tsx
+    ./src/app/[locale]/page.tsx
+[02:52:04.880] Browser ERROR   ./src/components/PopularDestinations.tsx:8:1
+Export siteDataFr doesn't exist in target module
+   6 | import Image from 'next/image';
+   7 | import { ArrowRight, Clock, MapPin } from 'lucide-react';
+>  8 | import { siteData, siteDataFr } from '@/data/siteData';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { useTranslations } from 'next-intl';
+  10 |
+  11 | export const PopularDestinations = ({ locale, dict }: { locale: string, dict: any }) => {
+
+The export siteDataFr was not found in module [project]/src/data/siteData.ts [app-client] (ecmascript).
+Did you mean to import siteData?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/PopularDestinations.tsx
+    ./src/app/[locale]/page.tsx
+[02:52:04.880] Browser ERROR   ./src/components/PopularDestinations.tsx:8:1
+Export siteDataFr doesn't exist in target module
+   6 | import Image from 'next/image';
+   7 | import { ArrowRight, Clock, MapPin } from 'lucide-react';
+>  8 | import { siteData, siteDataFr } from '@/data/siteData';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { useTranslations } from 'next-intl';
+  10 |
+  11 | export const PopularDestinations = ({ locale, dict }: { locale: string, dict: any }) => {
+
+The export siteDataFr was not found in module [project]/src/data/siteData.ts [app-ssr] (ecmascript).
+Did you mean to import siteData?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/PopularDestinations.tsx
+    ./src/app/[locale]/page.tsx
+[02:53:15.319] Server  LOG      ✓ Compiled in 46ms
+[02:54:21.437] Server  LOG      ✓ Compiled in 38ms
+[02:57:14.848] Server  LOG      ✓ Compiled in 76ms
+[03:05:00.064] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[03:05:00.064] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.

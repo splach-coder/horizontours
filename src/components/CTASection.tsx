@@ -4,9 +4,13 @@ import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowRight, Phone, Mail } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import { siteInfo } from '@/data/siteInfo';
 
 // CTA - Modern split design with beige background
 export const CTASection = ({ locale, dict }: { locale: string, dict: any }) => {
+    const t = useTranslations('CTASection');
+
     return (
         <section className="py-12 bg-neutral-100">
             <div className="container mx-auto px-6 md:px-4">
@@ -30,14 +34,14 @@ export const CTASection = ({ locale, dict }: { locale: string, dict: any }) => {
                         {/* Left: Text Content */}
                         <div className="flex flex-col justify-center">
                             <span className="text-primary text-sm font-medium uppercase tracking-widest mb-4">
-                                Ready to explore?
+                                {t('readyToExplore')}
                             </span>
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-dark font-poppins mb-6 leading-tight">
-                                Let's plan your <br />
-                                <span className="text-primary">dream trip</span> together
+                                {t('heading1')} <br />
+                                <span className="text-primary">{t('heading2')}</span> {t('heading2Highlight')}
                             </h2>
                             <p className="text-neutral-600 text-lg mb-8 max-w-md leading-relaxed">
-                                {dict.text}
+                                {t('description')}
                             </p>
 
                             {/* CTA Buttons */}
@@ -46,14 +50,14 @@ export const CTASection = ({ locale, dict }: { locale: string, dict: any }) => {
                                     href={`/${locale}/contact`}
                                     className="inline-flex items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-medium hover:bg-primary-dark transition-colors group"
                                 >
-                                    {dict.button}
+                                    {t('bookYourTrip')}
                                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                 </Link>
                                 <Link
                                     href={`/${locale}/tours`}
                                     className="inline-flex items-center justify-center gap-2 bg-neutral-dark text-white px-8 py-4 rounded-full font-medium hover:bg-neutral-800 transition-colors"
                                 >
-                                    Browse Tours
+                                    {t('browseTours')}
                                 </Link>
                             </div>
                         </div>
@@ -62,7 +66,7 @@ export const CTASection = ({ locale, dict }: { locale: string, dict: any }) => {
                         <div className="flex flex-col justify-center gap-4">
                             {/* WhatsApp Card */}
                             <a
-                                href="https://wa.me/212600000000"
+                                href={`https://wa.me/${siteInfo.contact.whatsapp.replace(/\+/g, '')}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group bg-white hover:bg-white/80 border border-neutral-200 rounded-2xl p-6 transition-all duration-300 flex items-center gap-4 shadow-sm hover:shadow-md"
@@ -71,23 +75,23 @@ export const CTASection = ({ locale, dict }: { locale: string, dict: any }) => {
                                     <Phone className="w-6 h-6 text-green-600" />
                                 </div>
                                 <div>
-                                    <span className="block text-neutral-dark font-medium text-lg">WhatsApp Us</span>
-                                    <span className="text-neutral-500 text-sm">+212 600 000 000</span>
+                                    <span className="block text-neutral-dark font-medium text-lg">{t('whatsappUs')}</span>
+                                    <span className="text-neutral-500 text-sm">{siteInfo.contact.whatsapp}</span>
                                 </div>
                                 <ArrowRight className="w-5 h-5 text-neutral-400 ml-auto group-hover:text-primary group-hover:translate-x-1 transition-all" />
                             </a>
 
                             {/* Email Card */}
                             <a
-                                href="mailto:contact@horizontours.com"
+                                href={`mailto:${siteInfo.contact.email}`}
                                 className="group bg-white hover:bg-white/80 border border-neutral-200 rounded-2xl p-6 transition-all duration-300 flex items-center gap-4 shadow-sm hover:shadow-md"
                             >
                                 <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
                                     <Mail className="w-6 h-6 text-primary" />
                                 </div>
                                 <div>
-                                    <span className="block text-neutral-dark font-medium text-lg">Email Us</span>
-                                    <span className="text-neutral-500 text-sm">contact@horizontours.com</span>
+                                    <span className="block text-neutral-dark font-medium text-lg">{t('emailUs')}</span>
+                                    <span className="text-neutral-500 text-sm">{siteInfo.contact.email}</span>
                                 </div>
                                 <ArrowRight className="w-5 h-5 text-neutral-400 ml-auto group-hover:text-primary group-hover:translate-x-1 transition-all" />
                             </a>
@@ -96,15 +100,15 @@ export const CTASection = ({ locale, dict }: { locale: string, dict: any }) => {
                             <div className="grid grid-cols-3 gap-4 mt-4">
                                 <div className="text-center">
                                     <span className="block text-2xl md:text-3xl font-bold text-neutral-dark">500+</span>
-                                    <span className="text-neutral-500 text-xs uppercase tracking-wider">Travelers</span>
+                                    <span className="text-neutral-500 text-xs uppercase tracking-wider">{t('travelers')}</span>
                                 </div>
                                 <div className="text-center">
                                     <span className="block text-2xl md:text-3xl font-bold text-neutral-dark">10+</span>
-                                    <span className="text-neutral-500 text-xs uppercase tracking-wider">Years</span>
+                                    <span className="text-neutral-500 text-xs uppercase tracking-wider">{t('years')}</span>
                                 </div>
                                 <div className="text-center">
                                     <span className="block text-2xl md:text-3xl font-bold text-neutral-dark">4.9</span>
-                                    <span className="text-neutral-500 text-xs uppercase tracking-wider">Rating</span>
+                                    <span className="text-neutral-500 text-xs uppercase tracking-wider">{t('rating')}</span>
                                 </div>
                             </div>
                         </div>

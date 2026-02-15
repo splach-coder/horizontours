@@ -1,6 +1,6 @@
 {
   "HomePage": {
-    "title": "Bienvenue à Horizon Tours",
+    "title": "Bienvenue à Trust Drivers",
     "description": "Découvrez la beauté authentique de Marrakech",
     "heroTag": "Découvrez Marrakech",
     "heroTitle": "Un voyage de tradition, d'innovation et de beauté naturelle",
@@ -110,12 +110,13 @@
     "perPerson": "par personne"
   },
   "AboutPage": {
-    "title": "À Propos de Nous",
-    "tag": "À Propos",
+    "title": "À Propos de",
+    "titleItalic": "Nous",
+    "tag": "À Propos de Nous",
     "subtitle": "Votre partenaire de confiance pour des expériences marocaines authentiques.",
     "storyTitle": "Notre Histoire",
     "storyTag": "Notre Histoire",
-    "storyText": "Horizon Tours est née d'une passion pour le partage des trésors cachés et de la culture vibrante du Maroc. Nous nous spécialisons dans la création de voyages personnalisés qui vont au-delà de l'ordinaire, vous connectant avec le cœur et l'âme de ce beau pays.",
+    "storyText": "Trust Drivers est née d'une passion pour le partage des trésors cachés et de la culture vibrante du Maroc. Nous nous spécialisons dans la création de voyages personnalisés qui vont au-delà de l'ordinaire, vous connectant avec le cœur et l'âme de ce beau pays.",
     "storyLocal": "Fondée par des locaux ayant un amour profond pour leur patrimoine, nous visons à vous montrer le Maroc que nous connaissons et aimons. Des souks animés de Marrakech au silence serein du désert d'Agafay, chaque expérience est conçue avec soin.",
     "missionTitle": "Notre Mission",
     "whyChooseTag": "Pourquoi Nous Choisir",
@@ -132,6 +133,9 @@
     "value3Text": "Votre sécurité est notre priorité absolue. Nous fournissons des transports professionnels, des guides experts et une assistance 24/7."
   },
   "ContactPage": {
+    "getInTouch": "Contactez-nous",
+    "contactUs": "Contactez",
+    "contactUsItalic": "Nous",
     "heroTitlePart1": "Connectez-vous avec",
     "heroTitlePart2": "Nous",
     "heroSubtitle": "Des voyages marocains sur mesure adaptés à votre rythme.",
@@ -141,6 +145,7 @@
     "callWhatsapp": "Appel ou WhatsApp",
     "emailUs": "Envoyez-nous un Email",
     "location": "Emplacement",
+    "followUs": "Suivez-nous",
     "sendInquiry": "Envoyer une Demande",
     "fillForm": "Remplissez le formulaire ci-dessous pour discuter avec nous directement sur WhatsApp.",
     "fullName": "Nom Complet",
@@ -157,6 +162,8 @@
     "adventures": "Aventures",
     "curatedPacks": "Packs Organisés",
     "transport": "Transport",
+    "allServices": "Tous les Services",
+    "allServicesDesc": "Parcourez toutes nos offres",
     "option": "option",
     "options": "options",
     "available": "disponible(s)",
@@ -169,7 +176,20 @@
     "duration_half_day": "Demi-journée",
     "duration_2_hours": "2 heures",
     "duration_4_hours": "4 heures",
-    "flexible": "Flexible"
+    "flexible": "Flexible",
+    "ctaTitle": "Vous ne trouvez pas ce que vous cherchez ?",
+    "ctaDescription": "Nous créons des expériences personnalisées adaptées à vos préférences. Planifions ensemble votre voyage parfait.",
+    "contactUs": "Contactez-nous"
+  },
+  "GalleryPage": {
+    "tag": "Voyage Visuel",
+    "title": "Galerie",
+    "subtitle": "Explorez la beauté du Maroc à travers notre collection organisée de moments et de souvenirs.",
+    "allPhotos": "Toutes les Photos",
+    "tours": "Visites",
+    "landscapes": "Paysages",
+    "culture": "Culture",
+    "adventures": "Aventures"
   },
   "ListingPage": {
     "tag": "Découvrez le Maroc",
@@ -197,5 +217,131 @@
     "transportLabel": "Transport",
     "transportFlexible": "Flexible",
     "transportDescDefault": "Profitez d'un voyage confortable et sûr avec notre {itemName}. Les chauffeurs professionnels assurent ponctualité et confort."
+  },
+  "Reviews": {
+    "title": "Ce Que Disent Nos Clients",
+    "postedOn": "Publié sur Google",
+    "viewAll": "Voir tous les avis sur Google Maps",
+    "review1Author": "Sarah Johnson",
+    "review1Text": "Une expérience absolument incroyable ! Notre guide était compétent et passionné par la culture marocaine. Le circuit dans le désert a dépassé toutes les attentes. Je recommande vivement Trust Drivers à tous ceux qui visitent le Maroc !",
+    "review1Date": "Il y a 2 semaines",
+    "review2Author": "Mohammed Al-Rashid",
+    "review2Text": "Service professionnel du début à la fin. Le chauffeur était ponctuel, le véhicule impeccable et tout le voyage s'est déroulé sans accroc. Trust Drivers a rendu nos vacances en famille inoubliables !",
+    "review2Date": "Il y a 1 mois",
+    "review3Author": "Emma Martinez",
+    "review3Text": "Meilleure compagnie de tours à Marrakech ! Ils ont parfaitement personnalisé notre itinéraire et nous ont montré des joyaux cachés que nous n'aurions jamais trouvés seuls. Le tour des montagnes de l'Atlas était à couper le souffle !",
+    "review3Date": "Il y a 3 semaines",
+    "review4Author": "David Chen",
+    "review4Text": "Service exceptionnel et attention aux détails. Notre chauffeur parlait parfaitement anglais et partageait des histoires fascinantes sur l'histoire du Maroc. L'expérience du désert du Sahara était une aventure unique !",
+    "review4Date": "Il y a 1 semaine",
+    "review5Author": "Fatima Benali",
+    "review5Text": "J'ai utilisé de nombreux services de tours, mais Trust Drivers se démarque. Ils sont fiables, professionnels et se soucient vraiment de créer des expériences mémorables. Le tour côtier à Essaouira était magique !",
+    "review5Date": "Il y a 2 mois",
+    "review6Author": "James Wilson",
+    "review6Text": "De la réservation à la fin de notre voyage, tout était parfait. Les guides étaient sympathiques et compétents. Nous nous sommes sentis en sécurité et bien pris en charge tout au long de notre voyage. Cinq étoiles !",
+    "review6Date": "Il y a 3 semaines",
+    "review7Author": "Aisha Rahman",
+    "review7Text": "Trust Drivers a fourni une expérience marocaine authentique. Ils nous ont emmenés dans des marchés locaux, des restaurants traditionnels et de magnifiques paysages. Notre famille chérira ces souvenirs pour toujours !",
+    "review7Date": "Il y a 1 mois",
+    "review8Author": "Pierre Dubois",
+    "review8Text": "Magnifique ! Le professionnalisme et la chaleur de l'équipe Trust Drivers ont rendu notre lune de miel extraordinaire. Le tour privé valait chaque centime. Nous reviendrons certainement !",
+    "review8Date": "Il y a 2 semaines",
+    "review9Author": "Lisa Anderson",
+    "review9Text": "Je voyageais seule et je me suis sentie complètement en sécurité avec Trust Drivers. Ils étaient respectueux, accommodants et ont fait tout leur possible pour que j'aie une expérience incroyable. Hautement recommandé !",
+    "review9Date": "Il y a 4 semaines",
+    "review10Author": "Omar Hassan",
+    "review10Text": "Service exceptionnel ! L'attention aux détails, les véhicules confortables et les guides experts ont fait de cela la meilleure expérience de tour que j'aie jamais eue. Trust Drivers est vraiment à la hauteur de son nom !",
+    "review10Date": "Il y a 1 semaine"
+  },
+  "PopularDestinations": {
+    "subtitle": "Découvrez le Maroc",
+    "title": "Destinations",
+    "titleItalic": "Populaires",
+    "description": "Expériences sélectionnées pour des aventures inoubliables à travers le Maroc",
+    "morocco": "Maroc",
+    "from": "À partir de",
+    "exploreAllTours": "Explorer Tous les Tours"
+  },
+  "CTASection": {
+    "readyToExplore": "Prêt à explorer ?",
+    "heading1": "Planifions votre",
+    "heading2": "voyage de rêve",
+    "heading2Highlight": "ensemble",
+    "description": "Réservez votre visite privée aujourd'hui et découvrez la magie de Marrakech avec nos guides experts.",
+    "bookYourTrip": "Réservez Votre Voyage",
+    "browseTours": "Parcourir les Tours",
+    "whatsappUs": "WhatsApp",
+    "emailUs": "Email",
+    "travelers": "Voyageurs",
+    "years": "Années",
+    "rating": "Note",
+    "getInTouch": "Contactez-nous",
+    "contactUs": "Nous Contacter",
+    "followUs": "Suivez-Nous",
+    "readyToStart": "Prêt à commencer votre voyage ?",
+    "unforgettableExperience": "Laissez-nous créer une expérience inoubliable adaptée juste pour vous."
+  },
+  "AboutPageContent": {
+    "getInTouch": "Contactez-nous",
+    "aboutUs": "À Propos",
+    "aboutUsItalic": "De Nous",
+    "ourStory": "Notre Histoire"
+  },
+  "BookingForm": {
+    "contactForPrice": "Contactez pour le Prix"
+  },
+  "GalleryPreview": {
+    "subtitle": "Histoires réelles de vrais voyageurs",
+    "title": "Moments qui ont rendu chaque voyage",
+    "titleItalic": "inoubliable",
+    "seeMore": "Voir plus de bonheur"
+  },
+  "HeroSearch": {
+    "title1": "Trouvez votre prochain",
+    "title2": "voyage inoubliable",
+    "subtitle": "Découvrez des joyaux cachés, des endroits chill et des aventures sauvages, tout en un seul endroit.",
+    "pickDate": "Choisir une date",
+    "travelers": "Voyageurs",
+    "traveler": "Voyageur",
+    "search": "Rechercher",
+    "findMyTrip": "Trouver mon voyage",
+    "selectTravelDate": "Sélectionnez votre date de voyage",
+    "numberOfTravelers": "Nombre de voyageurs"
+  },
+  "BookingEngine": {
+    "bookNow": "Réserver Maintenant",
+    "contactForPrice": "Contactez pour le Prix",
+    "customQuote": "Devis personnalisé selon vos besoins",
+    "total": "total",
+    "pricePerPerson": "Prix par personne",
+    "numberOfTravelers": "Nombre de voyageurs",
+    "subtotal": "Sous-total",
+    "chooseExperience": "Choisir l'Expérience",
+    "travelDate": "Date de Voyage",
+    "travelers": "Voyageurs",
+    "person": "personne",
+    "people": "personnes",
+    "confirmViaWhatsApp": "Confirmer via WhatsApp",
+    "noPaymentNow": "💳 Aucun paiement maintenant • Payer à l'arrivée"
+  },
+  "AboutCTA": {
+    "title": "Prêt à commencer votre voyage ?",
+    "description": "Laissez-nous créer une expérience inoubliable adaptée juste pour vous.",
+    "button": "Contactez-nous"
+  },
+  "FAQ": {
+    "title": "Questions",
+    "titleItalic": "Fréquentes",
+    "subtitle": "Vous avez des questions avant votre prochain voyage ? Nous avons les réponses — voici tout ce que vous devez savoir sur les voyages avec Trust Drivers.",
+    "q1": "Puis-je modifier ou annuler mon voyage après la réservation ?",
+    "a1": "Oui ! Nous comprenons que les plans peuvent changer. Vous pouvez facilement modifier ou annuler votre voyage en nous contactant directement via WhatsApp ou email. Assurez-vous simplement de vérifier les options de dates flexibles avant de confirmer votre réservation.",
+    "q2": "Trust Drivers propose-t-il des options de voyage en groupe ?",
+    "a2": "Absolument ! Nous proposons des circuits privés pour des expériences intimes et des circuits en groupe pour ceux qui souhaitent rencontrer d'autres voyageurs. Nos groupes sont maintenus petits (maximum 12 personnes) pour garantir qualité et attention personnalisée.",
+    "q3": "Comment obtenir de l'aide pendant mon voyage ?",
+    "a3": "Nous fournissons une assistance 24h/24 et 7j/7 tout au long de votre voyage. Vous aurez une ligne WhatsApp dédiée pour joindre notre équipe à tout moment. Nos guides locaux sont également disponibles pour vous assister lors de toutes les activités et excursions.",
+    "q4": "Qu'est-ce qui est inclus dans le prix du circuit ?",
+    "a4": "Nos prix de circuits incluent généralement l'hébergement, le transport privé, des guides professionnels et les repas spécifiés (généralement demi-pension). Les inclusions spécifiques sont détaillées sur chaque page de circuit. Les vols, les pourboires et les dépenses personnelles ne sont généralement pas inclus.",
+    "q5": "Quelle est la meilleure période pour visiter le Maroc ?",
+    "a5": "La meilleure période pour visiter le Maroc est au printemps (mars à mai) ou en automne (septembre à novembre) lorsque les températures sont agréables. L'été peut être chaud dans le désert, tandis que l'hiver est idéal pour les régions du sud."
   }
 }

@@ -117,7 +117,7 @@ function Header() {
                             className: "flex items-center gap-2 z-50 relative -my-4",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 src: "/images/logo.png",
-                                alt: "Horizon Tours",
+                                alt: "Trust Drivers",
                                 width: 100,
                                 height: 50,
                                 className: "object-contain",
@@ -434,7 +434,7 @@ function Header() {
                                     children: [
                                         "© ",
                                         new Date().getFullYear(),
-                                        " Horizon Tours. ",
+                                        " Trust Drivers. ",
                                         t('allRightsReserved')
                                     ]
                                 }, void 0, true, {
@@ -488,11 +488,11 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
 const siteConfig = {
     // Brand
-    name: 'Horizon Tours',
-    shortName: 'Horizon Tours',
-    description: 'Discover Morocco with Horizon Tours - Premium private tours, desert adventures, and luxury transport in Marrakech. Explore the Sahara, Atlas Mountains, and Imperial Cities with expert local guides.',
+    name: 'Trust Drivers',
+    shortName: 'Trust Drivers',
+    description: 'Discover Morocco with Trust Drivers - Premium private tours, desert adventures, and luxury transport in Marrakech. Explore the Sahara, Atlas Mountains, and Imperial Cities with expert local guides.',
     // URLs
-    url: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_SITE_URL || 'https://horizontours.com',
+    url: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_SITE_URL || 'https://trustdrivers.tours',
     // Localization
     defaultLocale: 'en',
     locales: [
@@ -501,9 +501,9 @@ const siteConfig = {
     ],
     // Contact
     contact: {
-        phone: '+212678545975',
-        whatsapp: '+212678545975',
-        email: 'contact@horizontours.com'
+        phone: '+212606912396',
+        whatsapp: '+212606912396',
+        email: 'contact@trustdrivers.tours'
     },
     // SEO Keywords
     keywords: [
@@ -527,9 +527,9 @@ const siteConfig = {
         'Morocco excursions'
     ],
     // SEO / Social
-    ogImage: '/images/og-horizon-tours.png',
-    twitterHandle: '@horizontours',
-    creator: 'Horizon Tours',
+    ogImage: '/images/og-trust-drivers.png',
+    twitterHandle: '@trustdrivers',
+    creator: 'Trust Drivers',
     // Business Info (for structured data)
     business: {
         type: 'TravelAgency',
@@ -562,16 +562,16 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/config/site.ts [app-client] (ecmascript)");
 ;
 const siteInfo = {
-    name: "Horizon Tours",
+    name: "Trust Drivers",
     description: "Experience the magic of Marrakech with our premium tours, activities, and transport services.",
     contact: {
         phone: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["siteConfig"].contact.phone,
         whatsapp: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["siteConfig"].contact.whatsapp,
-        email: "contact@horizontours.com",
+        email: "contact@trustdrivers.tours",
         address: "Marrakech, Morocco"
     },
     socials: {
-        instagram: "https://www.instagram.com/horizontours/"
+        instagram: "https://www.instagram.com/trustdrivers/"
     },
     whatsappBookingMessage: "Hello, I would like to book: "
 };
@@ -619,7 +619,7 @@ function Footer() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                     src: "/images/logo.png",
-                                    alt: "Horizon Tours",
+                                    alt: "Trust Drivers",
                                     width: 140,
                                     height: 100,
                                     className: "mb-6 object-contain"
@@ -819,7 +819,7 @@ function Footer() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-white/60 text-sm",
                             children: [
-                                "© Horizon Tours ",
+                                "© Trust Drivers ",
                                 currentYear,
                                 " ",
                                 t('copyright')

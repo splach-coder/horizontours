@@ -55,7 +55,7 @@ function ContactPage() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                 src: "/images/marrakech/marrakech3.jpg",
-                                alt: "Contact Horizon Tours",
+                                alt: "Contact Trust Drivers",
                                 fill: true,
                                 className: "object-cover",
                                 priority: true
@@ -97,7 +97,7 @@ function ContactPage() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "inline-block text-primary bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium mb-6",
-                                            children: "Get in touch"
+                                            children: t('getInTouch')
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/[locale]/contact/page.tsx",
                                             lineNumber: 50,
@@ -106,14 +106,15 @@ function ContactPage() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                             className: "text-5xl md:text-7xl lg:text-8xl font-medium text-white font-poppins mb-6 leading-[1.1]",
                                             children: [
-                                                "Contact ",
+                                                t('contactUs'),
+                                                " ",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "italic",
-                                                    children: "Us"
+                                                    children: t('contactUsItalic')
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/[locale]/contact/page.tsx",
                                                     lineNumber: 54,
-                                                    columnNumber: 41
+                                                    columnNumber: 50
                                                 }, this)
                                             ]
                                         }, void 0, true, {
@@ -364,7 +365,7 @@ function ContactPage() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "block text-neutral-dark font-medium mb-4",
-                                                children: "Follow Us"
+                                                children: t('followUs')
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/[locale]/contact/page.tsx",
                                                 lineNumber: 129,

@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { siteData } from '@/data/siteData';
+import { getSiteData } from '@/data/getSiteData';
 import { ArrowRight, Clock, Star, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -17,16 +17,22 @@ interface PageProps {
 export default function ActivitiesPage({ params }: PageProps) {
     const { locale } = React.use(params);
     const t = useTranslations('ListingPage');
+    const data = getSiteData(locale);
 
-    const experiences = siteData.activities.experiences || [];
+    const experiences = data.activities.experiences || [];
     const grouped = experiences.reduce((acc: any, curr: any) => {
         const type = curr.type;
         if (!acc[type]) {
+            const typeNameFr = type === 'camel' ? 'Dromadaire' : (type.charAt(0).toUpperCase() + type.slice(1));
+            const typeNameEn = type.charAt(0).toUpperCase() + type.slice(1);
+
             acc[type] = {
                 ...curr,
                 id: curr.type,
-                name: `${curr.type} Adventures`,
-                desc: `Experience our exclusive ${curr.type} activities.`,
+                name: locale === 'fr' ? `Aventures en ${typeNameFr}` : `${typeNameEn} Adventures`,
+                desc: locale === 'fr'
+                    ? `Découvrez nos activités exclusives en ${typeNameFr.toLowerCase()}.`
+                    : `Experience our exclusive ${typeNameEn} activities.`,
                 isGrouped: true
             };
         }
@@ -64,7 +70,7 @@ export default function ActivitiesPage({ params }: PageProps) {
                                 {t('tag')}
                             </span>
                             <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium text-white font-poppins mb-6 leading-[1.1]">
-                                <span className="italic">Adventures</span> & Activities
+                                <span className="italic">{locale === 'fr' ? 'Aventures' : 'Adventures'}</span> & {locale === 'fr' ? 'Activités' : 'Activities'}
                             </h1>
                             <p className="text-white/80 text-xl md:text-2xl max-w-2xl font-light leading-relaxed">
                                 {t('activitiesSubtitle')}
@@ -88,15 +94,15 @@ export default function ActivitiesPage({ params }: PageProps) {
                     <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
                         <div>
                             <h2 className="text-3xl md:text-4xl font-medium text-neutral-dark font-poppins mb-2">
-                                All Activities
+                                {locale === 'fr' ? 'Toutes les Activités' : 'All Activities'}
                             </h2>
-                            <p className="text-neutral-500">{groupedActivities.length} activities available</p>
+                            <p className="text-neutral-500">{groupedActivities.length} {locale === 'fr' ? 'activités disponibles' : 'activities available'}</p>
                         </div>
                         <Link
                             href={`/${locale}/services`}
                             className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
                         >
-                            View all services
+                            {locale === 'fr' ? 'Voir tous les services' : 'View all services'}
                             <ArrowRight className="w-4 h-4" />
                         </Link>
                     </div>
@@ -120,7 +126,7 @@ export default function ActivitiesPage({ params }: PageProps) {
                                             />
                                             <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium flex items-center gap-1.5">
                                                 <Clock className="w-3 h-3 text-primary" />
-                                                2-4 hours
+                                                2-4 {locale === 'fr' ? 'heures' : 'hours'}
                                             </div>
                                             <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-2.5 py-1.5 rounded-full text-xs font-bold flex items-center gap-1">
                                                 <Star className="w-3 h-3 text-yellow-500 fill-yellow-500" />
@@ -138,11 +144,11 @@ export default function ActivitiesPage({ params }: PageProps) {
 
                                             <div className="flex items-center justify-between pt-4 border-t border-neutral-100">
                                                 <div>
-                                                    <span className="text-neutral-400 text-xs">From</span>
+                                                    <span className="text-neutral-400 text-xs">{locale === 'fr' ? 'À partir de' : 'From'}</span>
                                                     <span className="block text-xl font-bold text-primary">€{item.price}</span>
                                                 </div>
                                                 <span className="inline-flex items-center gap-1.5 text-neutral-dark text-sm font-medium group-hover:text-primary transition-colors">
-                                                    Details
+                                                    {locale === 'fr' ? 'Détails' : 'Details'}
                                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                                 </span>
                                             </div>

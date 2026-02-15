@@ -279,22 +279,94 @@ const siteData = {
         scale: 5,
         items: [
             {
-                id: "rev-new-1",
-                targetType: "tour",
-                targetId: "circuit-5-days-south",
-                author: "Jean D.",
+                id: "rev-1",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Sarah Johnson",
                 rating: 5,
-                comment: "An unforgettable journey through the south. The desert night was magical.",
-                date: "2024-12-10"
+                comment: "An absolutely incredible experience! Our guide was knowledgeable and passionate about Moroccan culture. The desert tour exceeded all expectations. Highly recommend Trust Drivers for anyone visiting Morocco!",
+                date: "2 weeks ago"
             },
             {
-                id: "rev-new-2",
-                targetType: "tour",
-                targetId: "circuit-3-days-merzouga",
-                author: "Alice K.",
+                id: "rev-2",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Mohammed Al-Rashid",
                 rating: 5,
-                comment: "Perfect organization. Our driver was very helpful and kind.",
-                date: "2024-11-05"
+                comment: "Professional service from start to finish. The driver was punctual, the vehicle was spotless, and the entire trip was seamless. Trust Drivers made our family vacation unforgettable!",
+                date: "1 month ago"
+            },
+            {
+                id: "rev-3",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Emma Martinez",
+                rating: 5,
+                comment: "Best tour company in Marrakech! They customized our itinerary perfectly and showed us hidden gems we never would have found on our own. The Atlas Mountains tour was breathtaking!",
+                date: "3 weeks ago"
+            },
+            {
+                id: "rev-4",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "David Chen",
+                rating: 5,
+                comment: "Exceptional service and attention to detail. Our driver spoke perfect English and shared fascinating stories about Morocco's history. The Sahara desert experience was a once-in-a-lifetime adventure!",
+                date: "1 week ago"
+            },
+            {
+                id: "rev-5",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Fatima Benali",
+                rating: 5,
+                comment: "I've used many tour services, but Trust Drivers stands out. They're reliable, professional, and truly care about creating memorable experiences. The coastal tour to Essaouira was magical!",
+                date: "2 months ago"
+            },
+            {
+                id: "rev-6",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "James Wilson",
+                rating: 5,
+                comment: "From booking to the end of our trip, everything was perfect. The guides were friendly and knowledgeable. We felt safe and well taken care of throughout our entire journey. Five stars!",
+                date: "3 weeks ago"
+            },
+            {
+                id: "rev-7",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Aisha Rahman",
+                rating: 5,
+                comment: "Trust Drivers provided an authentic Moroccan experience. They took us to local markets, traditional restaurants, and beautiful landscapes. Our family will treasure these memories forever!",
+                date: "1 month ago"
+            },
+            {
+                id: "rev-8",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Pierre Dubois",
+                rating: 5,
+                comment: "Magnifique! The professionalism and warmth of the Trust Drivers team made our honeymoon extraordinary. The private tour was worth every penny. We'll definitely be back!",
+                date: "2 weeks ago"
+            },
+            {
+                id: "rev-9",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Lisa Anderson",
+                rating: 5,
+                comment: "I was traveling solo and felt completely safe with Trust Drivers. They were respectful, accommodating, and went above and beyond to ensure I had an amazing experience. Highly recommended!",
+                date: "4 weeks ago"
+            },
+            {
+                id: "rev-10",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Omar Hassan",
+                rating: 5,
+                comment: "Outstanding service! The attention to detail, comfortable vehicles, and expert guides made this the best tour experience I've ever had. Trust Drivers truly lives up to their name!",
+                date: "1 week ago"
             }
         ]
     }
@@ -563,13 +635,94 @@ const siteDataFr = {
         scale: 5,
         items: [
             {
-                id: "rev-new-1",
-                targetType: "tour",
-                targetId: "circuit-5-days-south",
-                author: "Jean D.",
+                id: "rev-1",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Sarah Johnson",
                 rating: 5,
-                comment: "Un voyage inoubliable à travers le sud. La nuit au désert était magique.",
-                date: "2024-12-10"
+                comment: "Une expérience absolument incroyable ! Notre guide était compétent et passionné par la culture marocaine. Le circuit dans le désert a dépassé toutes les attentes. Je recommande vivement Trust Drivers à tous ceux qui visitent le Maroc !",
+                date: "Il y a 2 semaines"
+            },
+            {
+                id: "rev-2",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Mohammed Al-Rashid",
+                rating: 5,
+                comment: "Service professionnel du début à la fin. Le chauffeur était ponctuel, le véhicule impeccable et tout le voyage s'est déroulé sans accroc. Trust Drivers a rendu nos vacances en famille inoubliables !",
+                date: "Il y a 1 mois"
+            },
+            {
+                id: "rev-3",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Emma Martinez",
+                rating: 5,
+                comment: "Meilleure compagnie de tours à Marrakech ! Ils ont parfaitement personnalisé notre itinéraire et nous ont montré des joyaux cachés que nous n'aurions jamais trouvés seuls. Le tour des montagnes de l'Atlas était à couper le souffle !",
+                date: "Il y a 3 semaines"
+            },
+            {
+                id: "rev-4",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "David Chen",
+                rating: 5,
+                comment: "Service exceptionnel et attention aux détails. Notre chauffeur parlait parfaitement anglais et partageait des histoires fascinantes sur l'histoire du Maroc. L'expérience du désert du Sahara était une aventure unique !",
+                date: "Il y a 1 semaine"
+            },
+            {
+                id: "rev-5",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Fatima Benali",
+                rating: 5,
+                comment: "J'ai utilisé de nombreux services de tours, mais Trust Drivers se démarque. Ils sont fiables, professionnels et se soucient vraiment de créer des expériences mémorables. Le tour côtier à Essaouira était magique !",
+                date: "Il y a 2 mois"
+            },
+            {
+                id: "rev-6",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "James Wilson",
+                rating: 5,
+                comment: "De la réservation à la fin de notre voyage, tout était parfait. Les guides étaient sympathiques et compétents. Nous nous sommes sentis en sécurité et bien pris en charge tout au long de notre voyage. Cinq étoiles !",
+                date: "Il y a 3 semaines"
+            },
+            {
+                id: "rev-7",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Aisha Rahman",
+                rating: 5,
+                comment: "Trust Drivers a fourni une expérience marocaine authentique. Ils nous ont emmenés dans des marchés locaux, des restaurants traditionnels et de magnifiques paysages. Notre famille chérira ces souvenirs pour toujours !",
+                date: "Il y a 1 mois"
+            },
+            {
+                id: "rev-8",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Pierre Dubois",
+                rating: 5,
+                comment: "Magnifique ! Le professionnalisme et la chaleur de l'équipe Trust Drivers ont rendu notre lune de miel extraordinaire. Le tour privé valait chaque centime. Nous reviendrons certainement !",
+                date: "Il y a 2 semaines"
+            },
+            {
+                id: "rev-9",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Lisa Anderson",
+                rating: 5,
+                comment: "Je voyageais seule et je me suis sentie complètement en sécurité avec Trust Drivers. Ils étaient respectueux, accommodants et ont fait tout leur possible pour que j'aie une expérience incroyable. Hautement recommandé !",
+                date: "Il y a 4 semaines"
+            },
+            {
+                id: "rev-10",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Omar Hassan",
+                rating: 5,
+                comment: "Service exceptionnel ! L'attention aux détails, les véhicules confortables et les guides experts ont fait de cela la meilleure expérience de tour que j'aie jamais eue. Trust Drivers est vraiment à la hauteur de son nom !",
+                date: "Il y a 1 semaine"
             }
         ]
     }
@@ -596,6 +749,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/check.js [app-client] (ecmascript) <export default as Check>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-down.js [app-client] (ecmascript) <export default as ChevronDown>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$BookingContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/context/BookingContext.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-intl/dist/esm/development/react-client/index.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
@@ -603,8 +757,10 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+;
 const BookingForm = ({ serviceName, serviceType, basePrice = 0, variants = [] })=>{
     _s();
+    const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])('BookingEngine');
     // Get initial values from booking context (from hero search)
     const { travelers: contextTravelers, selectedDate: contextDate } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$BookingContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useBooking"])();
     const [formData, setFormData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
@@ -705,21 +861,21 @@ Please confirm availability. Thank you!`;
                                         className: "w-5 h-5"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/BookingForm.tsx",
-                                        lineNumber: 117,
+                                        lineNumber: 119,
                                         columnNumber: 25
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                         className: "text-lg font-bold",
-                                        children: "Book Now"
+                                        children: t('bookNow')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/BookingForm.tsx",
-                                        lineNumber: 118,
+                                        lineNumber: 120,
                                         columnNumber: 25
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/BookingForm.tsx",
-                                lineNumber: 116,
+                                lineNumber: 118,
                                 columnNumber: 21
                             }, ("TURBOPACK compile-time value", void 0)),
                             !isTransport && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -730,18 +886,18 @@ Please confirm availability. Thank you!`;
                                     className: `w-5 h-5 transition-transform ${showPriceBreakdown ? 'rotate-180' : ''}`
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/BookingForm.tsx",
-                                    lineNumber: 126,
+                                    lineNumber: 128,
                                     columnNumber: 29
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/BookingForm.tsx",
-                                lineNumber: 121,
+                                lineNumber: 123,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/BookingForm.tsx",
-                        lineNumber: 115,
+                        lineNumber: 117,
                         columnNumber: 17
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -750,24 +906,24 @@ Please confirm availability. Thank you!`;
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "text-2xl font-bold block",
-                                    children: "Contact for Price"
+                                    children: t('contactForPrice')
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/BookingForm.tsx",
-                                    lineNumber: 133,
+                                    lineNumber: 135,
                                     columnNumber: 29
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "text-white/70 text-sm",
-                                    children: "Custom quote based on your needs"
+                                    children: t('customQuote')
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/BookingForm.tsx",
-                                    lineNumber: 134,
+                                    lineNumber: 136,
                                     columnNumber: 29
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/BookingForm.tsx",
-                            lineNumber: 132,
+                            lineNumber: 134,
                             columnNumber: 25
                         }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                             children: [
@@ -779,28 +935,28 @@ Please confirm availability. Thank you!`;
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/BookingForm.tsx",
-                                    lineNumber: 138,
+                                    lineNumber: 140,
                                     columnNumber: 29
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "text-white/70 text-sm",
-                                    children: "total"
+                                    children: t('total')
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/BookingForm.tsx",
-                                    lineNumber: 139,
+                                    lineNumber: 141,
                                     columnNumber: 29
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true)
                     }, void 0, false, {
                         fileName: "[project]/src/components/BookingForm.tsx",
-                        lineNumber: 130,
+                        lineNumber: 132,
                         columnNumber: 17
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/BookingForm.tsx",
-                lineNumber: 114,
+                lineNumber: 116,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             !isTransport && showPriceBreakdown && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -813,10 +969,10 @@ Please confirm availability. Thank you!`;
                                 className: "flex justify-between text-gray-600",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        children: "Price per person"
+                                        children: t('pricePerPerson')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/BookingForm.tsx",
-                                        lineNumber: 150,
+                                        lineNumber: 152,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -827,23 +983,23 @@ Please confirm availability. Thank you!`;
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/BookingForm.tsx",
-                                        lineNumber: 151,
+                                        lineNumber: 153,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/BookingForm.tsx",
-                                lineNumber: 149,
+                                lineNumber: 151,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex justify-between text-gray-600",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        children: "Number of travelers"
+                                        children: t('numberOfTravelers')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/BookingForm.tsx",
-                                        lineNumber: 154,
+                                        lineNumber: 156,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -854,23 +1010,23 @@ Please confirm availability. Thank you!`;
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/BookingForm.tsx",
-                                        lineNumber: 155,
+                                        lineNumber: 157,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/BookingForm.tsx",
-                                lineNumber: 153,
+                                lineNumber: 155,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "pt-2 border-t border-neutral-200 flex justify-between font-bold text-neutral-dark",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        children: "Subtotal"
+                                        children: t('subtotal')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/BookingForm.tsx",
-                                        lineNumber: 158,
+                                        lineNumber: 160,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -881,19 +1037,19 @@ Please confirm availability. Thank you!`;
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/BookingForm.tsx",
-                                        lineNumber: 159,
+                                        lineNumber: 161,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/BookingForm.tsx",
-                                lineNumber: 157,
+                                lineNumber: 159,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/BookingForm.tsx",
-                        lineNumber: 148,
+                        lineNumber: 150,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0)),
                     selectedVariant?.location && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -903,26 +1059,26 @@ Please confirm availability. Thank you!`;
                                 className: "w-3 h-3"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/BookingForm.tsx",
-                                lineNumber: 164,
+                                lineNumber: 166,
                                 columnNumber: 29
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 children: selectedVariant.location
                             }, void 0, false, {
                                 fileName: "[project]/src/components/BookingForm.tsx",
-                                lineNumber: 165,
+                                lineNumber: 167,
                                 columnNumber: 29
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/BookingForm.tsx",
-                        lineNumber: 163,
+                        lineNumber: 165,
                         columnNumber: 25
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/BookingForm.tsx",
-                lineNumber: 147,
+                lineNumber: 149,
                 columnNumber: 17
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -939,14 +1095,15 @@ Please confirm availability. Thank you!`;
                                         className: "w-4 h-4 text-primary"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/BookingForm.tsx",
-                                        lineNumber: 177,
+                                        lineNumber: 179,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0)),
-                                    " Choose Experience"
+                                    " ",
+                                    t('chooseExperience')
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/BookingForm.tsx",
-                                lineNumber: 176,
+                                lineNumber: 178,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -965,7 +1122,7 @@ Please confirm availability. Thank you!`;
                                                             children: variant.name
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/BookingForm.tsx",
-                                                            lineNumber: 191,
+                                                            lineNumber: 193,
                                                             columnNumber: 45
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -973,13 +1130,13 @@ Please confirm availability. Thank you!`;
                                                             children: variant.location
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/BookingForm.tsx",
-                                                            lineNumber: 192,
+                                                            lineNumber: 194,
                                                             columnNumber: 45
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/BookingForm.tsx",
-                                                    lineNumber: 190,
+                                                    lineNumber: 192,
                                                     columnNumber: 41
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -995,12 +1152,12 @@ Please confirm availability. Thank you!`;
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/BookingForm.tsx",
-                                                                lineNumber: 196,
+                                                                lineNumber: 198,
                                                                 columnNumber: 49
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/BookingForm.tsx",
-                                                            lineNumber: 195,
+                                                            lineNumber: 197,
                                                             columnNumber: 45
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         formData.selectedVariant === variant.id && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1009,40 +1166,40 @@ Please confirm availability. Thank you!`;
                                                                 className: "w-3 h-3 text-white"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/BookingForm.tsx",
-                                                                lineNumber: 200,
+                                                                lineNumber: 202,
                                                                 columnNumber: 53
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/BookingForm.tsx",
-                                                            lineNumber: 199,
+                                                            lineNumber: 201,
                                                             columnNumber: 49
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/BookingForm.tsx",
-                                                    lineNumber: 194,
+                                                    lineNumber: 196,
                                                     columnNumber: 41
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/BookingForm.tsx",
-                                            lineNumber: 189,
+                                            lineNumber: 191,
                                             columnNumber: 37
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, variant.id, false, {
                                         fileName: "[project]/src/components/BookingForm.tsx",
-                                        lineNumber: 181,
+                                        lineNumber: 183,
                                         columnNumber: 33
                                     }, ("TURBOPACK compile-time value", void 0)))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/BookingForm.tsx",
-                                lineNumber: 179,
+                                lineNumber: 181,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/BookingForm.tsx",
-                        lineNumber: 175,
+                        lineNumber: 177,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1055,14 +1212,15 @@ Please confirm availability. Thank you!`;
                                         className: "w-4 h-4 text-primary"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/BookingForm.tsx",
-                                        lineNumber: 214,
+                                        lineNumber: 216,
                                         columnNumber: 25
                                     }, ("TURBOPACK compile-time value", void 0)),
-                                    " Travel Date"
+                                    " ",
+                                    t('travelDate')
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/BookingForm.tsx",
-                                lineNumber: 213,
+                                lineNumber: 215,
                                 columnNumber: 21
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1078,13 +1236,13 @@ Please confirm availability. Thank you!`;
                                 className: "w-full bg-neutral-50 border border-neutral-200 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-medium text-neutral-dark text-sm"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/BookingForm.tsx",
-                                lineNumber: 216,
+                                lineNumber: 218,
                                 columnNumber: 21
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/BookingForm.tsx",
-                        lineNumber: 212,
+                        lineNumber: 214,
                         columnNumber: 17
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1097,14 +1255,15 @@ Please confirm availability. Thank you!`;
                                         className: "w-4 h-4 text-primary"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/BookingForm.tsx",
-                                        lineNumber: 230,
+                                        lineNumber: 232,
                                         columnNumber: 25
                                     }, ("TURBOPACK compile-time value", void 0)),
-                                    " Travelers"
+                                    " ",
+                                    t('travelers')
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/BookingForm.tsx",
-                                lineNumber: 229,
+                                lineNumber: 231,
                                 columnNumber: 21
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1118,7 +1277,7 @@ Please confirm availability. Thank you!`;
                                         children: "−"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/BookingForm.tsx",
-                                        lineNumber: 233,
+                                        lineNumber: 235,
                                         columnNumber: 25
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1129,21 +1288,21 @@ Please confirm availability. Thank you!`;
                                                 children: formData.guests
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/BookingForm.tsx",
-                                                lineNumber: 242,
+                                                lineNumber: 244,
                                                 columnNumber: 29
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-xs text-gray-500",
-                                                children: formData.guests === 1 ? 'person' : 'people'
+                                                children: formData.guests === 1 ? t('person') : t('people')
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/BookingForm.tsx",
-                                                lineNumber: 243,
+                                                lineNumber: 245,
                                                 columnNumber: 29
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/BookingForm.tsx",
-                                        lineNumber: 241,
+                                        lineNumber: 243,
                                         columnNumber: 25
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1154,26 +1313,26 @@ Please confirm availability. Thank you!`;
                                         children: "+"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/BookingForm.tsx",
-                                        lineNumber: 245,
+                                        lineNumber: 247,
                                         columnNumber: 25
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/BookingForm.tsx",
-                                lineNumber: 232,
+                                lineNumber: 234,
                                 columnNumber: 21
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/BookingForm.tsx",
-                        lineNumber: 228,
+                        lineNumber: 230,
                         columnNumber: 17
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "border-t border-neutral-200 my-6"
                     }, void 0, false, {
                         fileName: "[project]/src/components/BookingForm.tsx",
-                        lineNumber: 257,
+                        lineNumber: 259,
                         columnNumber: 17
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1184,45 +1343,46 @@ Please confirm availability. Thank you!`;
                                 className: "w-5 h-5 fill-current"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/BookingForm.tsx",
-                                lineNumber: 264,
+                                lineNumber: 266,
                                 columnNumber: 21
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                children: "Confirm via WhatsApp"
+                                children: t('confirmViaWhatsApp')
                             }, void 0, false, {
                                 fileName: "[project]/src/components/BookingForm.tsx",
-                                lineNumber: 265,
+                                lineNumber: 267,
                                 columnNumber: 21
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/BookingForm.tsx",
-                        lineNumber: 260,
+                        lineNumber: 262,
                         columnNumber: 17
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "text-xs text-center text-gray-400",
-                        children: "💳 No payment now • Pay on arrival"
+                        children: t('noPaymentNow')
                     }, void 0, false, {
                         fileName: "[project]/src/components/BookingForm.tsx",
-                        lineNumber: 268,
+                        lineNumber: 270,
                         columnNumber: 17
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/BookingForm.tsx",
-                lineNumber: 172,
+                lineNumber: 174,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/BookingForm.tsx",
-        lineNumber: 112,
+        lineNumber: 114,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
-_s(BookingForm, "t5KAQTSaEThUANsvcnss7qY7pDw=", false, function() {
+_s(BookingForm, "xfV8VZLHjAyD82GrMAPN6ABfbOg=", false, function() {
     return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"],
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$BookingContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useBooking"]
     ];
 });

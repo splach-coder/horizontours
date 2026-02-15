@@ -279,22 +279,94 @@ const siteData = {
         scale: 5,
         items: [
             {
-                id: "rev-new-1",
-                targetType: "tour",
-                targetId: "circuit-5-days-south",
-                author: "Jean D.",
+                id: "rev-1",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Sarah Johnson",
                 rating: 5,
-                comment: "An unforgettable journey through the south. The desert night was magical.",
-                date: "2024-12-10"
+                comment: "An absolutely incredible experience! Our guide was knowledgeable and passionate about Moroccan culture. The desert tour exceeded all expectations. Highly recommend Trust Drivers for anyone visiting Morocco!",
+                date: "2 weeks ago"
             },
             {
-                id: "rev-new-2",
-                targetType: "tour",
-                targetId: "circuit-3-days-merzouga",
-                author: "Alice K.",
+                id: "rev-2",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Mohammed Al-Rashid",
                 rating: 5,
-                comment: "Perfect organization. Our driver was very helpful and kind.",
-                date: "2024-11-05"
+                comment: "Professional service from start to finish. The driver was punctual, the vehicle was spotless, and the entire trip was seamless. Trust Drivers made our family vacation unforgettable!",
+                date: "1 month ago"
+            },
+            {
+                id: "rev-3",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Emma Martinez",
+                rating: 5,
+                comment: "Best tour company in Marrakech! They customized our itinerary perfectly and showed us hidden gems we never would have found on our own. The Atlas Mountains tour was breathtaking!",
+                date: "3 weeks ago"
+            },
+            {
+                id: "rev-4",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "David Chen",
+                rating: 5,
+                comment: "Exceptional service and attention to detail. Our driver spoke perfect English and shared fascinating stories about Morocco's history. The Sahara desert experience was a once-in-a-lifetime adventure!",
+                date: "1 week ago"
+            },
+            {
+                id: "rev-5",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Fatima Benali",
+                rating: 5,
+                comment: "I've used many tour services, but Trust Drivers stands out. They're reliable, professional, and truly care about creating memorable experiences. The coastal tour to Essaouira was magical!",
+                date: "2 months ago"
+            },
+            {
+                id: "rev-6",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "James Wilson",
+                rating: 5,
+                comment: "From booking to the end of our trip, everything was perfect. The guides were friendly and knowledgeable. We felt safe and well taken care of throughout our entire journey. Five stars!",
+                date: "3 weeks ago"
+            },
+            {
+                id: "rev-7",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Aisha Rahman",
+                rating: 5,
+                comment: "Trust Drivers provided an authentic Moroccan experience. They took us to local markets, traditional restaurants, and beautiful landscapes. Our family will treasure these memories forever!",
+                date: "1 month ago"
+            },
+            {
+                id: "rev-8",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Pierre Dubois",
+                rating: 5,
+                comment: "Magnifique! The professionalism and warmth of the Trust Drivers team made our honeymoon extraordinary. The private tour was worth every penny. We'll definitely be back!",
+                date: "2 weeks ago"
+            },
+            {
+                id: "rev-9",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Lisa Anderson",
+                rating: 5,
+                comment: "I was traveling solo and felt completely safe with Trust Drivers. They were respectful, accommodating, and went above and beyond to ensure I had an amazing experience. Highly recommended!",
+                date: "4 weeks ago"
+            },
+            {
+                id: "rev-10",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Omar Hassan",
+                rating: 5,
+                comment: "Outstanding service! The attention to detail, comfortable vehicles, and expert guides made this the best tour experience I've ever had. Trust Drivers truly lives up to their name!",
+                date: "1 week ago"
             }
         ]
     }
@@ -563,13 +635,94 @@ const siteDataFr = {
         scale: 5,
         items: [
             {
-                id: "rev-new-1",
-                targetType: "tour",
-                targetId: "circuit-5-days-south",
-                author: "Jean D.",
+                id: "rev-1",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Sarah Johnson",
                 rating: 5,
-                comment: "Un voyage inoubliable à travers le sud. La nuit au désert était magique.",
-                date: "2024-12-10"
+                comment: "Une expérience absolument incroyable ! Notre guide était compétent et passionné par la culture marocaine. Le circuit dans le désert a dépassé toutes les attentes. Je recommande vivement Trust Drivers à tous ceux qui visitent le Maroc !",
+                date: "Il y a 2 semaines"
+            },
+            {
+                id: "rev-2",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Mohammed Al-Rashid",
+                rating: 5,
+                comment: "Service professionnel du début à la fin. Le chauffeur était ponctuel, le véhicule impeccable et tout le voyage s'est déroulé sans accroc. Trust Drivers a rendu nos vacances en famille inoubliables !",
+                date: "Il y a 1 mois"
+            },
+            {
+                id: "rev-3",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Emma Martinez",
+                rating: 5,
+                comment: "Meilleure compagnie de tours à Marrakech ! Ils ont parfaitement personnalisé notre itinéraire et nous ont montré des joyaux cachés que nous n'aurions jamais trouvés seuls. Le tour des montagnes de l'Atlas était à couper le souffle !",
+                date: "Il y a 3 semaines"
+            },
+            {
+                id: "rev-4",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "David Chen",
+                rating: 5,
+                comment: "Service exceptionnel et attention aux détails. Notre chauffeur parlait parfaitement anglais et partageait des histoires fascinantes sur l'histoire du Maroc. L'expérience du désert du Sahara était une aventure unique !",
+                date: "Il y a 1 semaine"
+            },
+            {
+                id: "rev-5",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Fatima Benali",
+                rating: 5,
+                comment: "J'ai utilisé de nombreux services de tours, mais Trust Drivers se démarque. Ils sont fiables, professionnels et se soucient vraiment de créer des expériences mémorables. Le tour côtier à Essaouira était magique !",
+                date: "Il y a 2 mois"
+            },
+            {
+                id: "rev-6",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "James Wilson",
+                rating: 5,
+                comment: "De la réservation à la fin de notre voyage, tout était parfait. Les guides étaient sympathiques et compétents. Nous nous sommes sentis en sécurité et bien pris en charge tout au long de notre voyage. Cinq étoiles !",
+                date: "Il y a 3 semaines"
+            },
+            {
+                id: "rev-7",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Aisha Rahman",
+                rating: 5,
+                comment: "Trust Drivers a fourni une expérience marocaine authentique. Ils nous ont emmenés dans des marchés locaux, des restaurants traditionnels et de magnifiques paysages. Notre famille chérira ces souvenirs pour toujours !",
+                date: "Il y a 1 mois"
+            },
+            {
+                id: "rev-8",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Pierre Dubois",
+                rating: 5,
+                comment: "Magnifique ! Le professionnalisme et la chaleur de l'équipe Trust Drivers ont rendu notre lune de miel extraordinaire. Le tour privé valait chaque centime. Nous reviendrons certainement !",
+                date: "Il y a 2 semaines"
+            },
+            {
+                id: "rev-9",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Lisa Anderson",
+                rating: 5,
+                comment: "Je voyageais seule et je me suis sentie complètement en sécurité avec Trust Drivers. Ils étaient respectueux, accommodants et ont fait tout leur possible pour que j'aie une expérience incroyable. Hautement recommandé !",
+                date: "Il y a 4 semaines"
+            },
+            {
+                id: "rev-10",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Omar Hassan",
+                rating: 5,
+                comment: "Service exceptionnel ! L'attention aux détails, les véhicules confortables et les guides experts ont fait de cela la meilleure expérience de tour que j'aie jamais eue. Trust Drivers est vraiment à la hauteur de son nom !",
+                date: "Il y a 1 semaine"
             }
         ]
     }
@@ -594,9 +747,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-down.js [app-client] (ecmascript) <export default as ChevronDown>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$siteData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/data/siteData.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-intl/dist/esm/development/react-client/index.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
+;
 ;
 ;
 ;
@@ -627,6 +782,7 @@ const allTourImages = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$dat
 const galleryImages = allTourImages.slice(0, 24);
 const GalleryPageContent = ()=>{
     _s();
+    const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])('GalleryPage');
     const [selectedImage, setSelectedImage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "min-h-screen bg-neutral-100",
@@ -645,20 +801,20 @@ const GalleryPageContent = ()=>{
                                 priority: true
                             }, void 0, false, {
                                 fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                lineNumber: 43,
+                                lineNumber: 45,
                                 columnNumber: 21
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/70"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                lineNumber: 50,
+                                lineNumber: 52,
                                 columnNumber: 21
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/GalleryPageContent.tsx",
-                        lineNumber: 42,
+                        lineNumber: 44,
                         columnNumber: 17
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -681,47 +837,48 @@ const GalleryPageContent = ()=>{
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "inline-block text-primary bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium mb-6",
-                                            children: "Visual Journey"
+                                            children: t('tag')
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                            lineNumber: 60,
+                                            lineNumber: 62,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                             className: "text-5xl md:text-7xl lg:text-8xl font-medium text-white font-poppins mb-6 leading-[1.1]",
                                             children: [
-                                                "Captured ",
+                                                t('title'),
+                                                " ",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "italic",
                                                     children: "Moments"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                                    lineNumber: 64,
-                                                    columnNumber: 42
+                                                    lineNumber: 66,
+                                                    columnNumber: 46
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                            lineNumber: 63,
+                                            lineNumber: 65,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-white/80 text-xl md:text-2xl max-w-2xl font-light leading-relaxed",
-                                            children: "Explore the vibrant colors, breathtaking landscapes, and authentic daily life of Morocco through our lens."
+                                            children: t('subtitle')
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                            lineNumber: 66,
+                                            lineNumber: 68,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                    lineNumber: 55,
+                                    lineNumber: 57,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                lineNumber: 54,
+                                lineNumber: 56,
                                 columnNumber: 21
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -741,24 +898,24 @@ const GalleryPageContent = ()=>{
                                     className: "w-8 h-8 text-white/60"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                    lineNumber: 77,
+                                    lineNumber: 79,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                lineNumber: 72,
+                                lineNumber: 74,
                                 columnNumber: 21
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/GalleryPageContent.tsx",
-                        lineNumber: 53,
+                        lineNumber: 55,
                         columnNumber: 17
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/GalleryPageContent.tsx",
-                lineNumber: 41,
+                lineNumber: 43,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -774,7 +931,7 @@ const GalleryPageContent = ()=>{
                                     children: "Our Gallery"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                    lineNumber: 86,
+                                    lineNumber: 88,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -785,13 +942,13 @@ const GalleryPageContent = ()=>{
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                    lineNumber: 89,
+                                    lineNumber: 91,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/GalleryPageContent.tsx",
-                            lineNumber: 85,
+                            lineNumber: 87,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -825,14 +982,14 @@ const GalleryPageContent = ()=>{
                                                     className: "object-cover group-hover:scale-105 transition-transform duration-500"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                                    lineNumber: 110,
+                                                    lineNumber: 112,
                                                     columnNumber: 41
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                                    lineNumber: 116,
+                                                    lineNumber: 118,
                                                     columnNumber: 41
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -843,17 +1000,17 @@ const GalleryPageContent = ()=>{
                                                             className: "w-6 h-6"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                                            lineNumber: 121,
+                                                            lineNumber: 123,
                                                             columnNumber: 49
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                                        lineNumber: 120,
+                                                        lineNumber: 122,
                                                         columnNumber: 45
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                                    lineNumber: 119,
+                                                    lineNumber: 121,
                                                     columnNumber: 41
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -864,7 +1021,7 @@ const GalleryPageContent = ()=>{
                                                             children: img.title
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                                            lineNumber: 127,
+                                                            lineNumber: 129,
                                                             columnNumber: 45
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -872,45 +1029,45 @@ const GalleryPageContent = ()=>{
                                                             children: img.category
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                                            lineNumber: 128,
+                                                            lineNumber: 130,
                                                             columnNumber: 45
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                                    lineNumber: 126,
+                                                    lineNumber: 128,
                                                     columnNumber: 41
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                            lineNumber: 107,
+                                            lineNumber: 109,
                                             columnNumber: 37
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                        lineNumber: 103,
+                                        lineNumber: 105,
                                         columnNumber: 33
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, img.id, false, {
                                     fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                    lineNumber: 95,
+                                    lineNumber: 97,
                                     columnNumber: 29
                                 }, ("TURBOPACK compile-time value", void 0)))
                         }, void 0, false, {
                             fileName: "[project]/src/components/GalleryPageContent.tsx",
-                            lineNumber: 93,
+                            lineNumber: 95,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/GalleryPageContent.tsx",
-                    lineNumber: 84,
+                    lineNumber: 86,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/GalleryPageContent.tsx",
-                lineNumber: 83,
+                lineNumber: 85,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -942,12 +1099,12 @@ const GalleryPageContent = ()=>{
                                 className: "w-6 h-6 md:w-8 md:h-8"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                lineNumber: 154,
+                                lineNumber: 156,
                                 columnNumber: 29
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/components/GalleryPageContent.tsx",
-                            lineNumber: 148,
+                            lineNumber: 150,
                             columnNumber: 25
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -975,12 +1132,12 @@ const GalleryPageContent = ()=>{
                                         className: "object-contain bg-neutral-900"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                        lineNumber: 165,
+                                        lineNumber: 167,
                                         columnNumber: 33
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                    lineNumber: 164,
+                                    lineNumber: 166,
                                     columnNumber: 29
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -991,7 +1148,7 @@ const GalleryPageContent = ()=>{
                                             children: selectedImage.title
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                            lineNumber: 174,
+                                            lineNumber: 176,
                                             columnNumber: 33
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -999,40 +1156,44 @@ const GalleryPageContent = ()=>{
                                             children: selectedImage.category
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                            lineNumber: 175,
+                                            lineNumber: 177,
                                             columnNumber: 33
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/GalleryPageContent.tsx",
-                                    lineNumber: 173,
+                                    lineNumber: 175,
                                     columnNumber: 29
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/GalleryPageContent.tsx",
-                            lineNumber: 157,
+                            lineNumber: 159,
                             columnNumber: 25
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/GalleryPageContent.tsx",
-                    lineNumber: 141,
+                    lineNumber: 143,
                     columnNumber: 21
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/GalleryPageContent.tsx",
-                lineNumber: 139,
+                lineNumber: 141,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/GalleryPageContent.tsx",
-        lineNumber: 39,
+        lineNumber: 41,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
-_s(GalleryPageContent, "gNHFCSJ3h3sH8HFrpxN7hUqoxHs=");
+_s(GalleryPageContent, "RzUzNgLOXc5dGFNy+zMSQItHS5o=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"]
+    ];
+});
 _c = GalleryPageContent;
 var _c;
 __turbopack_context__.k.register(_c, "GalleryPageContent");

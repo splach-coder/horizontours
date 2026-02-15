@@ -3,8 +3,8 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { siteData } from '@/data/siteData';
-import { ArrowRight, Clock, Star, Map, Compass, Palmtree, Car, ChevronDown } from 'lucide-react';
+import { getSiteData } from '@/data/getSiteData';
+import { ArrowRight, Clock, Star, Map, Compass, Palmtree, Car, ChevronDown, Grid } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -12,62 +12,141 @@ interface ServicesListingProps {
     locale: string;
 }
 
-const categories = [
-    {
-        id: 'tours',
-        label: 'Cultural Tours',
-        icon: Map,
-        route: 'tours',
-        description: 'Immerse yourself in Morocco\'s rich heritage',
-        data: () => siteData.tours
-    },
-    {
-        id: 'activities',
-        label: 'Adventures',
-        icon: Compass,
-        route: 'activities',
-        description: 'Thrilling experiences await',
-        data: () => {
-            const experiences = siteData.activities.experiences || [];
-            const grouped = experiences.reduce((acc: any, curr: any) => {
-                const type = curr.type;
-                if (!acc[type]) {
-                    acc[type] = {
-                        ...curr,
-                        id: curr.type,
-                        name: `${curr.type} Adventures`,
-                        desc: `Experience our exclusive ${curr.type} activities.`,
-                    };
-                }
-                if (curr.price < acc[type].price) {
-                    acc[type].price = curr.price;
-                }
-                return acc;
-            }, {});
-            return Object.values(grouped);
-        }
-    },
-    {
-        id: 'packages',
-        label: 'Curated Packs',
-        icon: Palmtree,
-        route: 'packages',
-        description: 'Complete travel experiences',
-        data: () => siteData.packages
-    },
-    {
-        id: 'transport',
-        label: 'Transport',
-        icon: Car,
-        route: 'transport',
-        description: 'Travel in comfort',
-        data: () => siteData.transport
-    },
-];
-
 export const ServicesListing = ({ locale }: ServicesListingProps) => {
     const t = useTranslations('ServicesPage');
-    const [activeCategory, setActiveCategory] = useState('tours');
+    const [activeCategory, setActiveCategory] = useState('all');
+    const data = getSiteData(locale);
+
+    const categories = [
+        {
+            id: 'all',
+            label: 'All Services',
+            icon: Grid,
+            route: 'services',
+            description: 'Browse all our offerings',
+            data: () => {
+                // Combine all services
+                const tours = data.tours;
+                const activities = data.activities.experiences || [];
+                const groupedActivities = activities.reduce((acc: any, curr: any) => {
+                    const type = curr.type;
+                    if (!acc[type]) {
+                        acc[type] = {
+                            ...curr,
+                            id: curr.type,
+                            name: `${curr.type} Adventures`,
+                            desc: `Experience our exclusive ${curr.type} activities.`,
+                        };
+                    }
+                    if (curr.price < acc[type].price) {
+                        acc[type].price = curr.price;
+                    }
+                    return acc;
+                }, {});
+                const activitiesArray = Object.values(groupedActivities);
+                const packages = data.packages;
+                const transport = data.transport;
+
+                return [...tours, ...activitiesArray, ...packages, ...transport];
+            }
+        },
+        {
+            id: 'tours',
+            label: 'Cultural Tours',
+            icon: Map,
+            route: 'tours',
+            description: 'Immerse yourself in Morocco\'s rich heritage',
+            data: () => data.tours
+        },
+        {
+            id: 'activities',
+            label: 'Adventures',
+            icon: Compass,
+            route: 'activities',
+            description: 'Thrilling experiences await',
+            data: () => {
+                const experiences = data.activities.experiences || [];
+                const grouped = experiences.reduce((acc: any, curr: any) => {
+                    const type = curr.type;
+                    if (!acc[type]) {
+                        acc[type] = {
+                            ...curr,
+                            id: curr.type,
+                            name: `${curr.type} Adventures`,
+                            desc: `Experience our exclusive ${curr.type} activities.`,
+                        };
+                    }
+                    if (curr.price < acc[type].price) {
+                        acc[type].price = curr.price;
+                    }
+                    return acc;
+                }, {});
+                return Object.values(grouped);
+            }
+        },
+        {
+            id: 'packages',
+            label: 'Curated Packs',
+            icon: Palmtree,
+            route: 'packages',
+            description: 'Complete travel experiences',
+            data: () => data.packages
+        },
+        {
+            id: 'transport',
+            label: 'Transport',
+            icon: Car,
+            route: 'transport',
+            description: 'Travel in comfort',
+            data: () => data.transport
+        },
+    ];
+
+    // Helper function to get translated category labels
+    const getCategoryLabel = (categoryId: string) => {
+        switch (categoryId) {
+            case 'all': return t('allServices');
+            case 'tours': return t('culturalTours');
+            case 'activities': return t('adventures');
+            case 'packages': return t('curatedPacks');
+            case 'transport': return t('transport');
+            default: return categoryId;
+        }
+    };
+
+    // Helper function to get translated category descriptions
+    const getCategoryDescription = (categoryId: string) => {
+        switch (categoryId) {
+            case 'all': return t('allServicesDesc');
+            case 'tours': return 'Immerse yourself in Morocco\'s rich heritage';
+            case 'activities': return 'Thrilling experiences await';
+            case 'packages': return 'Complete travel experiences';
+            case 'transport': return 'Travel in comfort';
+            default: return '';
+        }
+    };
+
+    // Helper function to determine the correct route for an item
+    const getItemRoute = (item: any) => {
+        // Check if item has pricing array (tours)
+        if (item.pricing && Array.isArray(item.pricing)) {
+            return 'tours';
+        }
+        // Check if item has type property (activities)
+        if (item.type && typeof item.type === 'string') {
+            return 'activities';
+        }
+        // Check if item has included/excluded arrays (packages)
+        if (item.included || item.excluded) {
+            return 'packages';
+        }
+        // Check if item has capacity (transport)
+        if (item.capacity) {
+            return 'transport';
+        }
+        // Fallback to active category route
+        return categories.find(c => c.id === activeCategory)?.route || 'services';
+    };
 
     const renderPrice = (item: any, categoryId: string) => {
         if (categoryId === 'tours' && item.pricing && item.pricing[0]) {
@@ -110,7 +189,7 @@ export const ServicesListing = ({ locale }: ServicesListingProps) => {
                                 {t('tag')}
                             </span>
                             <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium text-white font-poppins mb-6 leading-[1.1]">
-                                Our <span className="italic">Services</span>
+                                {t('titlePart1')} <span className="italic">{t('titlePart2')}</span>
                             </h1>
                             <p className="text-white/80 text-xl md:text-2xl max-w-2xl font-light leading-relaxed mb-8">
                                 {t('subtitle')}
@@ -128,7 +207,7 @@ export const ServicesListing = ({ locale }: ServicesListingProps) => {
                                             }`}
                                     >
                                         <cat.icon className="w-4 h-4" />
-                                        {cat.label}
+                                        {getCategoryLabel(cat.id)}
                                     </button>
                                 ))}
                             </div>
@@ -160,17 +239,17 @@ export const ServicesListing = ({ locale }: ServicesListingProps) => {
                         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
                             <div>
                                 <h2 className="text-3xl md:text-4xl font-medium text-neutral-dark font-poppins mb-2">
-                                    {categories.find(c => c.id === activeCategory)?.label}
+                                    {getCategoryLabel(activeCategory)}
                                 </h2>
                                 <p className="text-neutral-500">
-                                    {categories.find(c => c.id === activeCategory)?.description}
+                                    {getCategoryDescription(activeCategory)}
                                 </p>
                             </div>
                             <Link
                                 href={`/${locale}/${categories.find(c => c.id === activeCategory)?.route}`}
                                 className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
                             >
-                                View all
+                                {t('viewAll')}
                                 <ArrowRight className="w-4 h-4" />
                             </Link>
                         </div>
@@ -194,7 +273,7 @@ export const ServicesListing = ({ locale }: ServicesListingProps) => {
                                     transition={{ delay: idx * 0.05 }}
                                 >
                                     <Link
-                                        href={`/${locale}/${categories.find(c => c.id === activeCategory)?.route}/${item.id}`}
+                                        href={`/${locale}/${getItemRoute(item)}/${item.id}`}
                                         className="block group"
                                     >
                                         <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-full">
@@ -234,13 +313,13 @@ export const ServicesListing = ({ locale }: ServicesListingProps) => {
                                                 {/* Footer */}
                                                 <div className="flex items-center justify-between pt-4 border-t border-neutral-100">
                                                     <div>
-                                                        <span className="text-neutral-400 text-xs">From</span>
+                                                        <span className="text-neutral-400 text-xs">{t('startingFrom')}</span>
                                                         <span className="block text-xl font-bold text-primary">
                                                             {renderPrice(item, activeCategory)}
                                                         </span>
                                                     </div>
                                                     <span className="inline-flex items-center gap-1.5 text-neutral-dark text-sm font-medium group-hover:text-primary transition-colors">
-                                                        Details
+                                                        {t('details')}
                                                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                                     </span>
                                                 </div>
@@ -258,7 +337,7 @@ export const ServicesListing = ({ locale }: ServicesListingProps) => {
                             href={`/${locale}/${categories.find(c => c.id === activeCategory)?.route}`}
                             className="inline-flex items-center gap-2 bg-neutral-dark text-white px-8 py-4 rounded-full font-medium hover:bg-neutral-800 transition-colors group"
                         >
-                            View All {categories.find(c => c.id === activeCategory)?.label}
+                            {t('viewAll')} {getCategoryLabel(activeCategory)}
                             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                         </Link>
                     </div>
@@ -270,16 +349,16 @@ export const ServicesListing = ({ locale }: ServicesListingProps) => {
                 <div className="container mx-auto px-6 md:px-4">
                     <div className="bg-neutral-dark rounded-3xl p-10 md:p-16 text-center">
                         <h2 className="text-3xl md:text-4xl font-medium text-white font-poppins mb-4">
-                            Can't find what you're looking for?
+                            {t('ctaTitle')}
                         </h2>
                         <p className="text-white/70 text-lg mb-8 max-w-xl mx-auto">
-                            We create custom experiences tailored to your preferences. Let's plan your perfect trip together.
+                            {t('ctaDescription')}
                         </p>
                         <Link
                             href={`/${locale}/contact`}
                             className="inline-flex items-center gap-2 bg-white text-neutral-dark px-8 py-4 rounded-full font-medium hover:bg-neutral-100 transition-colors group"
                         >
-                            Contact Us
+                            {t('contactUs')}
                             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                         </Link>
                     </div>

@@ -112,7 +112,7 @@ export const AnimatedHero: React.FC<AnimatedHeroProps> = ({ lang }) => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                    Horizon <br /> <span className="font-serif italic bg-gradient-to-r from-secondary to-white bg-clip-text text-transparent">Tours</span>
+                    Trust <br /> <span className="font-serif italic bg-gradient-to-r from-secondary to-white bg-clip-text text-transparent">Drivers</span>
                 </motion.h1>
 
                 <motion.p

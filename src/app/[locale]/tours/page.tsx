@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { siteData } from '@/data/siteData';
+import { getSiteData } from '@/data/getSiteData';
 import { ArrowRight, Clock, Star, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -20,7 +20,8 @@ export default function ToursPage({ params }: PageProps) {
     const t = useTranslations('ListingPage');
     const searchParams = useSearchParams();
     const query = searchParams.get('search') || searchParams.get('destination');
-    const allTours = siteData.tours || [];
+    const data = getSiteData(locale);
+    const allTours = data.tours || [];
 
     const tours = React.useMemo(() => {
         if (!query) return allTours;
@@ -69,7 +70,7 @@ export default function ToursPage({ params }: PageProps) {
                                 {t('tag')}
                             </span>
                             <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium text-white font-poppins mb-6 leading-[1.1]">
-                                Cultural <span className="italic">Tours</span>
+                                {locale === 'fr' ? 'Circuits' : 'Cultural'} <span className="italic">{locale === 'fr' ? 'Culturels' : 'Tours'}</span>
                             </h1>
                             <p className="text-white/80 text-xl md:text-2xl max-w-2xl font-light leading-relaxed">
                                 {t('toursSubtitle')}
@@ -93,15 +94,15 @@ export default function ToursPage({ params }: PageProps) {
                     <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
                         <div>
                             <h2 className="text-3xl md:text-4xl font-medium text-neutral-dark font-poppins mb-2">
-                                All Tours
+                                {locale === 'fr' ? 'Tous les Circuits' : 'All Tours'}
                             </h2>
-                            <p className="text-neutral-500">{tours.length} tours available</p>
+                            <p className="text-neutral-500">{tours.length} {locale === 'fr' ? 'circuits disponibles' : 'tours available'}</p>
                         </div>
                         <Link
                             href={`/${locale}/services`}
                             className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
                         >
-                            View all services
+                            {locale === 'fr' ? 'Voir tous les services' : 'View all services'}
                             <ArrowRight className="w-4 h-4" />
                         </Link>
                     </div>
@@ -125,7 +126,7 @@ export default function ToursPage({ params }: PageProps) {
                                             />
                                             <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium flex items-center gap-1.5">
                                                 <Clock className="w-3 h-3 text-primary" />
-                                                {item.duration?.replace('_', ' ') || 'Full day'}
+                                                {item.duration?.replace('_', ' ') || (locale === 'fr' ? 'Journée complète' : 'Full day')}
                                             </div>
                                             <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-2.5 py-1.5 rounded-full text-xs font-bold flex items-center gap-1">
                                                 <Star className="w-3 h-3 text-yellow-500 fill-yellow-500" />
@@ -138,16 +139,18 @@ export default function ToursPage({ params }: PageProps) {
                                                 {item.name}
                                             </h3>
                                             <p className="text-neutral-500 text-sm leading-relaxed line-clamp-2 mb-4">
-                                                Experience the magic of {item.name}. This curated tour takes you through iconic locations.
+                                                {locale === 'fr'
+                                                    ? `Découvrez la magie de ${item.name}. Ce circuit organisé vous emmène à travers des lieux emblématiques.`
+                                                    : `Experience the magic of ${item.name}. This curated tour takes you through iconic locations.`}
                                             </p>
 
                                             <div className="flex items-center justify-between pt-4 border-t border-neutral-100">
                                                 <div>
-                                                    <span className="text-neutral-400 text-xs">From</span>
+                                                    <span className="text-neutral-400 text-xs">{locale === 'fr' ? 'À partir de' : 'From'}</span>
                                                     <span className="block text-xl font-bold text-primary">{renderPrice(item)}</span>
                                                 </div>
                                                 <span className="inline-flex items-center gap-1.5 text-neutral-dark text-sm font-medium group-hover:text-primary transition-colors">
-                                                    Details
+                                                    {locale === 'fr' ? 'Détails' : 'Details'}
                                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                                 </span>
                                             </div>

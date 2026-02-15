@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { siteData } from '@/data/siteData';
+import { getSiteData } from '@/data/getSiteData';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { ArrowLeft, ArrowUpRight, Compass, Map, Palmtree, Car, Clock, Users, Star } from 'lucide-react';
@@ -24,14 +24,15 @@ const PatternBackground = () => (
 
 export const ServicesPageContent = ({ locale }: { locale: string }) => {
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+    const data = getSiteData(locale);
 
     const getItems = () => {
-        if (selectedCategory === 'tours') return siteData.tours;
-        if (selectedCategory === 'packages') return siteData.packages;
-        if (selectedCategory === 'transport') return siteData.transport;
+        if (selectedCategory === 'tours') return data.tours;
+        if (selectedCategory === 'packages') return data.packages;
+        if (selectedCategory === 'transport') return data.transport;
 
         if (selectedCategory === 'activities') {
-            const experiences = siteData.activities.experiences || [];
+            const experiences = data.activities.experiences || [];
             // Group by type
             const grouped = experiences.reduce((acc: any, curr: any) => {
                 const type = curr.type;

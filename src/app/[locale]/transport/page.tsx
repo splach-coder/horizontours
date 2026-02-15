@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { siteData } from '@/data/siteData';
+import { getSiteData } from '@/data/getSiteData';
 import { ArrowRight, Clock, Star, ChevronDown, Car } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -17,7 +17,8 @@ interface PageProps {
 export default function TransportPage({ params }: PageProps) {
     const { locale } = React.use(params);
     const t = useTranslations('ListingPage');
-    const transport = siteData.transport || [];
+    const data = getSiteData(locale);
+    const transport = data.transport || [];
 
     return (
         <div className="min-h-screen bg-neutral-100">
@@ -45,7 +46,7 @@ export default function TransportPage({ params }: PageProps) {
                                 {t('tag')}
                             </span>
                             <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium text-white font-poppins mb-6 leading-[1.1]">
-                                <span className="italic">Transport</span> Services
+                                <span className="italic">{locale === 'fr' ? 'Services de' : 'Transport'}</span> {locale === 'fr' ? 'Transport' : 'Services'}
                             </h1>
                             <p className="text-white/80 text-xl md:text-2xl max-w-2xl font-light leading-relaxed">
                                 {t('transportSubtitle')}
@@ -69,15 +70,15 @@ export default function TransportPage({ params }: PageProps) {
                     <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
                         <div>
                             <h2 className="text-3xl md:text-4xl font-medium text-neutral-dark font-poppins mb-2">
-                                All Transport Options
+                                {locale === 'fr' ? 'Toutes les Options de Transport' : 'All Transport Options'}
                             </h2>
-                            <p className="text-neutral-500">{transport.length} options available</p>
+                            <p className="text-neutral-500">{transport.length} {locale === 'fr' ? 'options disponibles' : 'options available'}</p>
                         </div>
                         <Link
                             href={`/${locale}/services`}
                             className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
                         >
-                            View all services
+                            {locale === 'fr' ? 'Voir tous les services' : 'View all services'}
                             <ArrowRight className="w-4 h-4" />
                         </Link>
                     </div>
@@ -101,7 +102,7 @@ export default function TransportPage({ params }: PageProps) {
                                             />
                                             <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium flex items-center gap-1.5">
                                                 <Car className="w-3 h-3 text-primary" />
-                                                Flexible
+                                                {locale === 'fr' ? 'Flexible' : 'Flexible'}
                                             </div>
                                             <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-2.5 py-1.5 rounded-full text-xs font-bold flex items-center gap-1">
                                                 <Star className="w-3 h-3 text-yellow-500 fill-yellow-500" />
@@ -114,16 +115,18 @@ export default function TransportPage({ params }: PageProps) {
                                                 {item.name}
                                             </h3>
                                             <p className="text-neutral-500 text-sm leading-relaxed line-clamp-2 mb-4">
-                                                {item.description || `Premium ${item.name} service for comfortable travel across Morocco.`}
+                                                {item.description || (locale === 'fr'
+                                                    ? `Service premium de ${item.name} pour un voyage confortable à travers le Maroc.`
+                                                    : `Premium ${item.name} service for comfortable travel across Morocco.`)}
                                             </p>
 
                                             <div className="flex items-center justify-between pt-4 border-t border-neutral-100">
                                                 <div>
-                                                    <span className="text-neutral-400 text-xs">Price</span>
+                                                    <span className="text-neutral-400 text-xs">{locale === 'fr' ? 'Prix' : 'Price'}</span>
                                                     <span className="block text-xl font-bold text-primary">{t('onRequest')}</span>
                                                 </div>
                                                 <span className="inline-flex items-center gap-1.5 text-neutral-dark text-sm font-medium group-hover:text-primary transition-colors">
-                                                    Details
+                                                    {locale === 'fr' ? 'Détails' : 'Details'}
                                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                                 </span>
                                             </div>

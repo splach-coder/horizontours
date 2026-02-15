@@ -1,11 +1,11 @@
 export const siteConfig = {
     // Brand
-    name: 'Horizon Tours',
-    shortName: 'Horizon Tours',
-    description: 'Discover Morocco with Horizon Tours - Premium private tours, desert adventures, and luxury transport in Marrakech. Explore the Sahara, Atlas Mountains, and Imperial Cities with expert local guides.',
+    name: 'Trust Drivers',
+    shortName: 'Trust Drivers',
+    description: 'Discover Morocco with Trust Drivers - Premium private tours, desert adventures, and luxury transport in Marrakech. Explore the Sahara, Atlas Mountains, and Imperial Cities with expert local guides.',
 
     // URLs
-    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://horizontours.com',
+    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://trustdrivers.tours',
 
     // Localization
     defaultLocale: 'en',
@@ -13,9 +13,9 @@ export const siteConfig = {
 
     // Contact
     contact: {
-        phone: '+212678545975',
-        whatsapp: '+212678545975',
-        email: 'contact@horizontours.com'
+        phone: '+212606912396',
+        whatsapp: '+212606912396',
+        email: 'contact@trustdrivers.tours'
     },
 
     // SEO Keywords
@@ -41,9 +41,9 @@ export const siteConfig = {
     ],
 
     // SEO / Social
-    ogImage: '/images/og-horizon-tours.png',
-    twitterHandle: '@horizontours',
-    creator: 'Horizon Tours',
+    ogImage: '/images/og-trust-drivers.png',
+    twitterHandle: '@trustdrivers',
+    creator: 'Trust Drivers',
 
     // Business Info (for structured data)
     business: {

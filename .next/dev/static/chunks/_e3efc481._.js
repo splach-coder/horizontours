@@ -57,7 +57,7 @@ function ContactPage() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 src: "/images/marrakech/marrakech3.jpg",
-                                alt: "Contact Horizon Tours",
+                                alt: "Contact Trust Drivers",
                                 fill: true,
                                 className: "object-cover",
                                 priority: true
@@ -99,7 +99,7 @@ function ContactPage() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "inline-block text-primary bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium mb-6",
-                                            children: "Get in touch"
+                                            children: t('getInTouch')
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/[locale]/contact/page.tsx",
                                             lineNumber: 50,
@@ -108,14 +108,15 @@ function ContactPage() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                             className: "text-5xl md:text-7xl lg:text-8xl font-medium text-white font-poppins mb-6 leading-[1.1]",
                                             children: [
-                                                "Contact ",
+                                                t('contactUs'),
+                                                " ",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "italic",
-                                                    children: "Us"
+                                                    children: t('contactUsItalic')
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/[locale]/contact/page.tsx",
                                                     lineNumber: 54,
-                                                    columnNumber: 41
+                                                    columnNumber: 50
                                                 }, this)
                                             ]
                                         }, void 0, true, {
@@ -366,7 +367,7 @@ function ContactPage() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "block text-neutral-dark font-medium mb-4",
-                                                children: "Follow Us"
+                                                children: t('followUs')
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/[locale]/contact/page.tsx",
                                                 lineNumber: 129,
@@ -571,7 +572,7 @@ function ContactPage() {
         columnNumber: 9
     }, this);
 }
-_s(ContactPage, "GBmtFtqNNtid3g7JTVeuTlT9ciw=", false, function() {
+_s(ContactPage, "rZrmfSFS6TQNTQk71CuEpArx9p0=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$use$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLocale"]

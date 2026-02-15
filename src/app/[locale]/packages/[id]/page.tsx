@@ -2,7 +2,7 @@
 
 import React, { use } from 'react';
 import { notFound } from 'next/navigation';
-import { siteData } from '@/data/siteData';
+import { getSiteData } from '@/data/getSiteData';
 import { ServiceDetailContent } from '@/components/ServiceDetailContent';
 
 interface PageProps {
@@ -15,13 +15,16 @@ interface PageProps {
 export default function PackageDetailPage({ params }: PageProps) {
     const { id, locale } = use(params);
 
-    const item = (siteData.packages as any[]).find(p => p.id === id);
+    const data = getSiteData(locale);
+    const item = (data.packages as any[]).find(p => p.id === id);
 
     if (!item) {
         return notFound();
     }
 
-    const description = `The ultimate experience: ${item.name}. This package combines our best activities into a seamless adventure. Enjoy ${item.included.join(', ')} all in one go.`;
+    const description = locale === 'fr'
+        ? `L'expérience ultime : ${item.name}. Ce forfait combine nos meilleures activités en une aventure fluide. Profitez de ${item.included?.join(', ')} en une seule fois.`
+        : `The ultimate experience: ${item.name}. This package combines our best activities into a seamless adventure. Enjoy ${item.included?.join(', ')} all in one go.`;
 
     return (
         <ServiceDetailContent
@@ -34,7 +37,7 @@ export default function PackageDetailPage({ params }: PageProps) {
             price={item.price}
             duration="4_hours"
             location={item.location}
-            included={item.included}
+            included={item.included || []}
             excluded={[]}
             subItems={[]}
             gallery={item.gallery || []}

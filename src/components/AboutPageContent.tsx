@@ -29,6 +29,7 @@ const AnimatedCounter = ({ value, suffix = '', decimals = 0 }: { value: number, 
 
 export const AboutPageContent = () => {
     const t = useTranslations('AboutPage');
+    const tCTA = useTranslations('AboutCTA');
     const locale = useLocale();
 
     return (
@@ -57,7 +58,7 @@ export const AboutPageContent = () => {
                                 {t('tag')}
                             </span>
                             <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium text-white font-poppins mb-6 leading-[1.1]">
-                                About <span className="italic">Us</span>
+                                {t('title')} <span className="italic">{t('titleItalic')}</span>
                             </h1>
                             <p className="text-white/80 text-xl md:text-2xl max-w-2xl font-light leading-relaxed">
                                 {t('subtitle')}
@@ -222,16 +223,16 @@ export const AboutPageContent = () => {
                 <div className="container mx-auto px-6 md:px-4">
                     <div className="bg-neutral-dark rounded-3xl p-10 md:p-16 text-center">
                         <h2 className="text-3xl md:text-4xl font-medium text-white font-poppins mb-4">
-                            Ready to start your journey?
+                            {tCTA('title')}
                         </h2>
                         <p className="text-white/70 text-lg mb-8 max-w-xl mx-auto">
-                            Let us create an unforgettable experience tailored just for you.
+                            {tCTA('description')}
                         </p>
                         <Link
                             href={`/${locale}/contact`}
                             className="inline-flex items-center gap-2 bg-white text-neutral-dark px-8 py-4 rounded-full font-medium hover:bg-neutral-100 transition-colors group"
                         >
-                            Get in Touch
+                            {tCTA('button')}
                             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                         </Link>
                     </div>

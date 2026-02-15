@@ -2,7 +2,7 @@
 
 import React, { use } from 'react';
 import { notFound } from 'next/navigation';
-import { siteData } from '@/data/siteData';
+import { getSiteData } from '@/data/getSiteData';
 import { ServiceDetailContent } from '@/components/ServiceDetailContent';
 
 interface PageProps {
@@ -15,7 +15,8 @@ interface PageProps {
 export default function TourDetailPage({ params }: PageProps) {
     const { id, locale } = use(params);
 
-    const item = siteData.tours.find(t => t.id === id);
+    const data = getSiteData(locale);
+    const item = data.tours.find(t => t.id === id);
 
     if (!item) {
         return notFound();
@@ -29,7 +30,17 @@ export default function TourDetailPage({ params }: PageProps) {
     }
 
     // Static descriptions if not in DB (siteData seems sparse)
-    const description = `Experience the magic of ${item.name}. This curated tour takes you through the most iconic locations, offering a blend of history, culture, and breathtaking scenery. Our professional guides ensure you don't miss any hidden gems.`;
+    const description = locale === 'fr'
+        ? `Découvrez la magie de ${item.name}. Ce circuit organisé vous emmène à travers les lieux les plus emblématiques, offrant un mélange d'histoire, de culture et de paysages à couper le souffle. Nos guides professionnels veillent à ce que vous ne manquiez aucun joyau caché.`
+        : `Experience the magic of ${item.name}. This curated tour takes you through the most iconic locations, offering a blend of history, culture, and breathtaking scenery. Our professional guides ensure you don't miss any hidden gems.`;
+
+    const fallbackIncludes = locale === 'fr'
+        ? ['Prise en charge à l\'hôtel', 'Transport Climatisé', 'Guide Local']
+        : ['Hotel Pickup', 'Transport A/C', 'Local Guide'];
+
+    const fallbackExcludes = locale === 'fr'
+        ? ['Déjeuner', 'Frais d\'entrée', 'Pourboires']
+        : ['Lunch', 'Entrance Fees', 'Tips'];
 
     return (
         <ServiceDetailContent
@@ -42,8 +53,8 @@ export default function TourDetailPage({ params }: PageProps) {
             price={price}
             duration={item.duration}
             location="Marrakech Region"
-            included={item.includes || ['Hotel Pickup', 'Transport A/C', 'Local Guide']}
-            excluded={item.excludes || ['Lunch', 'Entrance Fees', 'Tips']}
+            included={item.includes || fallbackIncludes}
+            excluded={item.excludes || fallbackExcludes}
             itinerary={item.itinerary}
             subItems={[]}
             gallery={item.gallery || []}

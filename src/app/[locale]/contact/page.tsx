@@ -32,7 +32,7 @@ export default function ContactPage() {
                 <div className="absolute inset-0">
                     <Image
                         src="/images/marrakech/marrakech3.jpg"
-                        alt="Contact Horizon Tours"
+                        alt="Contact Trust Drivers"
                         fill
                         className="object-cover"
                         priority
@@ -48,10 +48,10 @@ export default function ContactPage() {
                             transition={{ duration: 1 }}
                         >
                             <span className="inline-block text-primary bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium mb-6">
-                                Get in touch
+                                {t('getInTouch')}
                             </span>
                             <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium text-white font-poppins mb-6 leading-[1.1]">
-                                Contact <span className="italic">Us</span>
+                                {t('contactUs')} <span className="italic">{t('contactUsItalic')}</span>
                             </h1>
                             <p className="text-white/80 text-xl md:text-2xl max-w-2xl font-light leading-relaxed">
                                 {t('heroSubtitle')}
@@ -126,7 +126,7 @@ export default function ContactPage() {
 
                             {/* Social Links */}
                             <div className="bg-white rounded-2xl p-6 shadow-sm">
-                                <span className="block text-neutral-dark font-medium mb-4">Follow Us</span>
+                                <span className="block text-neutral-dark font-medium mb-4">{t('followUs')}</span>
                                 <div className="flex items-center gap-4">
                                     <a
                                         href={siteInfo.socials.instagram}

@@ -22,7 +22,7 @@ export default function Footer() {
                     <div className="md:col-span-6">
                         <Image
                             src="/images/logo.png"
-                            alt="Horizon Tours"
+                            alt="Trust Drivers"
                             width={140}
                             height={100}
                             className="mb-6 object-contain"
@@ -58,7 +58,7 @@ export default function Footer() {
                 {/* Bottom Bar: Copyright & Socials */}
                 <div className="pt-8 border-t border-white/20 flex flex-col md:flex-row justify-between items-center gap-6">
                     <p className="text-white/60 text-sm">
-                        &copy; Horizon Tours {currentYear} {t('copyright')}
+                        &copy; Trust Drivers {currentYear} {t('copyright')}
                     </p>
 
                     <div className="flex items-center gap-6">

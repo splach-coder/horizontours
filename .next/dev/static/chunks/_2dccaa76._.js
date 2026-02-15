@@ -279,22 +279,94 @@ const siteData = {
         scale: 5,
         items: [
             {
-                id: "rev-new-1",
-                targetType: "tour",
-                targetId: "circuit-5-days-south",
-                author: "Jean D.",
+                id: "rev-1",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Sarah Johnson",
                 rating: 5,
-                comment: "An unforgettable journey through the south. The desert night was magical.",
-                date: "2024-12-10"
+                comment: "An absolutely incredible experience! Our guide was knowledgeable and passionate about Moroccan culture. The desert tour exceeded all expectations. Highly recommend Trust Drivers for anyone visiting Morocco!",
+                date: "2 weeks ago"
             },
             {
-                id: "rev-new-2",
-                targetType: "tour",
-                targetId: "circuit-3-days-merzouga",
-                author: "Alice K.",
+                id: "rev-2",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Mohammed Al-Rashid",
                 rating: 5,
-                comment: "Perfect organization. Our driver was very helpful and kind.",
-                date: "2024-11-05"
+                comment: "Professional service from start to finish. The driver was punctual, the vehicle was spotless, and the entire trip was seamless. Trust Drivers made our family vacation unforgettable!",
+                date: "1 month ago"
+            },
+            {
+                id: "rev-3",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Emma Martinez",
+                rating: 5,
+                comment: "Best tour company in Marrakech! They customized our itinerary perfectly and showed us hidden gems we never would have found on our own. The Atlas Mountains tour was breathtaking!",
+                date: "3 weeks ago"
+            },
+            {
+                id: "rev-4",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "David Chen",
+                rating: 5,
+                comment: "Exceptional service and attention to detail. Our driver spoke perfect English and shared fascinating stories about Morocco's history. The Sahara desert experience was a once-in-a-lifetime adventure!",
+                date: "1 week ago"
+            },
+            {
+                id: "rev-5",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Fatima Benali",
+                rating: 5,
+                comment: "I've used many tour services, but Trust Drivers stands out. They're reliable, professional, and truly care about creating memorable experiences. The coastal tour to Essaouira was magical!",
+                date: "2 months ago"
+            },
+            {
+                id: "rev-6",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "James Wilson",
+                rating: 5,
+                comment: "From booking to the end of our trip, everything was perfect. The guides were friendly and knowledgeable. We felt safe and well taken care of throughout our entire journey. Five stars!",
+                date: "3 weeks ago"
+            },
+            {
+                id: "rev-7",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Aisha Rahman",
+                rating: 5,
+                comment: "Trust Drivers provided an authentic Moroccan experience. They took us to local markets, traditional restaurants, and beautiful landscapes. Our family will treasure these memories forever!",
+                date: "1 month ago"
+            },
+            {
+                id: "rev-8",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Pierre Dubois",
+                rating: 5,
+                comment: "Magnifique! The professionalism and warmth of the Trust Drivers team made our honeymoon extraordinary. The private tour was worth every penny. We'll definitely be back!",
+                date: "2 weeks ago"
+            },
+            {
+                id: "rev-9",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Lisa Anderson",
+                rating: 5,
+                comment: "I was traveling solo and felt completely safe with Trust Drivers. They were respectful, accommodating, and went above and beyond to ensure I had an amazing experience. Highly recommended!",
+                date: "4 weeks ago"
+            },
+            {
+                id: "rev-10",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Omar Hassan",
+                rating: 5,
+                comment: "Outstanding service! The attention to detail, comfortable vehicles, and expert guides made this the best tour experience I've ever had. Trust Drivers truly lives up to their name!",
+                date: "1 week ago"
             }
         ]
     }
@@ -563,13 +635,94 @@ const siteDataFr = {
         scale: 5,
         items: [
             {
-                id: "rev-new-1",
-                targetType: "tour",
-                targetId: "circuit-5-days-south",
-                author: "Jean D.",
+                id: "rev-1",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Sarah Johnson",
                 rating: 5,
-                comment: "Un voyage inoubliable à travers le sud. La nuit au désert était magique.",
-                date: "2024-12-10"
+                comment: "Une expérience absolument incroyable ! Notre guide était compétent et passionné par la culture marocaine. Le circuit dans le désert a dépassé toutes les attentes. Je recommande vivement Trust Drivers à tous ceux qui visitent le Maroc !",
+                date: "Il y a 2 semaines"
+            },
+            {
+                id: "rev-2",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Mohammed Al-Rashid",
+                rating: 5,
+                comment: "Service professionnel du début à la fin. Le chauffeur était ponctuel, le véhicule impeccable et tout le voyage s'est déroulé sans accroc. Trust Drivers a rendu nos vacances en famille inoubliables !",
+                date: "Il y a 1 mois"
+            },
+            {
+                id: "rev-3",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Emma Martinez",
+                rating: 5,
+                comment: "Meilleure compagnie de tours à Marrakech ! Ils ont parfaitement personnalisé notre itinéraire et nous ont montré des joyaux cachés que nous n'aurions jamais trouvés seuls. Le tour des montagnes de l'Atlas était à couper le souffle !",
+                date: "Il y a 3 semaines"
+            },
+            {
+                id: "rev-4",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "David Chen",
+                rating: 5,
+                comment: "Service exceptionnel et attention aux détails. Notre chauffeur parlait parfaitement anglais et partageait des histoires fascinantes sur l'histoire du Maroc. L'expérience du désert du Sahara était une aventure unique !",
+                date: "Il y a 1 semaine"
+            },
+            {
+                id: "rev-5",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Fatima Benali",
+                rating: 5,
+                comment: "J'ai utilisé de nombreux services de tours, mais Trust Drivers se démarque. Ils sont fiables, professionnels et se soucient vraiment de créer des expériences mémorables. Le tour côtier à Essaouira était magique !",
+                date: "Il y a 2 mois"
+            },
+            {
+                id: "rev-6",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "James Wilson",
+                rating: 5,
+                comment: "De la réservation à la fin de notre voyage, tout était parfait. Les guides étaient sympathiques et compétents. Nous nous sommes sentis en sécurité et bien pris en charge tout au long de notre voyage. Cinq étoiles !",
+                date: "Il y a 3 semaines"
+            },
+            {
+                id: "rev-7",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Aisha Rahman",
+                rating: 5,
+                comment: "Trust Drivers a fourni une expérience marocaine authentique. Ils nous ont emmenés dans des marchés locaux, des restaurants traditionnels et de magnifiques paysages. Notre famille chérira ces souvenirs pour toujours !",
+                date: "Il y a 1 mois"
+            },
+            {
+                id: "rev-8",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Pierre Dubois",
+                rating: 5,
+                comment: "Magnifique ! Le professionnalisme et la chaleur de l'équipe Trust Drivers ont rendu notre lune de miel extraordinaire. Le tour privé valait chaque centime. Nous reviendrons certainement !",
+                date: "Il y a 2 semaines"
+            },
+            {
+                id: "rev-9",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Lisa Anderson",
+                rating: 5,
+                comment: "Je voyageais seule et je me suis sentie complètement en sécurité avec Trust Drivers. Ils étaient respectueux, accommodants et ont fait tout leur possible pour que j'aie une expérience incroyable. Hautement recommandé !",
+                date: "Il y a 4 semaines"
+            },
+            {
+                id: "rev-10",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Omar Hassan",
+                rating: 5,
+                comment: "Service exceptionnel ! L'attention aux détails, les véhicules confortables et les guides experts ont fait de cela la meilleure expérience de tour que j'aie jamais eue. Trust Drivers est vraiment à la hauteur de son nom !",
+                date: "Il y a 1 semaine"
             }
         ]
     }
@@ -740,14 +893,15 @@ const ServicesListing = ({ locale })=>{
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                             className: "text-5xl md:text-7xl lg:text-8xl font-medium text-white font-poppins mb-6 leading-[1.1]",
                                             children: [
-                                                "Our ",
+                                                t('titlePart1'),
+                                                " ",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "italic",
-                                                    children: "Services"
+                                                    children: t('titlePart2')
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ServicesListing.tsx",
                                                     lineNumber: 113,
-                                                    columnNumber: 37
+                                                    columnNumber: 51
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
@@ -882,7 +1036,7 @@ const ServicesListing = ({ locale })=>{
                                         href: `/${locale}/${categories.find((c)=>c.id === activeCategory)?.route}`,
                                         className: "inline-flex items-center gap-2 text-primary font-medium hover:underline",
                                         children: [
-                                            "View all",
+                                            t('viewAll'),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                                 className: "w-4 h-4"
                                             }, void 0, false, {
@@ -1023,7 +1177,7 @@ const ServicesListing = ({ locale })=>{
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                 className: "text-neutral-400 text-xs",
-                                                                                children: "From"
+                                                                                children: t('startingFrom')
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/ServicesListing.tsx",
                                                                                 lineNumber: 237,
@@ -1046,7 +1200,7 @@ const ServicesListing = ({ locale })=>{
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                         className: "inline-flex items-center gap-1.5 text-neutral-dark text-sm font-medium group-hover:text-primary transition-colors",
                                                                         children: [
-                                                                            "Details",
+                                                                            t('details'),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                                                                 className: "w-4 h-4 group-hover:translate-x-1 transition-transform"
                                                                             }, void 0, false, {
@@ -1104,7 +1258,8 @@ const ServicesListing = ({ locale })=>{
                                 href: `/${locale}/${categories.find((c)=>c.id === activeCategory)?.route}`,
                                 className: "inline-flex items-center gap-2 bg-neutral-dark text-white px-8 py-4 rounded-full font-medium hover:bg-neutral-800 transition-colors group",
                                 children: [
-                                    "View All ",
+                                    t('viewAll'),
+                                    " ",
                                     categories.find((c)=>c.id === activeCategory)?.label,
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                         className: "w-4 h-4 group-hover:translate-x-1 transition-transform"
@@ -1144,7 +1299,7 @@ const ServicesListing = ({ locale })=>{
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "text-3xl md:text-4xl font-medium text-white font-poppins mb-4",
-                                children: "Can't find what you're looking for?"
+                                children: t('ctaTitle')
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ServicesListing.tsx",
                                 lineNumber: 272,
@@ -1152,7 +1307,7 @@ const ServicesListing = ({ locale })=>{
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-white/70 text-lg mb-8 max-w-xl mx-auto",
-                                children: "We create custom experiences tailored to your preferences. Let's plan your perfect trip together."
+                                children: t('ctaDescription')
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ServicesListing.tsx",
                                 lineNumber: 275,
@@ -1162,7 +1317,7 @@ const ServicesListing = ({ locale })=>{
                                 href: `/${locale}/contact`,
                                 className: "inline-flex items-center gap-2 bg-white text-neutral-dark px-8 py-4 rounded-full font-medium hover:bg-neutral-100 transition-colors group",
                                 children: [
-                                    "Contact Us",
+                                    t('contactUs'),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                         className: "w-4 h-4 group-hover:translate-x-1 transition-transform"
                                     }, void 0, false, {

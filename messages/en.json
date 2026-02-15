@@ -1,6 +1,6 @@
 {
   "HomePage": {
-    "title": "Welcome to Horizon Tours",
+    "title": "Welcome to Trust Drivers",
     "description": "Experience the authentic beauty of Marrakech",
     "heroTag": "Discover Marrakech",
     "heroTitle": "A Journey of Tradition, Innovation, and Natural Beauty",
@@ -110,12 +110,13 @@
     "perPerson": "per person"
   },
   "AboutPage": {
-    "title": "About Us",
+    "title": "About",
+    "titleItalic": "Us",
     "tag": "About Us",
     "subtitle": "Your trusted partner for authentic Moroccan experiences.",
     "storyTitle": "Our Story",
     "storyTag": "Our Story",
-    "storyText": "Horizon Tours was born from a passion for sharing the hidden gems and vibrant culture of Morocco. We specialize in creating personalized journeys that go beyond the ordinary, connecting you with the heart and soul of this beautiful country.",
+    "storyText": "Trust Drivers was born from a passion for sharing the hidden gems and vibrant culture of Morocco. We specialize in creating personalized journeys that go beyond the ordinary, connecting you with the heart and soul of this beautiful country.",
     "storyLocal": "Founded by locals with a deep love for their heritage, we aim to show you the Morocco that we know and love. From the bustling souks of Marrakech to the serene silence of the Agafay desert, every experience is crafted with care.",
     "missionTitle": "Our Mission",
     "whyChooseTag": "Why Choose Us",
@@ -132,6 +133,9 @@
     "value3Text": "Your safety is our top priority. We provide professional transport, expert guides, and 24/7 support."
   },
   "ContactPage": {
+    "getInTouch": "Get in touch",
+    "contactUs": "Contact",
+    "contactUsItalic": "Us",
     "heroTitlePart1": "Connect with",
     "heroTitlePart2": "Us",
     "heroSubtitle": "Bespoke Moroccan journeys tailored to your rhythm.",
@@ -141,6 +145,7 @@
     "callWhatsapp": "Call or WhatsApp",
     "emailUs": "Email Us",
     "location": "Location",
+    "followUs": "Follow Us",
     "sendInquiry": "Send an Inquiry",
     "fillForm": "Fill out the form below to chat with us directly on WhatsApp.",
     "fullName": "Full Name",
@@ -157,6 +162,8 @@
     "adventures": "Adventures",
     "curatedPacks": "Curated Packs",
     "transport": "Transport",
+    "allServices": "All Services",
+    "allServicesDesc": "Browse all our offerings",
     "option": "option",
     "options": "options",
     "available": "available",
@@ -169,7 +176,10 @@
     "duration_half_day": "Half Day",
     "duration_2_hours": "2 hours",
     "duration_4_hours": "4 hours",
-    "flexible": "Flexible"
+    "flexible": "Flexible",
+    "ctaTitle": "Can't find what you're looking for?",
+    "ctaDescription": "We create custom experiences tailored to your preferences. Let's plan your perfect trip together.",
+    "contactUs": "Contact Us"
   },
   "ListingPage": {
     "tag": "Discover Morocco",
@@ -197,5 +207,141 @@
     "transportLabel": "Transport",
     "transportFlexible": "Flexible",
     "transportDescDefault": "Enjoy a comfortable and safe journey with our {itemName}. Professional drivers ensure punctuality and comfort."
+  },
+  "GalleryPage": {
+    "tag": "Visual Journey",
+    "title": "Gallery",
+    "subtitle": "Explore the beauty of Morocco through our curated collection of moments and memories.",
+    "allPhotos": "All Photos",
+    "tours": "Tours",
+    "landscapes": "Landscapes",
+    "culture": "Culture",
+    "adventures": "Adventures"
+  },
+  "Reviews": {
+    "title": "What Our Guests Say",
+    "postedOn": "Posted on Google",
+    "viewAll": "View all reviews on Google Maps",
+    "review1Author": "Sarah Johnson",
+    "review1Text": "An absolutely incredible experience! Our guide was knowledgeable and passionate about Moroccan culture. The desert tour exceeded all expectations. Highly recommend Trust Drivers for anyone visiting Morocco!",
+    "review1Date": "2 weeks ago",
+    "review2Author": "Mohammed Al-Rashid",
+    "review2Text": "Professional service from start to finish. The driver was punctual, the vehicle was spotless, and the entire trip was seamless. Trust Drivers made our family vacation unforgettable!",
+    "review2Date": "1 month ago",
+    "review3Author": "Emma Martinez",
+    "review3Text": "Best tour company in Marrakech! They customized our itinerary perfectly and showed us hidden gems we never would have found on our own. The Atlas Mountains tour was breathtaking!",
+    "review3Date": "3 weeks ago",
+    "review4Author": "David Chen",
+    "review4Text": "Exceptional service and attention to detail. Our driver spoke perfect English and shared fascinating stories about Morocco's history. The Sahara desert experience was a once-in-a-lifetime adventure!",
+    "review4Date": "1 week ago",
+    "review5Author": "Fatima Benali",
+    "review5Text": "I've used many tour services, but Trust Drivers stands out. They're reliable, professional, and truly care about creating memorable experiences. The coastal tour to Essaouira was magical!",
+    "review5Date": "2 months ago",
+    "review6Author": "James Wilson",
+    "review6Text": "From booking to the end of our trip, everything was perfect. The guides were friendly and knowledgeable. We felt safe and well taken care of throughout our entire journey. Five stars!",
+    "review6Date": "3 weeks ago",
+    "review7Author": "Aisha Rahman",
+    "review7Text": "Trust Drivers provided an authentic Moroccan experience. They took us to local markets, traditional restaurants, and beautiful landscapes. Our family will treasure these memories forever!",
+    "review7Date": "1 month ago",
+    "review8Author": "Pierre Dubois",
+    "review8Text": "Magnifique! The professionalism and warmth of the Trust Drivers team made our honeymoon extraordinary. The private tour was worth every penny. We'll definitely be back!",
+    "review8Date": "2 weeks ago",
+    "review9Author": "Lisa Anderson",
+    "review9Text": "I was traveling solo and felt completely safe with Trust Drivers. They were respectful, accommodating, and went above and beyond to ensure I had an amazing experience. Highly recommended!",
+    "review9Date": "4 weeks ago",
+    "review10Author": "Omar Hassan",
+    "review10Text": "Outstanding service! The attention to detail, comfortable vehicles, and expert guides made this the best tour experience I've ever had. Trust Drivers truly lives up to their name!",
+    "review10Date": "1 week ago"
+  },
+  "PopularDestinations": {
+    "subtitle": "Discover Morocco",
+    "title": "Popular",
+    "titleItalic": "Destinations",
+    "description": "Handpicked experiences for unforgettable adventures across Morocco",
+    "morocco": "Morocco",
+    "from": "From",
+    "exploreAllTours": "Explore All Tours"
+  },
+  "CTASection": {
+    "readyToExplore": "Ready to explore?",
+    "heading1": "Let's plan your",
+    "heading2": "dream trip",
+    "heading2Highlight": "together",
+    "description": "Book your private tour today and discover the magic of Marrakech with our expert guides.",
+    "bookYourTrip": "Book Your Trip",
+    "browseTours": "Browse Tours",
+    "whatsappUs": "WhatsApp Us",
+    "emailUs": "Email Us",
+    "travelers": "Travelers",
+    "years": "Years",
+    "rating": "Rating",
+    "getInTouch": "Get in touch",
+    "contactUs": "Contact Us",
+    "followUs": "Follow Us",
+    "readyToStart": "Ready to start your journey?",
+    "unforgettableExperience": "Let us create an unforgettable experience tailored just for you."
+  },
+  "AboutPageContent": {
+    "getInTouch": "Get in touch",
+    "aboutUs": "About",
+    "aboutUsItalic": "Us",
+    "ourStory": "Our Story"
+  },
+  "BookingForm": {
+    "contactForPrice": "Contact for Price"
+  },
+  "GalleryPreview": {
+    "subtitle": "Real stories from real travelers",
+    "title": "Moments that made every journey",
+    "titleItalic": "unforgettable",
+    "seeMore": "See more happiness"
+  },
+  "HeroSearch": {
+    "title1": "Find your next",
+    "title2": "unforgettable trip",
+    "subtitle": "Discover hidden gems, chill spots, and wild adventures, all in one place.",
+    "pickDate": "Pick a date",
+    "travelers": "Travelers",
+    "traveler": "Traveler",
+    "search": "Search",
+    "findMyTrip": "Find my trip",
+    "selectTravelDate": "Select your travel date",
+    "numberOfTravelers": "Number of travelers"
+  },
+  "BookingEngine": {
+    "bookNow": "Book Now",
+    "contactForPrice": "Contact for Price",
+    "customQuote": "Custom quote based on your needs",
+    "total": "total",
+    "pricePerPerson": "Price per person",
+    "numberOfTravelers": "Number of travelers",
+    "subtotal": "Subtotal",
+    "chooseExperience": "Choose Experience",
+    "travelDate": "Travel Date",
+    "travelers": "Travelers",
+    "person": "person",
+    "people": "people",
+    "confirmViaWhatsApp": "Confirm via WhatsApp",
+    "noPaymentNow": "💳 No payment now • Pay on arrival"
+  },
+  "AboutCTA": {
+    "title": "Ready to start your journey?",
+    "description": "Let us create an unforgettable experience tailored just for you.",
+    "button": "Get in Touch"
+  },
+  "FAQ": {
+    "title": "Frequently Asked",
+    "titleItalic": "Questions",
+    "subtitle": "Got questions before your next trip? We've got you covered — here's everything you need to know about traveling with Trust Drivers.",
+    "q1": "Can I change or cancel my trip after booking?",
+    "a1": "Yes! We understand plans can change. You can easily modify or cancel your trip by contacting us directly via WhatsApp or email. Just make sure to check the flexible date options before confirming your booking.",
+    "q2": "Does Trust Drivers offer group travel options?",
+    "a2": "Absolutely! We offer both private tours for intimate experiences and group tours for those who want to meet fellow travelers. Our group sizes are kept small (max 12 people) to ensure quality and personalized attention.",
+    "q3": "How do I get travel support during my trip?",
+    "a3": "We provide 24/7 support throughout your journey. You'll have a dedicated WhatsApp line to reach our team anytime. Our local guides are also available to assist you during all activities and excursions.",
+    "q4": "What's included in the tour price?",
+    "a4": "Our tour prices typically include accommodation, private transportation, professional guides, and specified meals (usually half-board). Specific inclusions are detailed on each tour page. Flights, tips, and personal expenses are generally not included.",
+    "q5": "What is the best time to visit Morocco?",
+    "a5": "The best time to visit Morocco is during spring (March to May) or autumn (September to November) when temperatures are pleasant. Summer can be hot in the desert, while winter is ideal for the southern regions."
   }
 }

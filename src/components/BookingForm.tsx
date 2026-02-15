@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { siteConfig } from '@/config/site';
 import { Calendar, Users, MessageCircle, MapPin, Clock, Receipt, Check, ChevronDown } from 'lucide-react';
 import { useBooking } from '@/context/BookingContext';
+import { useTranslations } from 'next-intl';
 
 interface BookingFormProps {
     serviceName: string;
@@ -25,6 +26,7 @@ export const BookingForm = ({
     basePrice = 0,
     variants = []
 }: BookingFormProps) => {
+    const t = useTranslations('BookingEngine');
     // Get initial values from booking context (from hero search)
     const { travelers: contextTravelers, selectedDate: contextDate } = useBooking();
 
@@ -115,7 +117,7 @@ Please confirm availability. Thank you!`;
                 <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center gap-2">
                         <Receipt className="w-5 h-5" />
-                        <h3 className="text-lg font-bold">Book Now</h3>
+                        <h3 className="text-lg font-bold">{t('bookNow')}</h3>
                     </div>
                     {!isTransport && (
                         <button
@@ -130,13 +132,13 @@ Please confirm availability. Thank you!`;
                 <div className="flex items-baseline gap-2">
                     {isTransport ? (
                         <div>
-                            <span className="text-2xl font-bold block">Contact for Price</span>
-                            <span className="text-white/70 text-sm">Custom quote based on your needs</span>
+                            <span className="text-2xl font-bold block">{t('contactForPrice')}</span>
+                            <span className="text-white/70 text-sm">{t('customQuote')}</span>
                         </div>
                     ) : (
                         <>
                             <span className="text-4xl font-bold">{pricing.total}€</span>
-                            <span className="text-white/70 text-sm">total</span>
+                            <span className="text-white/70 text-sm">{t('total')}</span>
                         </>
                     )}
                 </div>
@@ -147,15 +149,15 @@ Please confirm availability. Thank you!`;
                 <div className="px-6 py-4 bg-primary/5 border-b border-neutral-100">
                     <div className="space-y-2 text-sm">
                         <div className="flex justify-between text-gray-600">
-                            <span>Price per person</span>
+                            <span>{t('pricePerPerson')}</span>
                             <span className="font-semibold">{pricing.basePrice}€</span>
                         </div>
                         <div className="flex justify-between text-gray-600">
-                            <span>Number of travelers</span>
+                            <span>{t('numberOfTravelers')}</span>
                             <span className="font-semibold">× {formData.guests}</span>
                         </div>
                         <div className="pt-2 border-t border-neutral-200 flex justify-between font-bold text-neutral-dark">
-                            <span>Subtotal</span>
+                            <span>{t('subtotal')}</span>
                             <span className="text-primary">{pricing.guestsTotal}€</span>
                         </div>
                     </div>
@@ -174,7 +176,7 @@ Please confirm availability. Thank you!`;
                 {variants.length > 0 && (
                     <div className="space-y-3">
                         <label className="text-xs font-bold uppercase text-neutral-dark tracking-wide flex items-center gap-2">
-                            <MapPin className="w-4 h-4 text-primary" /> Choose Experience
+                            <MapPin className="w-4 h-4 text-primary" /> {t('chooseExperience')}
                         </label>
                         <div className="space-y-2">
                             {variants.map((variant) => (
@@ -211,7 +213,7 @@ Please confirm availability. Thank you!`;
                 {/* Date Picker */}
                 <div className="space-y-2">
                     <label className="text-xs font-bold uppercase text-neutral-dark tracking-wide flex items-center gap-2">
-                        <Calendar className="w-4 h-4 text-primary" /> Travel Date
+                        <Calendar className="w-4 h-4 text-primary" /> {t('travelDate')}
                     </label>
                     <input
                         type="date"
@@ -227,7 +229,7 @@ Please confirm availability. Thank you!`;
                 {/* Guests Counter */}
                 <div className="space-y-2">
                     <label className="text-xs font-bold uppercase text-neutral-dark tracking-wide flex items-center gap-2">
-                        <Users className="w-4 h-4 text-primary" /> Travelers
+                        <Users className="w-4 h-4 text-primary" /> {t('travelers')}
                     </label>
                     <div className="flex items-center justify-between bg-neutral-50 border border-neutral-200 rounded-lg p-2">
                         <button
@@ -240,7 +242,7 @@ Please confirm availability. Thank you!`;
                         </button>
                         <div className="text-center">
                             <span className="font-bold text-xl text-neutral-dark block">{formData.guests}</span>
-                            <span className="text-xs text-gray-500">{formData.guests === 1 ? 'person' : 'people'}</span>
+                            <span className="text-xs text-gray-500">{formData.guests === 1 ? t('person') : t('people')}</span>
                         </div>
                         <button
                             type="button"
@@ -262,11 +264,11 @@ Please confirm availability. Thank you!`;
                     className="w-full bg-[#25D366] hover:bg-[#20b858] text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 group"
                 >
                     <MessageCircle className="w-5 h-5 fill-current" />
-                    <span>Confirm via WhatsApp</span>
+                    <span>{t('confirmViaWhatsApp')}</span>
                 </button>
 
                 <p className="text-xs text-center text-gray-400">
-                    💳 No payment now • Pay on arrival
+                    {t('noPaymentNow')}
                 </p>
             </form>
         </div>

@@ -4,35 +4,38 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ZoomIn, ChevronDown } from 'lucide-react';
 import Image from 'next/image';
-import { siteData } from '@/data/siteData';
+import { getSiteData } from '@/data/getSiteData';
+import { useTranslations } from 'next-intl';
 
-// Dynamically generate gallery items from siteData tours
-const allTourImages = siteData.tours.reduce((acc: any[], tour) => {
-    acc.push({
-        id: `${tour.id}-main`,
-        src: tour.image,
-        category: 'Tour',
-        title: tour.name,
-        size: acc.length % 3 === 0 ? 'large' : acc.length % 3 === 1 ? 'medium' : 'small'
-    });
+export const GalleryPageContent = ({ locale }: { locale: string }) => {
+    const t = useTranslations('GalleryPage');
+    const data = getSiteData(locale);
 
-    if (tour.gallery && tour.gallery.length > 0) {
-        tour.gallery.forEach((img, idx) => {
-            acc.push({
-                id: `${tour.id}-gal-${idx}`,
-                src: img,
-                category: 'Experience',
-                title: `${tour.name} View`,
-                size: (acc.length + idx) % 3 === 0 ? 'medium' : (acc.length + idx) % 3 === 1 ? 'small' : 'large'
-            });
+    // Dynamically generate gallery items from siteData tours
+    const allTourImages = data.tours.reduce((acc: any[], tour) => {
+        acc.push({
+            id: `${tour.id}-main`,
+            src: tour.image,
+            category: 'Tour',
+            title: tour.name,
+            size: acc.length % 3 === 0 ? 'large' : acc.length % 3 === 1 ? 'medium' : 'small'
         });
-    }
-    return acc;
-}, []);
 
-const galleryImages = allTourImages.slice(0, 24);
+        if (tour.gallery && tour.gallery.length > 0) {
+            tour.gallery.forEach((img, idx) => {
+                acc.push({
+                    id: `${tour.id}-gal-${idx}`,
+                    src: img,
+                    category: 'Experience',
+                    title: `${tour.name} View`,
+                    size: (acc.length + idx) % 3 === 0 ? 'medium' : (acc.length + idx) % 3 === 1 ? 'small' : 'large'
+                });
+            });
+        }
+        return acc;
+    }, []);
 
-export const GalleryPageContent = () => {
+    const galleryImages = allTourImages.slice(0, 24);
     const [selectedImage, setSelectedImage] = useState<typeof galleryImages[0] | null>(null);
 
     return (
@@ -58,13 +61,13 @@ export const GalleryPageContent = () => {
                             transition={{ duration: 1 }}
                         >
                             <span className="inline-block text-primary bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium mb-6">
-                                Visual Journey
+                                {t('tag')}
                             </span>
                             <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium text-white font-poppins mb-6 leading-[1.1]">
-                                Captured <span className="italic">Moments</span>
+                                {t('title')} <span className="italic">Moments</span>
                             </h1>
                             <p className="text-white/80 text-xl md:text-2xl max-w-2xl font-light leading-relaxed">
-                                Explore the vibrant colors, breathtaking landscapes, and authentic daily life of Morocco through our lens.
+                                {t('subtitle')}
                             </p>
                         </motion.div>
                     </div>

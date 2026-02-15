@@ -1,4 +1,4 @@
-import { siteData } from '@/data/siteData';
+import { getSiteData } from '@/data/getSiteData';
 import { HeroSearch } from '@/components/HeroSearch';
 import { ReviewsSlider } from '@/components/ReviewsSlider';
 import { AboutPreview } from '@/components/AboutPreview';
@@ -15,6 +15,7 @@ export default async function Home({
 }) {
   const { locale } = await params;
   const t = await import(`../../../messages/${locale}.json`);
+  const data = getSiteData(locale);
 
   return (
     <main className="flex flex-col min-h-screen bg-neutral-100">
@@ -31,7 +32,7 @@ export default async function Home({
       <WhyTravelWithUs dict={t.HomePage.WhyTravel} />
 
       {/* 5. Reviews - Google Style */}
-      <ReviewsSlider reviews={siteData.reviews.items} />
+      <ReviewsSlider reviews={data.reviews.items} />
 
       {/* 6. Gallery Preview - Traveler Stories */}
       <GalleryPreview locale={locale} />

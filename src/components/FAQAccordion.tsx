@@ -3,37 +3,19 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
-
-interface FAQItem {
-    question: string;
-    answer: string;
-}
-
-const faqData: FAQItem[] = [
-    {
-        question: "Can I change or cancel my trip after booking?",
-        answer: "Yes! We understand plans can change. You can easily modify or cancel your trip by contacting us directly via WhatsApp or email. Just make sure to check the flexible date options before confirming your booking."
-    },
-    {
-        question: "Does Horizon Tours offer group travel options?",
-        answer: "Absolutely! We offer both private tours for intimate experiences and group tours for those who want to meet fellow travelers. Our group sizes are kept small (max 12 people) to ensure quality and personalized attention."
-    },
-    {
-        question: "How do I get travel support during my trip?",
-        answer: "We provide 24/7 support throughout your journey. You'll have a dedicated WhatsApp line to reach our team anytime. Our local guides are also available to assist you during all activities and excursions."
-    },
-    {
-        question: "What's included in the tour price?",
-        answer: "Our tour prices typically include accommodation, private transportation, professional guides, and specified meals (usually half-board). Specific inclusions are detailed on each tour page. Flights, tips, and personal expenses are generally not included."
-    },
-    {
-        question: "What is the best time to visit Morocco?",
-        answer: "The best time to visit Morocco is during spring (March to May) or autumn (September to November) when temperatures are pleasant. Summer can be hot in the desert, while winter is ideal for the southern regions."
-    }
-];
+import { useTranslations } from 'next-intl';
 
 export const FAQAccordion: React.FC = () => {
+    const t = useTranslations('FAQ');
     const [openIndex, setOpenIndex] = useState<number>(0);
+
+    const faqData = [
+        { question: t('q1'), answer: t('a1') },
+        { question: t('q2'), answer: t('a2') },
+        { question: t('q3'), answer: t('a3') },
+        { question: t('q4'), answer: t('a4') },
+        { question: t('q5'), answer: t('a5') }
+    ];
 
     const toggleFAQ = (index: number) => {
         setOpenIndex(openIndex === index ? -1 : index);
@@ -51,10 +33,10 @@ export const FAQAccordion: React.FC = () => {
                     className="text-center mb-12"
                 >
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-dark font-poppins mb-4">
-                        Frequently Asked <span className="italic">Questions</span>
+                        {t('title')} <span className="italic">{t('titleItalic')}</span>
                     </h2>
                     <p className="text-neutral-500 max-w-xl mx-auto">
-                        Got questions before your next trip? We've got you covered — here's everything you need to know about traveling with Horizon Tours.
+                        {t('subtitle')}
                     </p>
                 </motion.div>
 

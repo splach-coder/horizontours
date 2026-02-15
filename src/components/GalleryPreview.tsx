@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 interface GalleryMoment {
     id: string;
@@ -67,6 +68,8 @@ interface GalleryPreviewProps {
 }
 
 export const GalleryPreview: React.FC<GalleryPreviewProps> = ({ locale }) => {
+    const t = useTranslations('GalleryPreview');
+
     return (
         <section className="py-12 bg-neutral-100 overflow-hidden">
             <div className="container mx-auto px-6 md:px-4">
@@ -79,11 +82,11 @@ export const GalleryPreview: React.FC<GalleryPreviewProps> = ({ locale }) => {
                     className="text-center mb-16"
                 >
                     <span className="text-neutral-500 text-sm mb-4 block">
-                        Real stories from real travelers
+                        {t('subtitle')}
                     </span>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-dark font-poppins leading-tight">
-                        Moments that made every journey<br />
-                        <span className="italic">unforgettable</span>
+                        {t('title')}<br />
+                        <span className="italic">{t('titleItalic')}</span>
                     </h2>
                 </motion.div>
             </div>
@@ -163,7 +166,7 @@ export const GalleryPreview: React.FC<GalleryPreviewProps> = ({ locale }) => {
                     href={`/${locale}/gallery`}
                     className="inline-flex items-center gap-2 bg-neutral-dark text-white px-8 py-3 rounded-full font-medium hover:bg-neutral-800 transition-colors shadow-lg"
                 >
-                    See more happiness
+                    {t('seeMore')}
                 </Link>
             </motion.div>
         </section>

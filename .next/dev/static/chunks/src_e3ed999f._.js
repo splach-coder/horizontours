@@ -31,7 +31,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 const HeroSearch = ({ lang })=>{
     _s();
-    const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])('HomePage');
+    const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])('HeroSearch');
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const containerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const datePickerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
@@ -88,9 +88,9 @@ const HeroSearch = ({ lang })=>{
     };
     // Format date for display
     const formatDate = (dateStr)=>{
-        if (!dateStr) return 'Pick a date';
+        if (!dateStr) return t('pickDate');
         const date = new Date(dateStr);
-        return date.toLocaleDateString('en-US', {
+        return date.toLocaleDateString(lang === 'fr' ? 'fr-FR' : 'en-US', {
             month: 'short',
             day: 'numeric',
             year: 'numeric'
@@ -165,15 +165,16 @@ const HeroSearch = ({ lang })=>{
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                 className: "text-4xl md:text-5xl lg:text-6xl font-medium text-white mb-4 font-poppins tracking-tight leading-[1.1]",
                                 children: [
-                                    "Find your next ",
+                                    t('title1'),
+                                    " ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/components/HeroSearch.tsx",
                                         lineNumber: 93,
-                                        columnNumber: 40
+                                        columnNumber: 39
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "text-white/90",
-                                        children: "unforgettable trip"
+                                        children: t('title2')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/HeroSearch.tsx",
                                         lineNumber: 94,
@@ -187,7 +188,7 @@ const HeroSearch = ({ lang })=>{
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-white/70 text-base md:text-lg font-light mb-10 max-w-2xl mx-auto",
-                                children: "Discover hidden gems, chill spots, and wild adventures, all in one place."
+                                children: t('subtitle')
                             }, void 0, false, {
                                 fileName: "[project]/src/components/HeroSearch.tsx",
                                 lineNumber: 96,
@@ -262,7 +263,7 @@ const HeroSearch = ({ lang })=>{
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                     className: "block text-neutral-dark text-xs font-medium mb-2",
-                                                    children: "Select your travel date"
+                                                    children: t('selectTravelDate')
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/HeroSearch.tsx",
                                                     lineNumber: 128,
@@ -320,7 +321,7 @@ const HeroSearch = ({ lang })=>{
                                                 children: [
                                                     travelers,
                                                     " ",
-                                                    travelers === 1 ? 'Traveler' : 'Travelers'
+                                                    travelers === 1 ? t('traveler') : t('travelers')
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/HeroSearch.tsx",
@@ -351,7 +352,7 @@ const HeroSearch = ({ lang })=>{
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                     className: "block text-neutral-dark text-xs font-medium mb-3",
-                                                    children: "Number of travelers"
+                                                    children: t('numberOfTravelers')
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/HeroSearch.tsx",
                                                     lineNumber: 161,
@@ -436,7 +437,7 @@ const HeroSearch = ({ lang })=>{
                                         columnNumber: 25
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        children: "Search"
+                                        children: t('search')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/HeroSearch.tsx",
                                         lineNumber: 191,
@@ -515,7 +516,7 @@ const HeroSearch = ({ lang })=>{
                                                 children: [
                                                     travelers,
                                                     " ",
-                                                    travelers === 1 ? 'Traveler' : 'Travelers'
+                                                    travelers === 1 ? t('traveler') : t('travelers')
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/HeroSearch.tsx",
@@ -588,7 +589,7 @@ const HeroSearch = ({ lang })=>{
                                         columnNumber: 25
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        children: "Find my trip"
+                                        children: t('findMyTrip')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/HeroSearch.tsx",
                                         lineNumber: 246,
@@ -1453,9 +1454,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 __turbopack_context__.s([
     "siteData",
-    ()=>siteData,
-    "siteDataFr",
-    ()=>siteDataFr
+    ()=>siteData
 ]);
 const siteData = {
     currency: "EUR",
@@ -1728,297 +1727,94 @@ const siteData = {
         scale: 5,
         items: [
             {
-                id: "rev-new-1",
-                targetType: "tour",
-                targetId: "circuit-5-days-south",
-                author: "Jean D.",
+                id: "rev-1",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Sarah Johnson",
                 rating: 5,
-                comment: "An unforgettable journey through the south. The desert night was magical.",
-                date: "2024-12-10"
+                comment: "An absolutely incredible experience! Our guide was knowledgeable and passionate about Moroccan culture. The desert tour exceeded all expectations. Highly recommend Trust Drivers for anyone visiting Morocco!",
+                date: "2 weeks ago"
             },
             {
-                id: "rev-new-2",
-                targetType: "tour",
-                targetId: "circuit-3-days-merzouga",
-                author: "Alice K.",
+                id: "rev-2",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Mohammed Al-Rashid",
                 rating: 5,
-                comment: "Perfect organization. Our driver was very helpful and kind.",
-                date: "2024-11-05"
-            }
-        ]
-    }
-};
-const siteDataFr = {
-    currency: "EUR",
-    location: "Marrakech",
-    tours: [
-        {
-            id: "circuit-5-days-south",
-            name: "Circuit 5 jours 4 nuit a l'extérieur - Le Grand Sud",
-            duration: "5_days",
-            image: "/images/merzouga/merzouga1.jpg",
-            gallery: [
-                "/images/ouarzazate/cristiano-pinto-knB5iCogf5Q-unsplash.jpg",
-                "/images/merzouga/merzouga2.jpg",
-                "/images/merzouga/merzouga3.jpg",
-                "/images/Zagoura/kristijan-nikodinovski-RfK4AQchykw-unsplash.jpg"
-            ],
-            pricing: [
-                {
-                    minPeople: 2,
-                    maxPeople: 5,
-                    pricePerPerson: 690
-                },
-                {
-                    minPeople: 6,
-                    maxPeople: 20,
-                    pricePerPerson: 495
-                }
-            ],
-            includes: [
-                "Transport en privé van climatisé avec chauffeur parle français ou anglais",
-                "Balade Dromadaire",
-                "Guide a ait ben hadou",
-                "Accommodation en Demi pension (Ouarzazate, Tinghir, Merzouga, Zagora)"
-            ],
-            excludes: [
-                "Déjeuner",
-                "Pourboires"
-            ],
-            itinerary: [
-                {
-                    day: 1,
-                    title: "Marrakech - Ouarzazate",
-                    description: "Départ de Marrakech le premier jour vers 8h, visite du kasbah ait ben hadou et studio de cinéma a Ouarzazate kasbah taourirt. Passez la nuit a Ouarzazate hôtel en Demi pension."
-                },
-                {
-                    day: 2,
-                    title: "Ouarzazate - Tinghir",
-                    description: "Départ de Ouarzazate vers 8h. Arrivé a boumalne dedes visite du gourge dades. Prends la route vers tinghir déjeuner et visite du gorge et palmeraie du draa. La nuit a tinghir en demi pension."
-                },
-                {
-                    day: 3,
-                    title: "Tinghir - Merzouga",
-                    description: "Le 3 ème jour prendre la route vers 8h30 Via arfoud. Arrivé a merzouga prend les Dromadaire nuit dans un camp."
-                },
-                {
-                    day: 4,
-                    title: "Merzouga - Zagora",
-                    description: "Le lendemain retour a l auberge en dos de dromadaire déjeuner et départ vers zagoura via alnif nkob tazarine. Passé la nuit a zagoura."
-                },
-                {
-                    day: 5,
-                    title: "Zagora - Marrakech",
-                    description: "Retour a Marrakech."
-                }
-            ]
-        },
-        {
-            id: "circuit-3-days-merzouga",
-            name: "Les trois jours Merzouga 2 nuit a l'extérieur",
-            duration: "3_days",
-            image: "/images/merzouga/merzouga4.jpg",
-            gallery: [
-                "/images/ouarzazate/abdou-faiz-mBo2EUfJ5sY-unsplash.jpg",
-                "/images/merzouga/merzouga5.jpg",
-                "/images/camel-riding/peter-thomas-nF8-ekoE0qw-unsplash.jpg"
-            ],
-            pricing: [
-                {
-                    minPeople: 2,
-                    maxPeople: 5,
-                    pricePerPerson: 380
-                },
-                {
-                    minPeople: 6,
-                    maxPeople: 20,
-                    pricePerPerson: 263
-                }
-            ],
-            includes: [
-                "Transport en privé van climatisé avec chauffeur",
-                "Balade Dromadaire",
-                "Guide a ait ben hadou",
-                "Accommodation"
-            ],
-            excludes: [
-                "Déjeuner",
-                "Pourboires"
-            ],
-            itinerary: [
-                {
-                    day: 1,
-                    title: "Marrakech - Boumalne Dades",
-                    description: "Départ de Marrakech via le col de tichka 2260 m. Déjeuner a ait ben hadou visite du kasbah avec un guide local. Après midi prend la route via Ouarzazate arrive a boumalne dades nuit dans un hôtel en demi pension."
-                },
-                {
-                    day: 2,
-                    title: "Boumalne Dades - Merzouga",
-                    description: "Visite du gorge dades. Arrivé a tinghir visite du gorge todgha. L après midi déjeuner pendant le chemin vers arfoud. Arrivé a merzouga prend le Dromadaire pour aller dormir dans un camp."
-                },
-                {
-                    day: 3,
-                    title: "Merzouga - Marrakech",
-                    description: "Retour en Dromadaire vers l auberge prendre le petit déjeuner. Et retour a Marrakech. Vers 20h."
-                }
-            ]
-        },
-        {
-            id: "circuit-8-days-imperial",
-            name: "Circuit désert et Villes impérials 8j 6 nuits",
-            duration: "8_days",
-            image: "/images/fes/hazy-momo-YSTtLgsvRa8-unsplash.jpg",
-            gallery: [
-                "/images/merzouga/merzouga1.jpg",
-                "/images/fes/mauro-lima-mPD9BJ_QGXw-unsplash.jpg",
-                "/images/rabat/niklas-VqouWpsuziE-unsplash.jpg",
-                "/images/casablanca/oussama-rahib-NNECQHl9bJc-unsplash.jpg",
-                "/images/marrakech/marrakech1.jpg"
-            ],
-            pricing: [
-                {
-                    minPeople: 2,
-                    maxPeople: 4,
-                    pricePerPerson: 1650
-                },
-                {
-                    minPeople: 5,
-                    maxPeople: 20,
-                    pricePerPerson: 1380
-                }
-            ],
-            includes: [
-                "Transport en privé van avec chauffeur",
-                "Guide locaux",
-                "Balade Dromadaire a merzouga"
-            ],
-            excludes: [
-                "Entrés de monuments",
-                "Déjeuner",
-                "Pourboires"
-            ],
-            itinerary: [
-                {
-                    day: 1,
-                    title: "Marrakech - Ouarzazate",
-                    description: "Départ de Marrakech vers 9h vers ait ben hadou via col de tichka 2260m. Visite du kasbah avec un guide Local, déjeuner et continue vers Ouarzazate nuit et hôtel en demi pension."
-                },
-                {
-                    day: 2,
-                    title: "Ouarzazate - Tinghir",
-                    description: "Ouarzazate vers la vallée du roses. Arrive au gorge dades visite et continue vers tinghir déjeuner et visite du gorge todgha et palmeraie du draa. Nuit a tinghir hôtel en demi pension."
-                },
-                {
-                    day: 3,
-                    title: "Tinghir - Merzouga",
-                    description: "Tinghir vers arfoud déjeuner pendant le chemin. Arrivé a merzouga après midi the de bienvenu et prends Dromadaire pour aller au bivouac nuit."
-                },
-                {
-                    day: 4,
-                    title: "Merzouga - Fes",
-                    description: "Merzouga Fes via midelt ifran. Nuit dans un hôtel en demi pension."
-                },
-                {
-                    day: 5,
-                    title: "Visite de Fes",
-                    description: "Visite de Fes toute la journée extérieur et fameuse médina avec un guide Local. Nuit dans un hôtel en demi pension."
-                },
-                {
-                    day: 6,
-                    title: "Fes - Rabat",
-                    description: "Fes Rabat. Visite de volubilis et moulay driss. Visite de Meknès avec un guide local. Déjeuner a Meknès. La nuit a rabat dans un hôtel en demi pension."
-                },
-                {
-                    day: 7,
-                    title: "Rabat - Marrakech",
-                    description: "Rabat Marrakech. Visite de rabat challat kasbah lodaya grandes avenues. Arrivé a casa déjeuner et visite de la mousque hassan 2 la corniche. Prend la route vers Marrakech nuit a Marrakech."
-                },
-                {
-                    day: 8,
-                    title: "Marrakech & Agafay",
-                    description: "Visite de Marrakech et dîner spectacle au désert d agafay. Retour vers 22h."
-                }
-            ]
-        }
-    ],
-    activities: {
-        timeSlots: [
-            {
-                id: "morning",
-                from: "09:00",
-                to: "12:30"
+                comment: "Professional service from start to finish. The driver was punctual, the vehicle was spotless, and the entire trip was seamless. Trust Drivers made our family vacation unforgettable!",
+                date: "1 month ago"
             },
             {
-                id: "afternoon",
-                from: "14:00",
-                to: "18:00"
-            }
-        ],
-        experiences: [
-            /* Same as EN */ {
-                id: "quad-agafay",
-                type: "quad",
-                location: "Agafay",
-                price: 50,
-                duration: "2_hours",
-                image: "/images/quad-biking/haris-khan-v40H7tLOZII-unsplash.jpg",
-                gallery: [
-                    "/images/quad-biking/devon-janse-van-rensburg-08HCHS7EULI-unsplash.jpg",
-                    "/images/quad-biking/mayar-zidan-LVNcykwlDEg-unsplash.jpg",
-                    "/images/quad-biking/nils-5RfEgsnxeHo-unsplash.jpg"
-                ]
+                id: "rev-3",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Emma Martinez",
+                rating: 5,
+                comment: "Best tour company in Marrakech! They customized our itinerary perfectly and showed us hidden gems we never would have found on our own. The Atlas Mountains tour was breathtaking!",
+                date: "3 weeks ago"
             },
             {
-                id: "camel-agafay",
-                type: "camel",
-                location: "Agafay",
-                price: 25,
-                duration: "1_hour",
-                image: "/images/camel-riding/oussama-rahib-f7F8URbIx08-unsplash.jpg",
-                gallery: [
-                    "/images/camel-riding/peter-thomas-PotqZeNaUZ4-unsplash.jpg",
-                    "/images/camel-riding/sheila-c-KuXu8rx_1-8-unsplash.jpg"
-                ]
-            }
-        ],
-        addons: [
-            {
-                id: "dinner",
-                name: "Dîner",
-                pricePerPerson: 25,
-                availableFrom: "15:00",
-                availableTo: "21:00"
-            }
-        ]
-    },
-    transport: [
-        {
-            id: "private",
-            name: "Transport privé",
-            image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070",
-            description: "Véhicule privé confortable avec chauffeur professionnel",
-            price: 50
-        },
-        {
-            id: "airport",
-            name: "Transfert aéroport",
-            image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074",
-            description: "Transferts aéroport fiables, service d'accueil",
-            price: 30
-        }
-    ],
-    packages: [],
-    reviews: {
-        scale: 5,
-        items: [
-            {
-                id: "rev-new-1",
-                targetType: "tour",
-                targetId: "circuit-5-days-south",
-                author: "Jean D.",
+                id: "rev-4",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "David Chen",
                 rating: 5,
-                comment: "Un voyage inoubliable à travers le sud. La nuit au désert était magique.",
-                date: "2024-12-10"
+                comment: "Exceptional service and attention to detail. Our driver spoke perfect English and shared fascinating stories about Morocco's history. The Sahara desert experience was a once-in-a-lifetime adventure!",
+                date: "1 week ago"
+            },
+            {
+                id: "rev-5",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Fatima Benali",
+                rating: 5,
+                comment: "I've used many tour services, but Trust Drivers stands out. They're reliable, professional, and truly care about creating memorable experiences. The coastal tour to Essaouira was magical!",
+                date: "2 months ago"
+            },
+            {
+                id: "rev-6",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "James Wilson",
+                rating: 5,
+                comment: "From booking to the end of our trip, everything was perfect. The guides were friendly and knowledgeable. We felt safe and well taken care of throughout our entire journey. Five stars!",
+                date: "3 weeks ago"
+            },
+            {
+                id: "rev-7",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Aisha Rahman",
+                rating: 5,
+                comment: "Trust Drivers provided an authentic Moroccan experience. They took us to local markets, traditional restaurants, and beautiful landscapes. Our family will treasure these memories forever!",
+                date: "1 month ago"
+            },
+            {
+                id: "rev-8",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Pierre Dubois",
+                rating: 5,
+                comment: "Magnifique! The professionalism and warmth of the Trust Drivers team made our honeymoon extraordinary. The private tour was worth every penny. We'll definitely be back!",
+                date: "2 weeks ago"
+            },
+            {
+                id: "rev-9",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Lisa Anderson",
+                rating: 5,
+                comment: "I was traveling solo and felt completely safe with Trust Drivers. They were respectful, accommodating, and went above and beyond to ensure I had an amazing experience. Highly recommended!",
+                date: "4 weeks ago"
+            },
+            {
+                id: "rev-10",
+                targetType: "general",
+                targetId: "trust-drivers",
+                author: "Omar Hassan",
+                rating: 5,
+                comment: "Outstanding service! The attention to detail, comfortable vehicles, and expert guides made this the best tour experience I've ever had. Trust Drivers truly lives up to their name!",
+                date: "1 week ago"
             }
         ]
     }
@@ -2042,6 +1838,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/clock.js [app-client] (ecmascript) <export default as Clock>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-client] (ecmascript) <export default as MapPin>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$siteData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/data/siteData.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-intl/dist/esm/development/react-client/index.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 'use client';
 ;
 ;
@@ -2050,12 +1849,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$siteData$2e$t
 ;
 ;
 const PopularDestinations = ({ locale, dict })=>{
+    _s();
+    const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])('PopularDestinations');
     const data = locale === 'fr' ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$siteData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["siteDataFr"] : __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$siteData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["siteData"];
+    // Only show 3 featured tours
     const featuredTours = [
         data.tours.find((t)=>t.id === 'circuit-5-days-south'),
         data.tours.find((t)=>t.id === 'circuit-3-days-merzouga'),
-        data.tours.find((t)=>t.id === 'circuit-8-days-imperial'),
-        data.tours.find((t)=>t.id === 'circuit-4-days-fes')
+        data.tours.find((t)=>t.id === 'circuit-8-days-imperial')
     ].filter(Boolean);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "py-12 bg-neutral-100",
@@ -2078,234 +1879,219 @@ const PopularDestinations = ({ locale, dict })=>{
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             className: "text-neutral-500 text-sm mb-3 block",
-                            children: dict?.subtitle || "Discover Morocco"
+                            children: t('subtitle')
                         }, void 0, false, {
                             fileName: "[project]/src/components/PopularDestinations.tsx",
-                            lineNumber: 30,
+                            lineNumber: 32,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-dark font-poppins leading-tight mb-4",
                             children: [
-                                "Popular ",
+                                t('title'),
+                                " ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "italic",
-                                    children: "Destinations"
+                                    children: t('titleItalic')
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/PopularDestinations.tsx",
-                                    lineNumber: 34,
-                                    columnNumber: 33
+                                    lineNumber: 36,
+                                    columnNumber: 38
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/PopularDestinations.tsx",
-                            lineNumber: 33,
+                            lineNumber: 35,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-neutral-500 max-w-xl mx-auto",
-                            children: "Handpicked experiences for unforgettable adventures across Morocco"
+                            children: t('description')
                         }, void 0, false, {
                             fileName: "[project]/src/components/PopularDestinations.tsx",
-                            lineNumber: 36,
+                            lineNumber: 38,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/PopularDestinations.tsx",
-                    lineNumber: 24,
+                    lineNumber: 26,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "relative -mx-6 md:mx-0",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex gap-5 overflow-x-auto pb-6 px-6 md:px-0 snap-x snap-mandatory scrollbar-hide",
-                            children: featuredTours.map((tour, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                    initial: {
-                                        opacity: 0,
-                                        x: 50
-                                    },
-                                    whileInView: {
-                                        opacity: 1,
-                                        x: 0
-                                    },
-                                    viewport: {
-                                        once: true
-                                    },
-                                    transition: {
-                                        delay: i * 0.1
-                                    },
-                                    className: "flex-shrink-0 w-[320px] md:w-[380px] snap-start",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: `/${locale}/tours/${tour.id}`,
-                                        className: "block group",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "relative h-[450px] md:h-[500px] rounded-3xl overflow-hidden",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                    src: tour.image,
-                                                    alt: tour.name,
-                                                    fill: true,
-                                                    className: "object-cover group-hover:scale-110 transition-transform duration-700"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                    lineNumber: 56,
-                                                    columnNumber: 41
-                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                    lineNumber: 64,
-                                                    columnNumber: 41
-                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "absolute top-5 left-5 flex items-center gap-2",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "bg-white/20 backdrop-blur-md text-white px-4 py-2 rounded-full text-xs font-medium flex items-center gap-1.5",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
-                                                                className: "w-3.5 h-3.5"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                                lineNumber: 69,
-                                                                columnNumber: 49
-                                                            }, ("TURBOPACK compile-time value", void 0)),
-                                                            tour.duration.replace('_', ' ')
-                                                        ]
-                                                    }, void 0, true, {
+                    className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10",
+                    children: featuredTours.map((tour, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                            initial: {
+                                opacity: 0,
+                                y: 30
+                            },
+                            whileInView: {
+                                opacity: 1,
+                                y: 0
+                            },
+                            viewport: {
+                                once: true
+                            },
+                            transition: {
+                                delay: i * 0.1,
+                                duration: 0.5
+                            },
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: `/${locale}/tours/${tour.id}`,
+                                className: "block group",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "relative h-[450px] md:h-[500px] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            src: tour.image,
+                                            alt: tour.name,
+                                            fill: true,
+                                            className: "object-cover group-hover:scale-110 transition-transform duration-700"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/PopularDestinations.tsx",
+                                            lineNumber: 56,
+                                            columnNumber: 37
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/PopularDestinations.tsx",
+                                            lineNumber: 64,
+                                            columnNumber: 37
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "absolute top-5 left-5 flex items-center gap-2",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "bg-white/20 backdrop-blur-md text-white px-4 py-2 rounded-full text-xs font-medium flex items-center gap-1.5",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
+                                                        className: "w-3.5 h-3.5"
+                                                    }, void 0, false, {
                                                         fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                        lineNumber: 68,
+                                                        lineNumber: 69,
                                                         columnNumber: 45
-                                                    }, ("TURBOPACK compile-time value", void 0))
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                    lineNumber: 67,
-                                                    columnNumber: 41
-                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    tour.duration.replace('_', ' ')
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/PopularDestinations.tsx",
+                                                lineNumber: 68,
+                                                columnNumber: 41
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/PopularDestinations.tsx",
+                                            lineNumber: 67,
+                                            columnNumber: 37
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "absolute bottom-0 left-0 right-0 p-6",
+                                            children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "absolute bottom-0 left-0 right-0 p-6",
+                                                    className: "flex items-center gap-1.5 text-white/70 text-sm mb-2",
                                                     children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "flex items-center gap-1.5 text-white/70 text-sm mb-2",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
-                                                                    className: "w-3.5 h-3.5"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                                    lineNumber: 78,
-                                                                    columnNumber: 49
-                                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    children: "Morocco"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                                    lineNumber: 79,
-                                                                    columnNumber: 49
-                                                                }, ("TURBOPACK compile-time value", void 0))
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                            lineNumber: 77,
-                                                            columnNumber: 45
-                                                        }, ("TURBOPACK compile-time value", void 0)),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                            className: "text-xl md:text-2xl font-medium text-white font-poppins mb-4 leading-tight",
-                                                            children: tour.name
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
+                                                            className: "w-3.5 h-3.5"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                            lineNumber: 83,
+                                                            lineNumber: 78,
                                                             columnNumber: 45
                                                         }, ("TURBOPACK compile-time value", void 0)),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "flex items-center justify-between",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "text-white/60 text-xs block",
-                                                                            children: "From"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                                            lineNumber: 90,
-                                                                            columnNumber: 53
-                                                                        }, ("TURBOPACK compile-time value", void 0)),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "text-white text-2xl font-bold",
-                                                                            children: [
-                                                                                "€",
-                                                                                tour.price
-                                                                            ]
-                                                                        }, void 0, true, {
-                                                                            fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                                            lineNumber: 91,
-                                                                            columnNumber: 53
-                                                                        }, ("TURBOPACK compile-time value", void 0))
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                                    lineNumber: 89,
-                                                                    columnNumber: 49
-                                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "w-12 h-12 rounded-full bg-white flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300",
-                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
-                                                                        className: "w-5 h-5 text-neutral-dark group-hover:text-white transition-colors"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                                        lineNumber: 94,
-                                                                        columnNumber: 53
-                                                                    }, ("TURBOPACK compile-time value", void 0))
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                                    lineNumber: 93,
-                                                                    columnNumber: 49
-                                                                }, ("TURBOPACK compile-time value", void 0))
-                                                            ]
-                                                        }, void 0, true, {
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            children: t('morocco')
+                                                        }, void 0, false, {
                                                             fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                            lineNumber: 88,
+                                                            lineNumber: 79,
                                                             columnNumber: 45
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                    lineNumber: 75,
+                                                    lineNumber: 77,
+                                                    columnNumber: 41
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                    className: "text-xl md:text-2xl font-medium text-white font-poppins mb-4 leading-tight",
+                                                    children: tour.name
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/PopularDestinations.tsx",
+                                                    lineNumber: 83,
+                                                    columnNumber: 41
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex items-center justify-between",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "text-white/60 text-xs block",
+                                                                    children: t('from')
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/PopularDestinations.tsx",
+                                                                    lineNumber: 90,
+                                                                    columnNumber: 49
+                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "text-white text-2xl font-bold",
+                                                                    children: [
+                                                                        "€",
+                                                                        tour.price
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/PopularDestinations.tsx",
+                                                                    lineNumber: 91,
+                                                                    columnNumber: 49
+                                                                }, ("TURBOPACK compile-time value", void 0))
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/PopularDestinations.tsx",
+                                                            lineNumber: 89,
+                                                            columnNumber: 45
+                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "w-12 h-12 rounded-full bg-white flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                                                                className: "w-5 h-5 text-neutral-dark group-hover:text-white transition-colors"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/PopularDestinations.tsx",
+                                                                lineNumber: 94,
+                                                                columnNumber: 49
+                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/PopularDestinations.tsx",
+                                                            lineNumber: 93,
+                                                            columnNumber: 45
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/PopularDestinations.tsx",
+                                                    lineNumber: 88,
                                                     columnNumber: 41
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/PopularDestinations.tsx",
-                                            lineNumber: 54,
+                                            lineNumber: 75,
                                             columnNumber: 37
                                         }, ("TURBOPACK compile-time value", void 0))
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/PopularDestinations.tsx",
-                                        lineNumber: 53,
-                                        columnNumber: 33
-                                    }, ("TURBOPACK compile-time value", void 0))
-                                }, tour.id, false, {
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/src/components/PopularDestinations.tsx",
-                                    lineNumber: 45,
-                                    columnNumber: 29
-                                }, ("TURBOPACK compile-time value", void 0)))
-                        }, void 0, false, {
+                                    lineNumber: 54,
+                                    columnNumber: 33
+                                }, ("TURBOPACK compile-time value", void 0))
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/PopularDestinations.tsx",
+                                lineNumber: 53,
+                                columnNumber: 29
+                            }, ("TURBOPACK compile-time value", void 0))
+                        }, tour.id, false, {
                             fileName: "[project]/src/components/PopularDestinations.tsx",
-                            lineNumber: 43,
-                            columnNumber: 21
-                        }, ("TURBOPACK compile-time value", void 0)),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "absolute right-0 top-0 bottom-6 w-20 bg-gradient-to-l from-neutral-100 to-transparent pointer-events-none hidden md:block"
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/PopularDestinations.tsx",
-                            lineNumber: 105,
-                            columnNumber: 21
-                        }, ("TURBOPACK compile-time value", void 0))
-                    ]
-                }, void 0, true, {
+                            lineNumber: 46,
+                            columnNumber: 25
+                        }, ("TURBOPACK compile-time value", void 0)))
+                }, void 0, false, {
                     fileName: "[project]/src/components/PopularDestinations.tsx",
-                    lineNumber: 42,
+                    lineNumber: 44,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -2323,37 +2109,42 @@ const PopularDestinations = ({ locale, dict })=>{
                         href: `/${locale}/tours`,
                         className: "inline-flex items-center gap-2 bg-neutral-dark text-white px-8 py-4 rounded-full font-medium hover:bg-neutral-800 transition-colors group",
                         children: [
-                            "Explore All Tours",
+                            t('exploreAllTours'),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                 className: "w-4 h-4 group-hover:translate-x-1 transition-transform"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/PopularDestinations.tsx",
-                                lineNumber: 120,
+                                lineNumber: 116,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/PopularDestinations.tsx",
-                        lineNumber: 115,
+                        lineNumber: 111,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/src/components/PopularDestinations.tsx",
-                    lineNumber: 109,
+                    lineNumber: 105,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/PopularDestinations.tsx",
-            lineNumber: 21,
+            lineNumber: 23,
             columnNumber: 13
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/components/PopularDestinations.tsx",
-        lineNumber: 20,
+        lineNumber: 22,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
+_s(PopularDestinations, "h6+q2O3NJKPY5uL0BIJGLIanww8=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"]
+    ];
+});
 _c = PopularDestinations;
 var _c;
 __turbopack_context__.k.register(_c, "PopularDestinations");
@@ -2687,6 +2478,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-intl/dist/esm/development/react-client/index.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 'use client';
 ;
 ;
@@ -2757,6 +2551,8 @@ const tapeRotations = [
     2
 ];
 const GalleryPreview = ({ locale })=>{
+    _s();
+    const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])('GalleryPreview');
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "py-12 bg-neutral-100 overflow-hidden",
         children: [
@@ -2778,44 +2574,44 @@ const GalleryPreview = ({ locale })=>{
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             className: "text-neutral-500 text-sm mb-4 block",
-                            children: "Real stories from real travelers"
+                            children: t('subtitle')
                         }, void 0, false, {
                             fileName: "[project]/src/components/GalleryPreview.tsx",
-                            lineNumber: 81,
+                            lineNumber: 84,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-dark font-poppins leading-tight",
                             children: [
-                                "Moments that made every journey",
+                                t('title'),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/components/GalleryPreview.tsx",
-                                    lineNumber: 85,
-                                    columnNumber: 56
+                                    lineNumber: 88,
+                                    columnNumber: 37
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "italic",
-                                    children: "unforgettable"
+                                    children: t('titleItalic')
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/GalleryPreview.tsx",
-                                    lineNumber: 86,
+                                    lineNumber: 89,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/GalleryPreview.tsx",
-                            lineNumber: 84,
+                            lineNumber: 87,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/GalleryPreview.tsx",
-                    lineNumber: 75,
+                    lineNumber: 78,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/GalleryPreview.tsx",
-                lineNumber: 72,
+                lineNumber: 75,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2872,27 +2668,27 @@ const GalleryPreview = ({ locale })=>{
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/GalleryPreview.tsx",
-                                                    lineNumber: 120,
+                                                    lineNumber: 123,
                                                     columnNumber: 37
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "absolute inset-0 bg-gradient-to-br from-amber-100/10 via-transparent to-black/10"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/GalleryPreview.tsx",
-                                                    lineNumber: 130,
+                                                    lineNumber: 133,
                                                     columnNumber: 37
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-orange-200/20 to-transparent"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/GalleryPreview.tsx",
-                                                    lineNumber: 132,
+                                                    lineNumber: 135,
                                                     columnNumber: 37
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/GalleryPreview.tsx",
-                                            lineNumber: 119,
+                                            lineNumber: 122,
                                             columnNumber: 33
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2905,18 +2701,18 @@ const GalleryPreview = ({ locale })=>{
                                                 children: moment.name
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/GalleryPreview.tsx",
-                                                lineNumber: 137,
+                                                lineNumber: 140,
                                                 columnNumber: 37
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/GalleryPreview.tsx",
-                                            lineNumber: 136,
+                                            lineNumber: 139,
                                             columnNumber: 33
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/GalleryPreview.tsx",
-                                    lineNumber: 113,
+                                    lineNumber: 116,
                                     columnNumber: 29
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2926,23 +2722,23 @@ const GalleryPreview = ({ locale })=>{
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/GalleryPreview.tsx",
-                                    lineNumber: 145,
+                                    lineNumber: 148,
                                     columnNumber: 29
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, moment.id, true, {
                             fileName: "[project]/src/components/GalleryPreview.tsx",
-                            lineNumber: 95,
+                            lineNumber: 98,
                             columnNumber: 25
                         }, ("TURBOPACK compile-time value", void 0)))
                 }, void 0, false, {
                     fileName: "[project]/src/components/GalleryPreview.tsx",
-                    lineNumber: 93,
+                    lineNumber: 96,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/GalleryPreview.tsx",
-                lineNumber: 92,
+                lineNumber: 95,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -2961,24 +2757,29 @@ const GalleryPreview = ({ locale })=>{
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     href: `/${locale}/gallery`,
                     className: "inline-flex items-center gap-2 bg-neutral-dark text-white px-8 py-3 rounded-full font-medium hover:bg-neutral-800 transition-colors shadow-lg",
-                    children: "See more happiness"
+                    children: t('seeMore')
                 }, void 0, false, {
                     fileName: "[project]/src/components/GalleryPreview.tsx",
-                    lineNumber: 162,
+                    lineNumber: 165,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/GalleryPreview.tsx",
-                lineNumber: 156,
+                lineNumber: 159,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/GalleryPreview.tsx",
-        lineNumber: 71,
+        lineNumber: 74,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
+_s(GalleryPreview, "h6+q2O3NJKPY5uL0BIJGLIanww8=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"]
+    ];
+});
 _c = GalleryPreview;
 var _c;
 __turbopack_context__.k.register(_c, "GalleryPreview");
@@ -2998,37 +2799,40 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-down.js [app-client] (ecmascript) <export default as ChevronDown>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-intl/dist/esm/development/react-client/index.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
 ;
 ;
 ;
-const faqData = [
-    {
-        question: "Can I change or cancel my trip after booking?",
-        answer: "Yes! We understand plans can change. You can easily modify or cancel your trip by contacting us directly via WhatsApp or email. Just make sure to check the flexible date options before confirming your booking."
-    },
-    {
-        question: "Does Horizon Tours offer group travel options?",
-        answer: "Absolutely! We offer both private tours for intimate experiences and group tours for those who want to meet fellow travelers. Our group sizes are kept small (max 12 people) to ensure quality and personalized attention."
-    },
-    {
-        question: "How do I get travel support during my trip?",
-        answer: "We provide 24/7 support throughout your journey. You'll have a dedicated WhatsApp line to reach our team anytime. Our local guides are also available to assist you during all activities and excursions."
-    },
-    {
-        question: "What's included in the tour price?",
-        answer: "Our tour prices typically include accommodation, private transportation, professional guides, and specified meals (usually half-board). Specific inclusions are detailed on each tour page. Flights, tips, and personal expenses are generally not included."
-    },
-    {
-        question: "What is the best time to visit Morocco?",
-        answer: "The best time to visit Morocco is during spring (March to May) or autumn (September to November) when temperatures are pleasant. Summer can be hot in the desert, while winter is ideal for the southern regions."
-    }
-];
+;
 const FAQAccordion = ()=>{
     _s();
+    const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])('FAQ');
     const [openIndex, setOpenIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
+    const faqData = [
+        {
+            question: t('q1'),
+            answer: t('a1')
+        },
+        {
+            question: t('q2'),
+            answer: t('a2')
+        },
+        {
+            question: t('q3'),
+            answer: t('a3')
+        },
+        {
+            question: t('q4'),
+            answer: t('a4')
+        },
+        {
+            question: t('q5'),
+            answer: t('a5')
+        }
+    ];
     const toggleFAQ = (index)=>{
         setOpenIndex(openIndex === index ? -1 : index);
     };
@@ -3054,33 +2858,34 @@ const FAQAccordion = ()=>{
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-dark font-poppins mb-4",
                             children: [
-                                "Frequently Asked ",
+                                t('title'),
+                                " ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "italic",
-                                    children: "Questions"
+                                    children: t('titleItalic')
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/FAQAccordion.tsx",
-                                    lineNumber: 54,
-                                    columnNumber: 42
+                                    lineNumber: 36,
+                                    columnNumber: 38
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/FAQAccordion.tsx",
-                            lineNumber: 53,
+                            lineNumber: 35,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-neutral-500 max-w-xl mx-auto",
-                            children: "Got questions before your next trip? We've got you covered — here's everything you need to know about traveling with Horizon Tours."
+                            children: t('subtitle')
                         }, void 0, false, {
                             fileName: "[project]/src/components/FAQAccordion.tsx",
-                            lineNumber: 56,
+                            lineNumber: 38,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/FAQAccordion.tsx",
-                    lineNumber: 47,
+                    lineNumber: 29,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3112,7 +2917,7 @@ const FAQAccordion = ()=>{
                                                 children: item.question
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/FAQAccordion.tsx",
-                                                lineNumber: 80,
+                                                lineNumber: 62,
                                                 columnNumber: 37
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3121,18 +2926,18 @@ const FAQAccordion = ()=>{
                                                     className: "w-4 h-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/FAQAccordion.tsx",
-                                                    lineNumber: 87,
+                                                    lineNumber: 69,
                                                     columnNumber: 41
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/FAQAccordion.tsx",
-                                                lineNumber: 83,
+                                                lineNumber: 65,
                                                 columnNumber: 37
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/FAQAccordion.tsx",
-                                        lineNumber: 76,
+                                        lineNumber: 58,
                                         columnNumber: 33
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -3160,53 +2965,57 @@ const FAQAccordion = ()=>{
                                                     children: item.answer
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/FAQAccordion.tsx",
-                                                    lineNumber: 101,
+                                                    lineNumber: 83,
                                                     columnNumber: 49
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/FAQAccordion.tsx",
-                                                lineNumber: 100,
+                                                lineNumber: 82,
                                                 columnNumber: 45
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/FAQAccordion.tsx",
-                                            lineNumber: 94,
+                                            lineNumber: 76,
                                             columnNumber: 41
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/FAQAccordion.tsx",
-                                        lineNumber: 92,
+                                        lineNumber: 74,
                                         columnNumber: 33
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/FAQAccordion.tsx",
-                                lineNumber: 71,
+                                lineNumber: 53,
                                 columnNumber: 29
                             }, ("TURBOPACK compile-time value", void 0))
                         }, index, false, {
                             fileName: "[project]/src/components/FAQAccordion.tsx",
-                            lineNumber: 64,
+                            lineNumber: 46,
                             columnNumber: 25
                         }, ("TURBOPACK compile-time value", void 0)))
                 }, void 0, false, {
                     fileName: "[project]/src/components/FAQAccordion.tsx",
-                    lineNumber: 62,
+                    lineNumber: 44,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/FAQAccordion.tsx",
-            lineNumber: 44,
+            lineNumber: 26,
             columnNumber: 13
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/components/FAQAccordion.tsx",
-        lineNumber: 43,
+        lineNumber: 25,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
-_s(FAQAccordion, "6UZ+mnQ9sKC06YXeyhrfGXQCT10=");
+_s(FAQAccordion, "EQIMnidTQSJOUilf77McBuizXzg=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"]
+    ];
+});
 _c = FAQAccordion;
 var _c;
 __turbopack_context__.k.register(_c, "FAQAccordion");
@@ -3227,12 +3036,19 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript) <export default as ArrowRight>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/phone.js [app-client] (ecmascript) <export default as Phone>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mail.js [app-client] (ecmascript) <export default as Mail>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-intl/dist/esm/development/react-client/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$siteInfo$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/data/siteInfo.ts [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 'use client';
 ;
 ;
 ;
 ;
+;
 const CTASection = ({ locale, dict })=>{
+    _s();
+    const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])('CTASection');
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "py-12 bg-neutral-100",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3264,20 +3080,20 @@ const CTASection = ({ locale, dict })=>{
                                 className: "absolute top-0 right-0 w-96 h-96 bg-primary rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/CTASection.tsx",
-                                lineNumber: 23,
+                                lineNumber: 27,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "absolute bottom-0 left-0 w-96 h-96 bg-primary/50 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/CTASection.tsx",
-                                lineNumber: 24,
+                                lineNumber: 28,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/CTASection.tsx",
-                        lineNumber: 22,
+                        lineNumber: 26,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3288,42 +3104,44 @@ const CTASection = ({ locale, dict })=>{
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "text-primary text-sm font-medium uppercase tracking-widest mb-4",
-                                        children: "Ready to explore?"
+                                        children: t('readyToExplore')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/CTASection.tsx",
-                                        lineNumber: 32,
+                                        lineNumber: 36,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                         className: "text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-dark font-poppins mb-6 leading-tight",
                                         children: [
-                                            "Let's plan your ",
+                                            t('heading1'),
+                                            " ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                 fileName: "[project]/src/components/CTASection.tsx",
-                                                lineNumber: 36,
+                                                lineNumber: 40,
                                                 columnNumber: 49
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-primary",
-                                                children: "dream trip"
+                                                children: t('heading2')
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/CTASection.tsx",
-                                                lineNumber: 37,
+                                                lineNumber: 41,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0)),
-                                            " together"
+                                            " ",
+                                            t('heading2Highlight')
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/CTASection.tsx",
-                                        lineNumber: 35,
+                                        lineNumber: 39,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-neutral-600 text-lg mb-8 max-w-md leading-relaxed",
-                                        children: dict.text
+                                        children: t('description')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/CTASection.tsx",
-                                        lineNumber: 39,
+                                        lineNumber: 43,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3333,46 +3151,46 @@ const CTASection = ({ locale, dict })=>{
                                                 href: `/${locale}/contact`,
                                                 className: "inline-flex items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-medium hover:bg-primary-dark transition-colors group",
                                                 children: [
-                                                    dict.button,
+                                                    t('bookYourTrip'),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                                         className: "w-5 h-5 group-hover:translate-x-1 transition-transform"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/CTASection.tsx",
-                                                        lineNumber: 50,
+                                                        lineNumber: 54,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/CTASection.tsx",
-                                                lineNumber: 45,
+                                                lineNumber: 49,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                 href: `/${locale}/tours`,
                                                 className: "inline-flex items-center justify-center gap-2 bg-neutral-dark text-white px-8 py-4 rounded-full font-medium hover:bg-neutral-800 transition-colors",
-                                                children: "Browse Tours"
+                                                children: t('browseTours')
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/CTASection.tsx",
-                                                lineNumber: 52,
+                                                lineNumber: 56,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/CTASection.tsx",
-                                        lineNumber: 44,
+                                        lineNumber: 48,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/CTASection.tsx",
-                                lineNumber: 31,
+                                lineNumber: 35,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex flex-col justify-center gap-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        href: "https://wa.me/212600000000",
+                                        href: `https://wa.me/${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$siteInfo$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["siteInfo"].contact.whatsapp.replace(/\+/g, '')}`,
                                         target: "_blank",
                                         rel: "noopener noreferrer",
                                         className: "group bg-white hover:bg-white/80 border border-neutral-200 rounded-2xl p-6 transition-all duration-300 flex items-center gap-4 shadow-sm hover:shadow-md",
@@ -3383,53 +3201,53 @@ const CTASection = ({ locale, dict })=>{
                                                     className: "w-6 h-6 text-green-600"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/CTASection.tsx",
-                                                    lineNumber: 71,
+                                                    lineNumber: 75,
                                                     columnNumber: 37
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/CTASection.tsx",
-                                                lineNumber: 70,
+                                                lineNumber: 74,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "block text-neutral-dark font-medium text-lg",
-                                                        children: "WhatsApp Us"
+                                                        children: t('whatsappUs')
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/CTASection.tsx",
-                                                        lineNumber: 74,
+                                                        lineNumber: 78,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "text-neutral-500 text-sm",
-                                                        children: "+212 600 000 000"
+                                                        children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$siteInfo$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["siteInfo"].contact.whatsapp
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/CTASection.tsx",
-                                                        lineNumber: 75,
+                                                        lineNumber: 79,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/CTASection.tsx",
-                                                lineNumber: 73,
+                                                lineNumber: 77,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                                 className: "w-5 h-5 text-neutral-400 ml-auto group-hover:text-primary group-hover:translate-x-1 transition-all"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/CTASection.tsx",
-                                                lineNumber: 77,
+                                                lineNumber: 81,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/CTASection.tsx",
-                                        lineNumber: 64,
+                                        lineNumber: 68,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        href: "mailto:contact@horizontours.com",
+                                        href: `mailto:${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$siteInfo$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["siteInfo"].contact.email}`,
                                         className: "group bg-white hover:bg-white/80 border border-neutral-200 rounded-2xl p-6 transition-all duration-300 flex items-center gap-4 shadow-sm hover:shadow-md",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3438,49 +3256,49 @@ const CTASection = ({ locale, dict })=>{
                                                     className: "w-6 h-6 text-primary"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/CTASection.tsx",
-                                                    lineNumber: 86,
+                                                    lineNumber: 90,
                                                     columnNumber: 37
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/CTASection.tsx",
-                                                lineNumber: 85,
+                                                lineNumber: 89,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "block text-neutral-dark font-medium text-lg",
-                                                        children: "Email Us"
+                                                        children: t('emailUs')
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/CTASection.tsx",
-                                                        lineNumber: 89,
+                                                        lineNumber: 93,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "text-neutral-500 text-sm",
-                                                        children: "contact@horizontours.com"
+                                                        children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$siteInfo$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["siteInfo"].contact.email
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/CTASection.tsx",
-                                                        lineNumber: 90,
+                                                        lineNumber: 94,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/CTASection.tsx",
-                                                lineNumber: 88,
+                                                lineNumber: 92,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                                 className: "w-5 h-5 text-neutral-400 ml-auto group-hover:text-primary group-hover:translate-x-1 transition-all"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/CTASection.tsx",
-                                                lineNumber: 92,
+                                                lineNumber: 96,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/CTASection.tsx",
-                                        lineNumber: 81,
+                                        lineNumber: 85,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3494,37 +3312,12 @@ const CTASection = ({ locale, dict })=>{
                                                         children: "500+"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/CTASection.tsx",
-                                                        lineNumber: 98,
-                                                        columnNumber: 37
-                                                    }, ("TURBOPACK compile-time value", void 0)),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-neutral-500 text-xs uppercase tracking-wider",
-                                                        children: "Travelers"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/CTASection.tsx",
-                                                        lineNumber: 99,
-                                                        columnNumber: 37
-                                                    }, ("TURBOPACK compile-time value", void 0))
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/components/CTASection.tsx",
-                                                lineNumber: 97,
-                                                columnNumber: 33
-                                            }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-center",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "block text-2xl md:text-3xl font-bold text-neutral-dark",
-                                                        children: "10+"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/CTASection.tsx",
                                                         lineNumber: 102,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "text-neutral-500 text-xs uppercase tracking-wider",
-                                                        children: "Years"
+                                                        children: t('travelers')
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/CTASection.tsx",
                                                         lineNumber: 103,
@@ -3541,7 +3334,7 @@ const CTASection = ({ locale, dict })=>{
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "block text-2xl md:text-3xl font-bold text-neutral-dark",
-                                                        children: "4.9"
+                                                        children: "10+"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/CTASection.tsx",
                                                         lineNumber: 106,
@@ -3549,7 +3342,7 @@ const CTASection = ({ locale, dict })=>{
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "text-neutral-500 text-xs uppercase tracking-wider",
-                                                        children: "Rating"
+                                                        children: t('years')
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/CTASection.tsx",
                                                         lineNumber: 107,
@@ -3560,42 +3353,72 @@ const CTASection = ({ locale, dict })=>{
                                                 fileName: "[project]/src/components/CTASection.tsx",
                                                 lineNumber: 105,
                                                 columnNumber: 33
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "text-center",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "block text-2xl md:text-3xl font-bold text-neutral-dark",
+                                                        children: "4.9"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/CTASection.tsx",
+                                                        lineNumber: 110,
+                                                        columnNumber: 37
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "text-neutral-500 text-xs uppercase tracking-wider",
+                                                        children: t('rating')
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/CTASection.tsx",
+                                                        lineNumber: 111,
+                                                        columnNumber: 37
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/CTASection.tsx",
+                                                lineNumber: 109,
+                                                columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/CTASection.tsx",
-                                        lineNumber: 96,
+                                        lineNumber: 100,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/CTASection.tsx",
-                                lineNumber: 62,
+                                lineNumber: 66,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/CTASection.tsx",
-                        lineNumber: 28,
+                        lineNumber: 32,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/CTASection.tsx",
-                lineNumber: 13,
+                lineNumber: 17,
                 columnNumber: 17
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/src/components/CTASection.tsx",
-            lineNumber: 12,
+            lineNumber: 16,
             columnNumber: 13
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/components/CTASection.tsx",
-        lineNumber: 11,
+        lineNumber: 15,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
+_s(CTASection, "h6+q2O3NJKPY5uL0BIJGLIanww8=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"]
+    ];
+});
 _c = CTASection;
 var _c;
 __turbopack_context__.k.register(_c, "CTASection");

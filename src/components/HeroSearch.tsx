@@ -12,7 +12,7 @@ interface HeroSearchProps {
 }
 
 export const HeroSearch: React.FC<HeroSearchProps> = ({ lang }) => {
-    const t = useTranslations('HomePage');
+    const t = useTranslations('HeroSearch');
     const router = useRouter();
     const containerRef = useRef(null);
     const datePickerRef = useRef<HTMLDivElement>(null);
@@ -54,9 +54,9 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({ lang }) => {
 
     // Format date for display
     const formatDate = (dateStr: string) => {
-        if (!dateStr) return 'Pick a date';
+        if (!dateStr) return t('pickDate');
         const date = new Date(dateStr);
-        return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        return date.toLocaleDateString(lang === 'fr' ? 'fr-FR' : 'en-US', { month: 'short', day: 'numeric', year: 'numeric' });
     };
 
     const toggleDatePicker = () => {
@@ -90,11 +90,11 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({ lang }) => {
                     className="max-w-5xl mx-auto"
                 >
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-white mb-4 font-poppins tracking-tight leading-[1.1]">
-                        Find your next <br />
-                        <span className="text-white/90">unforgettable trip</span>
+                        {t('title1')} <br />
+                        <span className="text-white/90">{t('title2')}</span>
                     </h1>
                     <p className="text-white/70 text-base md:text-lg font-light mb-10 max-w-2xl mx-auto">
-                        Discover hidden gems, chill spots, and wild adventures, all in one place.
+                        {t('subtitle')}
                     </p>
                 </motion.div>
 
@@ -125,7 +125,7 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({ lang }) => {
                                     exit={{ opacity: 0, y: 10 }}
                                     className="absolute top-full left-0 mt-3 bg-white rounded-2xl shadow-2xl p-4 z-50 min-w-[240px]"
                                 >
-                                    <label className="block text-neutral-dark text-xs font-medium mb-2">Select your travel date</label>
+                                    <label className="block text-neutral-dark text-xs font-medium mb-2">{t('selectTravelDate')}</label>
                                     <input
                                         type="date"
                                         value={selectedDate}
@@ -146,7 +146,7 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({ lang }) => {
                             className="w-full flex items-center gap-2 cursor-pointer group"
                         >
                             <Users className="w-4 h-4 text-white/70 group-hover:text-white transition-colors" />
-                            <span className="text-white text-xs font-medium">{travelers} {travelers === 1 ? 'Traveler' : 'Travelers'}</span>
+                            <span className="text-white text-xs font-medium">{travelers} {travelers === 1 ? t('traveler') : t('travelers')}</span>
                         </button>
 
                         {/* Travelers Dropdown */}
@@ -158,7 +158,7 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({ lang }) => {
                                     exit={{ opacity: 0, y: 10 }}
                                     className="absolute top-full left-0 mt-3 bg-white rounded-2xl shadow-2xl p-4 z-50 min-w-[200px]"
                                 >
-                                    <label className="block text-neutral-dark text-xs font-medium mb-3">Number of travelers</label>
+                                    <label className="block text-neutral-dark text-xs font-medium mb-3">{t('numberOfTravelers')}</label>
                                     <div className="flex items-center justify-between gap-4">
                                         <button
                                             type="button"
@@ -188,7 +188,7 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({ lang }) => {
                         className="bg-white text-neutral-dark hover:bg-neutral-100 transition-colors px-6 py-2.5 rounded-full font-semibold text-sm flex items-center gap-2 shadow-md"
                     >
                         <Search className="w-4 h-4" />
-                        <span>Search</span>
+                        <span>{t('search')}</span>
                     </button>
                 </motion.div>
 
@@ -216,7 +216,7 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({ lang }) => {
                     <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-3 flex items-center justify-between">
                         <div className="flex items-center gap-3">
                             <Users className="w-5 h-5 text-white/70" />
-                            <span className="text-white text-sm">{travelers} {travelers === 1 ? 'Traveler' : 'Travelers'}</span>
+                            <span className="text-white text-sm">{travelers} {travelers === 1 ? t('traveler') : t('travelers')}</span>
                         </div>
                         <div className="flex items-center gap-2">
                             <button
@@ -243,7 +243,7 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({ lang }) => {
                         className="w-full bg-white text-neutral-dark hover:bg-neutral-100 transition-colors px-8 py-4 rounded-full font-bold flex items-center justify-center gap-2 shadow-lg"
                     >
                         <Search className="w-5 h-5" />
-                        <span>Find my trip</span>
+                        <span>{t('findMyTrip')}</span>
                     </button>
                 </motion.div>
 

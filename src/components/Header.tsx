@@ -89,7 +89,7 @@ export default function Header() {
                     <Link href={`/${locale}`} className="flex items-center gap-2 z-50 relative -my-4">
                         <Image
                             src="/images/logo.png"
-                            alt="Horizon Tours"
+                            alt="Trust Drivers"
                             width={100}
                             height={50}
                             className="object-contain"
@@ -241,7 +241,7 @@ export default function Header() {
                             </Link>
 
                             <div className="text-center text-sm text-neutral-dark/40 pt-4">
-                                © {new Date().getFullYear()} Horizon Tours. {t('allRightsReserved')}
+                                © {new Date().getFullYear()} Trust Drivers. {t('allRightsReserved')}
                             </div>
                         </motion.div>
                     </motion.div>
