@@ -2370,7 +2370,7 @@ const PopularDestinations = ({ locale, dict })=>{
                                                                     className: "text-white text-2xl font-bold",
                                                                     children: [
                                                                         "€",
-                                                                        tour.price
+                                                                        tour.pricing ? Math.min(...tour.pricing.map((p)=>p.pricePerPerson)) : tour.price
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/PopularDestinations.tsx",

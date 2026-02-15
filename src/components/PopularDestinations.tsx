@@ -88,7 +88,7 @@ export const PopularDestinations = ({ locale, dict }: { locale: string, dict: an
                                         <div className="flex items-center justify-between">
                                             <div>
                                                 <span className="text-white/60 text-xs block">{t('from')}</span>
-                                                <span className="text-white text-2xl font-bold">€{tour.price}</span>
+                                                <span className="text-white text-2xl font-bold">€{tour.pricing ? Math.min(...tour.pricing.map((p: any) => p.pricePerPerson)) : tour.price}</span>
                                             </div>
                                             <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
                                                 <ArrowRight className="w-5 h-5 text-neutral-dark group-hover:text-white transition-colors" />
