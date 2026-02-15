@@ -57,9 +57,15 @@ export default function Footer() {
 
                 {/* Bottom Bar: Copyright & Socials */}
                 <div className="pt-8 border-t border-white/20 flex flex-col md:flex-row justify-between items-center gap-6">
-                    <p className="text-white/60 text-sm">
-                        &copy; Trust Drivers {currentYear} {t('copyright')}
-                    </p>
+                    <div className="flex flex-col md:flex-row items-center gap-1 md:gap-4 text-white/60 text-sm">
+                        <p>
+                            &copy; Trust Drivers {currentYear} {t('copyright')}
+                        </p>
+                        <span className="hidden md:inline text-white/20">|</span>
+                        <p>
+                            {locale === 'fr' ? 'Conçu par' : 'Designed by'} <a href="https://wereact.agency" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition-colors font-medium">WeReact Agency</a>
+                        </p>
+                    </div>
 
                     <div className="flex items-center gap-6">
                         <Link href={siteInfo.socials.instagram} target="_blank" className="hover:text-primary text-white/80 transition-colors">
