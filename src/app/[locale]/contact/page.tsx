@@ -86,31 +86,31 @@ export default function ContactPage() {
                                 href={`https://wa.me/${siteInfo.contact.whatsapp.replace(/\+/g, '')}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group bg-white rounded-2xl p-6 flex items-center gap-4 shadow-sm hover:shadow-lg transition-all duration-300"
+                                className="group bg-white hover:bg-white/80 border border-neutral-200 rounded-2xl p-4 md:p-6 transition-all duration-300 flex items-center gap-2 shadow-sm hover:shadow-md"
                             >
-                                <div className="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center group-hover:scale-110 transition-transform">
-                                    <Phone className="w-6 h-6 text-green-600" />
+                                <div className="min-w-10 min-h-10 md:min-w-14 md:min-h-14 rounded-full bg-green-100 flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <Phone className="w-5 h-5 md:w-6 md:h-6 text-green-600" />
                                 </div>
-                                <div className="flex-grow">
-                                    <span className="block text-neutral-dark font-medium text-lg">{t('callWhatsapp')}</span>
-                                    <span className="text-neutral-500">{siteInfo.contact.whatsapp}</span>
+                                <div>
+                                    <span className="block text-neutral-dark font-medium text-md md:text-lg">{t('whatsappUs')}</span>
+                                    <span className="text-neutral-500 text-xs md:text-sm">{siteInfo.contact.whatsapp}</span>
                                 </div>
-                                <ArrowRight className="w-5 h-5 text-neutral-400 group-hover:text-primary group-hover:translate-x-1 transition-all" />
+                                <ArrowRight className="min-w-5 min-h-5 md:min-w-6 md:min-h-6 text-neutral-400 ml-auto group-hover:text-primary group-hover:translate-x-1 transition-all" />
                             </a>
 
                             {/* Email Card */}
                             <a
                                 href={`mailto:${siteInfo.contact.email}`}
-                                className="group bg-white rounded-2xl p-6 flex items-center gap-4 shadow-sm hover:shadow-lg transition-all duration-300"
+                                className="group bg-white hover:bg-white/80 border border-neutral-200 rounded-2xl p-4 md:p-6 transition-all duration-300 flex items-center gap-2 shadow-sm hover:shadow-md"
                             >
-                                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                                    <Mail className="w-6 h-6 text-primary" />
+                                <div className="min-w-10 min-h-10 md:min-w-14 md:min-h-14 rounded-full bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <Mail className="w-5 h-5 md:w-6 md:h-6 text-primary" />
                                 </div>
-                                <div className="flex-grow">
-                                    <span className="block text-neutral-dark font-medium text-lg">{t('emailUs')}</span>
-                                    <span className="text-neutral-500">{siteInfo.contact.email}</span>
+                                <div>
+                                    <span className="block text-neutral-dark font-medium text-md md:text-lg">{t('emailUs')}</span>
+                                    <span className="text-neutral-500 text-xs md:text-sm">{siteInfo.contact.email}</span>
                                 </div>
-                                <ArrowRight className="w-5 h-5 text-neutral-400 group-hover:text-primary group-hover:translate-x-1 transition-all" />
+                                <ArrowRight className="min-w-5 min-h-5 md:min-w-6 md:min-h-6 text-neutral-400 ml-auto group-hover:text-primary group-hover:translate-x-1 transition-all" />
                             </a>
 
                             {/* Location Card */}
