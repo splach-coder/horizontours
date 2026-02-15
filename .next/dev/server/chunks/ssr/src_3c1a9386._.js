@@ -1495,7 +1495,7 @@ const siteData = {
             duration: "3_days",
             image: "/images/merzouga/merzouga4.jpg",
             gallery: [
-                "/images/ouarzazate/abdou-faiz-mBo2EUfJ5sY-unsplash.jpg",
+                "/images/ouarzazate/abdou-faiz-mBo2EUfJ7sY-unsplash.jpg",
                 "/images/merzouga/merzouga5.jpg",
                 "/images/camel-riding/peter-thomas-nF8-ekoE0qw-unsplash.jpg"
             ],
@@ -1860,7 +1860,7 @@ const siteDataFr = {
             duration: "3_days",
             image: "/images/merzouga/merzouga4.jpg",
             gallery: [
-                "/images/ouarzazate/abdou-faiz-mBo2EUfJ5sY-unsplash.jpg",
+                "/images/ouarzazate/abdou-faiz-mBo2EUfJ7sY-unsplash.jpg",
                 "/images/merzouga/merzouga5.jpg",
                 "/images/camel-riding/peter-thomas-nF8-ekoE0qw-unsplash.jpg"
             ],
