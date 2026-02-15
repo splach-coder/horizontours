@@ -41,7 +41,7 @@ export default function Preloader() {
                     >
                         <Image
                             src="/images/logo.png"
-                            alt="YooMarrakech"
+                            alt="Trust Drivers"
                             width={200}
                             height={200}
                             className="object-contain"

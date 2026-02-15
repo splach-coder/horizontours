@@ -29,7 +29,7 @@ export default function PrivacyPolicyPage() {
         {
             icon: Globe,
             title: "5. International Data Transfers",
-            content: "Yoo Marrakech is based in Morocco. Your information may be transferred to and processed in Morocco or other countries where our service providers operate. By using our services, you consent to the transfer of your information to countries outside your country of residence, which may have different data protection laws. We ensure appropriate safeguards are in place for such transfers."
+            content: "Trust Drivers is based in Morocco. Your information may be transferred to and processed in Morocco or other countries where our service providers operate. By using our services, you consent to the transfer of your information to countries outside your country of residence, which may have different data protection laws. We ensure appropriate safeguards are in place for such transfers."
         },
         {
             icon: Shield,
@@ -79,7 +79,7 @@ export default function PrivacyPolicyPage() {
         {
             icon: Mail,
             title: "15. Contact Us",
-            content: "If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at: Email: privacy@yoomarrakech.com or through our contact form on the website. We aim to respond to all privacy-related inquiries within 48 hours during business days. For urgent matters regarding your personal data, please indicate this in your subject line."
+            content: "If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at: Email: contact@trustdrivers.tours or through our contact form on the website. We aim to respond to all privacy-related inquiries within 48 hours during business days. For urgent matters regarding your personal data, please indicate this in your subject line."
         }
     ];
 
@@ -136,9 +136,9 @@ export default function PrivacyPolicyPage() {
                                     Our Commitment to Your Privacy
                                 </h2>
                                 <p className="text-gray-600 leading-relaxed mb-4">
-                                    At Yoo Marrakech, we are committed to protecting your privacy and ensuring the security
+                                    At Trust Drivers, we are committed to protecting your privacy and ensuring the security
                                     of your personal information. This Privacy Policy explains how we collect, use, disclose,
-                                    and safeguard your data when you visit our website or use our travel services.
+                                    and safeguard your data when you visit our website or use our travel and transport services.
                                 </p>
                                 <p className="text-gray-600 leading-relaxed">
                                     We comply with applicable data protection laws, including the Moroccan Data Protection Law

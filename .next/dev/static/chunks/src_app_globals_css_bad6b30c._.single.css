@@ -2902,16 +2902,6 @@
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
 
-  .shadow-neutral-900\/20 {
-    --tw-shadow-color: #17171733;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .shadow-neutral-900\/20 {
-      --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-neutral-900) 20%, transparent) var(--tw-shadow-alpha), transparent);
-    }
-  }
-
   .shadow-primary\/30 {
     --tw-shadow-color: var(--color-primary);
   }
@@ -3216,12 +3206,6 @@
   @media (hover: hover) {
     .hover\:bg-\[\#20b858\]:hover {
       background-color: #20b858;
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:bg-black:hover {
-      background-color: var(--color-black);
     }
   }
 

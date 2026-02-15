@@ -1,10 +1,5 @@
 {
-  "/[locale]/activities/[id]/page": "app/[locale]/activities/[id]/page.js",
-  "/[locale]/contact/page": "app/[locale]/contact/page.js",
-  "/[locale]/gallery/page": "app/[locale]/gallery/page.js",
   "/[locale]/page": "app/[locale]/page.js",
-  "/[locale]/services/page": "app/[locale]/services/page.js",
-  "/[locale]/tours/[id]/page": "app/[locale]/tours/[id]/page.js",
-  "/[locale]/transport/[id]/page": "app/[locale]/transport/[id]/page.js",
-  "/_not-found/page": "app/_not-found/page.js"
+  "/[locale]/privacy/page": "app/[locale]/privacy/page.js",
+  "/[locale]/terms/page": "app/[locale]/terms/page.js"
 }

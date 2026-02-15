@@ -8,11 +8,11 @@ export default function TermsOfServicePage() {
     const sections = [
         {
             title: "1. Acceptance of Terms",
-            content: "By accessing and using the Yoo Marrakech website and services, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services. These terms apply to all visitors, users, and others who access or use our travel services."
+            content: "By accessing and using the Trust Drivers website and services, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services. These terms apply to all visitors, users, and others who access or use our travel and transport services."
         },
         {
             title: "2. Services Description",
-            content: "Yoo Marrakech provides curated travel experiences in Morocco, including but not limited to guided tours, desert activities, transportation services, accommodation arrangements, and customized travel packages. All services are subject to availability and may be modified or discontinued at any time without prior notice."
+            content: "Trust Drivers provides premium travel experiences and transport services in Morocco, including but not limited to guided tours, desert excursions, airport transfers, private transportation, day trips, accommodation arrangements, and customized travel packages. All services are subject to availability and may be modified or discontinued at any time without prior notice."
         },
         {
             title: "3. Booking and Reservations",
@@ -28,7 +28,7 @@ export default function TermsOfServicePage() {
         },
         {
             title: "6. Travel Documents and Requirements",
-            content: "It is your responsibility to ensure you have valid travel documents, including passport, visa, travel insurance, and health requirements. Yoo Marrakech is not responsible for any issues arising from invalid or incomplete documentation. We recommend purchasing comprehensive travel insurance."
+            content: "It is your responsibility to ensure you have valid travel documents, including passport, visa, travel insurance, and health requirements. Trust Drivers is not responsible for any issues arising from invalid or incomplete documentation. We recommend purchasing comprehensive travel insurance."
         },
         {
             title: "7. Health and Safety",
@@ -36,11 +36,11 @@ export default function TermsOfServicePage() {
         },
         {
             title: "8. Liability and Indemnification",
-            content: "Yoo Marrakech acts as an intermediary between clients and service providers (hotels, transport operators, guides). While we carefully select our partners, we are not liable for their actions or omissions. Our liability is limited to the amount paid for services. You agree to indemnify us against claims arising from your breach of these terms or misconduct during travel."
+            content: "Trust Drivers acts as an intermediary between clients and service providers (hotels, transport operators, guides, activity providers). While we carefully select our partners, we are not liable for their actions or omissions. Our liability is limited to the amount paid for services. You agree to indemnify us against claims arising from your breach of these terms or misconduct during travel."
         },
         {
             title: "9. Intellectual Property",
-            content: "All content on this website, including text, graphics, logos, images, and software, is the property of Yoo Marrakech and protected by Moroccan and international copyright laws. You may not reproduce, distribute, modify, or create derivative works without our express written permission."
+            content: "All content on this website, including text, graphics, logos, images, and software, is the property of Trust Drivers and protected by Moroccan and international copyright laws. You may not reproduce, distribute, modify, or create derivative works without our express written permission."
         },
         {
             title: "10. User Conduct",
@@ -56,7 +56,7 @@ export default function TermsOfServicePage() {
         },
         {
             title: "13. Force Majeure",
-            content: "Yoo Marrakech is not liable for failure to perform obligations due to circumstances beyond our reasonable control, including natural disasters, war, terrorism, civil unrest, government actions, pandemics, or other force majeure events. In such cases, we will make reasonable efforts to provide alternatives or refunds where possible."
+            content: "Trust Drivers is not liable for failure to perform obligations due to circumstances beyond our reasonable control, including natural disasters, war, terrorism, civil unrest, government actions, pandemics, or other force majeure events. In such cases, we will make reasonable efforts to provide alternatives or refunds where possible."
         },
         {
             title: "14. Dispute Resolution",
@@ -122,11 +122,11 @@ export default function TermsOfServicePage() {
                             </div>
                             <div>
                                 <h2 className="text-2xl font-bold font-poppins text-neutral-dark mb-4">
-                                    Welcome to Yoo Marrakech
+                                    Welcome to Trust Drivers
                                 </h2>
                                 <p className="text-gray-600 leading-relaxed">
-                                    These Terms of Service govern your use of Yoo Marrakech's website and travel services.
-                                    By booking any of our tours, activities, or services, you enter into a legally binding
+                                    These Terms of Service govern your use of Trust Drivers' website and travel services.
+                                    By booking any of our tours, activities, transport services, or other services, you enter into a legally binding
                                     agreement with us. We are committed to providing exceptional travel experiences while
                                     ensuring clarity and transparency in our business relationship with you.
                                 </p>
@@ -169,7 +169,7 @@ export default function TermsOfServicePage() {
                                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
                                     If you have any questions about these Terms of Service or need clarification on any
                                     point, please don't hesitate to contact us. We're here to ensure you have a clear
-                                    understanding of our policies and a wonderful experience with Yoo Marrakech.
+                                    understanding of our policies and a wonderful experience with Trust Drivers.
                                 </p>
                                 <a
                                     href="/en/contact"
