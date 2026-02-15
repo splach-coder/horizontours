@@ -82,7 +82,7 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({ lang }) => {
             </motion.div>
 
             {/* Content */}
-            <div className="relative z-30 container mx-auto px-4 text-center flex flex-col items-center justify-center h-full pt-20">
+            <div className="relative z-30 container mx-auto px-2 md:px-4 text-center flex flex-col items-center justify-center h-full pt-20">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -200,7 +200,7 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({ lang }) => {
                     className="md:hidden w-full max-w-sm space-y-3"
                 >
                     {/* Date Input */}
-                    <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-3 flex items-center gap-3">
+                    <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-2 flex items-center gap-3">
                         <Calendar className="w-5 h-5 text-white/70" />
                         <input
                             type="date"
@@ -213,7 +213,7 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({ lang }) => {
                     </div>
 
                     {/* Travelers Input */}
-                    <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-3 flex items-center justify-between">
+                    <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-2 flex items-center justify-between">
                         <div className="flex items-center gap-3">
                             <Users className="w-5 h-5 text-white/70" />
                             <span className="text-white text-sm">{travelers} {travelers === 1 ? t('traveler') : t('travelers')}</span>

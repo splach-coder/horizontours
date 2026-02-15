@@ -178,7 +178,7 @@ export const ServicesListing = ({ locale }: ServicesListingProps) => {
                 </div>
 
                 {/* Hero Content */}
-                <div className="relative z-10 h-full flex flex-col justify-end pb-24 px-6">
+                <div className="relative z-10 h-full flex flex-col justify-end pb-24 px-4">
                     <div className="container mx-auto">
                         <motion.div
                             initial={{ opacity: 0, y: 40 }}
@@ -227,7 +227,7 @@ export const ServicesListing = ({ locale }: ServicesListingProps) => {
 
             {/* Services Content */}
             <section className="py-16 bg-neutral-100">
-                <div className="container mx-auto px-6 md:px-4">
+                <div className="container mx-auto px-4">
 
                     {/* Active Category Header */}
                     <motion.div
@@ -346,7 +346,7 @@ export const ServicesListing = ({ locale }: ServicesListingProps) => {
 
             {/* Bottom CTA */}
             <section className="py-16 bg-neutral-100">
-                <div className="container mx-auto px-6 md:px-4">
+                <div className="container mx-auto px-4">
                     <div className="bg-neutral-dark rounded-3xl p-10 md:p-16 text-center">
                         <h2 className="text-3xl md:text-4xl font-medium text-white font-poppins mb-4">
                             {t('ctaTitle')}

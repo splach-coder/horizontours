@@ -20,7 +20,7 @@ export const PopularDestinations = ({ locale, dict }: { locale: string, dict: an
 
     return (
         <section className="py-12 bg-neutral-100">
-            <div className="container mx-auto px-6 md:px-4">
+            <div className="container mx-auto px-4">
 
                 {/* Header - Centered */}
                 <motion.div

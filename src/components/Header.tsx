@@ -78,12 +78,12 @@ export default function Header() {
     return (
         <>
             <header
-                className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${isScrolled
+                className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
                     ? `py-2 ${!isMenuOpen ? 'bg-white/90 backdrop-blur-md shadow-sm' : 'bg-transparent'}`
                     : 'bg-transparent py-3'
                     }`}
             >
-                <div className="container mx-auto px-6 md:px-4 flex items-center justify-between relative">
+                <div className="container mx-auto px-4 flex items-center justify-between relative">
 
                     {/* Logo Section - Uses negative margin to overflow without affecting header height */}
                     <Link href={`/${locale}`} className="flex items-center gap-2 z-50 relative -my-4">
@@ -171,7 +171,7 @@ export default function Header() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: "-100%" }}
                         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                        className="fixed inset-0 bg-neutral-light z-30 md:hidden flex flex-col pt-24 pb-8 px-6"
+                        className="fixed inset-0 bg-neutral-light z-40 md:hidden flex flex-col pt-24 pb-8 px-6"
                     >
                         {/* Decorative Background Elements */}
                         <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
