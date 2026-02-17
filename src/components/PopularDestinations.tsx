@@ -41,7 +41,7 @@ export const PopularDestinations = ({ locale, dict }: { locale: string, dict: an
                 </motion.div>
 
                 {/* Responsive Grid - 3 Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                     {featuredTours.map((tour: any, i: number) => (
                         <motion.div
                             key={tour.id}
@@ -50,48 +50,50 @@ export const PopularDestinations = ({ locale, dict }: { locale: string, dict: an
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.1, duration: 0.5 }}
                         >
-                            <Link href={`/${locale}/tours/${tour.id}`} className="block group">
-                                <div className="relative h-[450px] md:h-[500px] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                            <Link href={`/${locale}/tours/${tour.id}`} className="block group h-full">
+                                <div className="relative h-[550px] rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500">
                                     {/* Background Image */}
-                                    <Image
-                                        src={tour.image}
-                                        alt={tour.name}
-                                        fill
-                                        className="object-cover group-hover:scale-110 transition-transform duration-700"
-                                    />
+                                    <div className="absolute inset-0">
+                                        <Image
+                                            src={tour.image}
+                                            alt={tour.name}
+                                            fill
+                                            className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-out"
+                                        />
+                                        <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500" />
+                                    </div>
 
-                                    {/* Gradient Overlay */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80" />
+                                    {/* Gradient Overlay - smooth fade for text readability */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-90" />
 
-                                    {/* Top Badge */}
-                                    <div className="absolute top-5 left-5 flex items-center gap-2">
-                                        <span className="bg-white/20 backdrop-blur-md text-white px-4 py-2 rounded-full text-xs font-medium flex items-center gap-1.5">
+                                    {/* Top Content: Badges */}
+                                    <div className="absolute top-6 left-6 right-6 flex items-start justify-between">
+                                        <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-4 py-2 rounded-full text-xs font-medium uppercase tracking-wider flex items-center gap-1.5">
                                             <Clock className="w-3.5 h-3.5" />
                                             {tour.duration.replace('_', ' ')}
                                         </span>
                                     </div>
 
                                     {/* Bottom Content */}
-                                    <div className="absolute bottom-0 left-0 right-0 p-6">
-                                        {/* Location */}
-                                        <div className="flex items-center gap-1.5 text-white/70 text-sm mb-2">
+                                    <div className="absolute bottom-0 left-0 right-0 p-8 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                                        {/* Location Tag */}
+                                        <div className="inline-flex items-center gap-1.5 text-primary text-xs font-bold uppercase tracking-widest mb-3">
                                             <MapPin className="w-3.5 h-3.5" />
                                             <span>{t('morocco')}</span>
                                         </div>
 
                                         {/* Title */}
-                                        <h3 className="text-xl md:text-2xl font-medium text-white font-poppins mb-4 leading-tight">
+                                        <h3 className="text-2xl md:text-3xl font-medium text-white font-poppins mb-6 leading-tight group-hover:text-white/90 transition-colors">
                                             {tour.name}
                                         </h3>
 
-                                        {/* Price & CTA */}
-                                        <div className="flex items-center justify-between">
-                                            <div>
-                                                <span className="text-white/60 text-xs block">{t('from')}</span>
-                                                <span className="text-white text-2xl font-bold">€{tour.pricing ? Math.min(...tour.pricing.map((p: any) => p.pricePerPerson)) : tour.price}</span>
-                                            </div>
-                                            <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                                                <ArrowRight className="w-5 h-5 text-neutral-dark group-hover:text-white transition-colors" />
+                                        {/* CTA Button - uniquely styled */}
+                                        <div className="flex items-center justify-between border-t border-white/10 pt-6 mt-2">
+                                            <span className="text-white/80 text-sm font-medium group-hover:text-white transition-colors">
+                                                {t('viewAll')}
+                                            </span>
+                                            <div className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:border-white transition-all duration-300">
+                                                <ArrowRight className="w-4 h-4 text-white group-hover:text-black transition-colors" />
                                             </div>
                                         </div>
                                     </div>

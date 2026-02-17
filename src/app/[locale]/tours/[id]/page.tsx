@@ -22,13 +22,6 @@ export default function TourDetailPage({ params }: PageProps) {
         return notFound();
     }
 
-    // formatting price
-    let price: number | string = 0;
-    if (item.pricing && item.pricing[0]) {
-        const p = item.pricing[0] as any;
-        price = p.totalPrice || p.pricePerPerson || 0;
-    }
-
     // Static descriptions if not in DB (siteData seems sparse)
     const description = locale === 'fr'
         ? `Découvrez la magie de ${item.name}. Ce circuit organisé vous emmène à travers les lieux les plus emblématiques, offrant un mélange d'histoire, de culture et de paysages à couper le souffle. Nos guides professionnels veillent à ce que vous ne manquiez aucun joyau caché.`
@@ -50,7 +43,7 @@ export default function TourDetailPage({ params }: PageProps) {
             title={item.name}
             description={description}
             image={item.image || "/images/hero-marrakech.jpg"}
-            price={price}
+            price={0} // Will be calculated based on group size
             duration={item.duration}
             location="Marrakech Region"
             included={item.includes || fallbackIncludes}
@@ -58,6 +51,7 @@ export default function TourDetailPage({ params }: PageProps) {
             itinerary={item.itinerary}
             subItems={[]}
             gallery={item.gallery || []}
+            pricing={item.pricing} // Pass the full pricing structure
         />
     );
 }

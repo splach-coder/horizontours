@@ -7,7 +7,7 @@ export const siteInfo = {
         phone: siteConfig.contact.phone,
         whatsapp: siteConfig.contact.whatsapp,
         email: "contact@trustdrivers.tours",
-        address: "Marrakech, Morocco"
+        address: "Num 23, Rue Ennakhil, M'hamid, Marrakech"
     },
     socials: {
         instagram: "https://www.instagram.com/trustdrivers/"

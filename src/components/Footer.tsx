@@ -28,9 +28,25 @@ export default function Footer() {
                             className="mb-6 object-contain"
                         />
                         <h3 className="text-3xl font-medium font-poppins text-white mb-6">{t('exploreTitle')}</h3>
-                        <p className="text-white/80 leading-relaxed mb-6 font-light max-w-md">
+                        <p className="text-white/80 leading-relaxed mb-8 font-light max-w-md">
                             {t('exploreText')}
                         </p>
+
+                        {/* Contact Info in Footer */}
+                        <div className="space-y-3 font-light text-white/80 text-sm">
+                            <p className="flex items-start gap-3">
+                                <span className="opacity-50 min-w-[20px] font-medium">A:</span>
+                                <span>{siteInfo.contact.address}</span>
+                            </p>
+                            <p className="flex items-center gap-3">
+                                <span className="opacity-50 min-w-[20px] font-medium">T:</span>
+                                <a href={`tel:${siteInfo.contact.phone.replace(/\s/g, '')}`} className="hover:text-white transition-colors">{siteInfo.contact.phone}</a>
+                            </p>
+                            <p className="flex items-center gap-3">
+                                <span className="opacity-50 min-w-[20px] font-medium">E:</span>
+                                <a href={`mailto:${siteInfo.contact.email}`} className="hover:text-white transition-colors">{siteInfo.contact.email}</a>
+                            </p>
+                        </div>
                     </div>
 
                     {/* Quick Links */}

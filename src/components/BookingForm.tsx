@@ -10,6 +10,11 @@ interface BookingFormProps {
     serviceName: string;
     serviceType: 'tour' | 'activity' | 'package' | 'transport';
     basePrice?: number | string;
+    pricingTiers?: {
+        minPeople: number;
+        maxPeople: number;
+        pricePerPerson: number;
+    }[];
     variants?: Array<{
         id: string;
         name: string;
@@ -24,6 +29,7 @@ export const BookingForm = ({
     serviceName,
     serviceType,
     basePrice = 0,
+    pricingTiers = [],
     variants = []
 }: BookingFormProps) => {
     const t = useTranslations('BookingEngine');
@@ -50,16 +56,28 @@ export const BookingForm = ({
     const [pricing, setPricing] = useState({
         basePrice: 0,
         guestsTotal: 0,
-        total: 0
+        total: 0,
+        isGroupDiscount: false // Track if group discount is applied
     });
 
     // Calculate pricing whenever form data changes
     useEffect(() => {
         let price = 0;
+        let isGroupDiscount = false;
 
         if (variants.length > 0 && formData.selectedVariant) {
             const variant = variants.find(v => v.id === formData.selectedVariant);
             price = variant?.price || 0;
+        } else if (pricingTiers && pricingTiers.length > 0) {
+            // Use tiered pricing based on group size
+            const tier = pricingTiers.find(p => formData.guests >= p.minPeople && formData.guests <= p.maxPeople);
+            price = tier?.pricePerPerson || pricingTiers[0]?.pricePerPerson || 0;
+
+            // Check if group discount is applied (not in the first/highest price tier)
+            if (tier && pricingTiers.length > 1) {
+                const firstTier = pricingTiers[0];
+                isGroupDiscount = tier.pricePerPerson < firstTier.pricePerPerson;
+            }
         } else {
             price = typeof basePrice === 'number' ? basePrice : parseInt(basePrice as string) || 0;
         }
@@ -69,9 +87,10 @@ export const BookingForm = ({
         setPricing({
             basePrice: price,
             guestsTotal: guestsTotal,
-            total: guestsTotal
+            total: guestsTotal,
+            isGroupDiscount: isGroupDiscount
         });
-    }, [formData.guests, formData.selectedVariant, basePrice, variants]);
+    }, [formData.guests, formData.selectedVariant, basePrice, pricingTiers, variants]);
 
     const handleGuestsChange = (increment: number) => {
         setFormData(prev => ({
@@ -119,15 +138,24 @@ Please confirm availability. Thank you!`;
                         <Receipt className="w-5 h-5" />
                         <h3 className="text-lg font-bold">{t('bookNow')}</h3>
                     </div>
-                    {!isTransport && (
-                        <button
-                            type="button"
-                            onClick={() => setShowPriceBreakdown(!showPriceBreakdown)}
-                            className="text-white/80 hover:text-white transition-colors"
-                        >
-                            <ChevronDown className={`w-5 h-5 transition-transform ${showPriceBreakdown ? 'rotate-180' : ''}`} />
-                        </button>
-                    )}
+                    <div className="flex items-center gap-2">
+                        {/* Group Discount Badge */}
+                        {pricing.isGroupDiscount && (
+                            <span className="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
+                                <Check className="w-3 h-3" />
+                                {t('groupDiscount')}
+                            </span>
+                        )}
+                        {!isTransport && (
+                            <button
+                                type="button"
+                                onClick={() => setShowPriceBreakdown(!showPriceBreakdown)}
+                                className="text-white/80 hover:text-white transition-colors"
+                            >
+                                <ChevronDown className={`w-5 h-5 transition-transform ${showPriceBreakdown ? 'rotate-180' : ''}`} />
+                            </button>
+                        )}
+                    </div>
                 </div>
                 <div className="flex items-baseline gap-2">
                     {isTransport ? (

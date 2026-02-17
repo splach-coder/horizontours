@@ -1,10 +1,159 @@
-[00:00:01.112] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:01.227] Server  LOG      ✓ Ready in 963ms
-[00:00:08.006] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:08.204] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[00:00:08.204] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:16.454] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:02:20.271] Server  LOG      ✓ Compiled in 36ms
-[00:02:32.936] Server  LOG      ✓ Compiled in 32ms
-[00:03:02.251] Server  LOG      ✓ Compiled in 38ms
-[00:06:13.852] Server  LOG      ✓ Compiled in 33ms
+[00:00:01.060] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:01.174] Server  LOG      ✓ Ready in 908ms
+[00:00:04.163] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:04.418] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:00:04.418] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:11.051] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:01:38.931] Server  LOG      ✓ Compiled in 82ms
+[00:01:49.794] Server  LOG      ✓ Compiled in 68ms
+[00:01:52.332] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:52.373] Server  ERROR   C:\Users\Ultrapc\Desktop\Websites\horizontours\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:01:52.374] Server  ERROR   C:\Users\Ultrapc\Desktop\Websites\horizontours\.next\dev\server\chunks\ssr\[root-of-the-server]__129f29bf._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:01:52.376] Server  ERROR    ⨯ Error: Cannot find module '../../../messages/favicon.ico.json'
+[00:01:53.690] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:53.832] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:54.451] Browser WARN    Image with src "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:01:59.633] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:02:12.226] Server  LOG      ✓ Compiled in 63ms
+[00:02:32.478] Server  LOG      ✓ Compiled in 65ms
+[00:02:32.583] Browser ERROR   ./src/components/BookingForm.tsx:32:5
+Ecmascript file had an error
+  30 |     serviceType,
+  31 |     basePrice = 0,
+> 32 |     pricing = [],
+     |     ^^^^^^^
+  33 |     variants = []
+  34 | }: BookingFormProps) => {
+  35 |     const t = useTranslations('BookingEngine');
+
+cannot reassign to a variable declared with `const`
+
+Import traces:
+  Client Component Browser:
+    ./src/components/BookingForm.tsx [Client Component Browser]
+    ./src/components/ServiceDetailContent.tsx [Client Component Browser]
+    ./src/app/[locale]/tours/[id]/page.tsx [Client Component Browser]
+    ./src/app/[locale]/tours/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/BookingForm.tsx [Client Component SSR]
+    ./src/components/ServiceDetailContent.tsx [Client Component SSR]
+    ./src/app/[locale]/tours/[id]/page.tsx [Client Component SSR]
+    ./src/app/[locale]/tours/[id]/page.tsx [Server Component]
+[00:02:53.159] Server  LOG      ✓ Compiled in 33ms
+[00:03:03.119] Server  LOG      ✓ Compiled in 48ms
+[00:03:18.332] Server  LOG      ✓ Compiled in 27ms
+[00:03:36.715] Server  LOG      ✓ Compiled in 60ms
+[00:04:58.230] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:00.204] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:00.360] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:05:00.965] Browser WARN    Image with src "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:05:13.047] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:05:48.808] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:40.870] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:41.096] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:07:41.096] Browser WARN    Image with src "/images/merzouga/merzouga1.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:07:41.650] Browser WARN    Image with src "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:07:44.062] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:44.239] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:07:44.239] Browser WARN    Image with src "http://localhost:3000/images/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:07:49.628] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:11:41.729] Server  LOG      ✓ Compiled in 38ms
+[00:11:47.123] Server  LOG      ✓ Compiled in 29ms
+[00:13:03.477] Server  LOG      ✓ Compiled in 68ms
+[00:13:39.053] Server  LOG      ✓ Compiled in 66ms
+[00:14:40.880] Server  LOG      ✓ Compiled in 72ms
+[00:15:43.194] Server  LOG      ✓ Compiled in 91ms
+[00:15:43.679] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `PopularDestinations.viewAll` in messages for locale `en`."}
+[00:15:43.679] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `PopularDestinations.viewAll` in messages for locale `en`."}
+[00:15:43.679] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `PopularDestinations.viewAll` in messages for locale `en`."}
+[00:15:43.679] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `PopularDestinations.viewAll` in messages for locale `en`."}
+[00:15:43.679] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `PopularDestinations.viewAll` in messages for locale `en`."}
+[00:15:43.679] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `PopularDestinations.viewAll` in messages for locale `en`."}
+[00:15:43.679] Browser WARN    Image with src "http://localhost:3000/images/merzouga/merzouga1.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:15:56.204] Server  LOG      ✓ Compiled in 28ms
+[00:15:56.667] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `PopularDestinations.viewAll` in messages for locale `en`."}
+[00:15:56.667] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `PopularDestinations.viewAll` in messages for locale `en`."}
+[00:15:56.667] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `PopularDestinations.viewAll` in messages for locale `en`."}
+[00:15:56.667] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `PopularDestinations.viewAll` in messages for locale `en`."}
+[00:15:56.667] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `PopularDestinations.viewAll` in messages for locale `en`."}
+[00:15:56.667] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `PopularDestinations.viewAll` in messages for locale `en`."}
+[00:21:30.667] Server  LOG      ✓ Compiled in 59ms
+[00:22:09.861] Server  LOG      ✓ Compiled in 87ms
+[00:29:21.541] Server  LOG      ✓ Compiled in 37ms
+[00:29:33.518] Server  LOG      ✓ Compiled in 26ms
+[00:33:36.064] Server  LOG      ✓ Compiled in 48ms
+[00:33:36.665] Browser ERROR   ./src/data/siteData.ts:172:9
+Parsing ecmascript source code failed
+  170 |         }
+  171 |     ],
+> 172 |         {
+      |         ^
+  173 |     id: "circuit-3-days-taliouine",
+  174 |         name: "3 Days Circuit - Taliouine Saffron Capital",
+  175 |             duration: "3_days",
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Server Component:
+    ./src/data/siteData.ts
+    ./src/data/getSiteData.ts
+    ./src/app/[locale]/page.tsx
+
+  Client Component Browser:
+    ./src/data/siteData.ts [Client Component Browser]
+    ./src/data/getSiteData.ts [Client Component Browser]
+    ./src/components/PopularDestinations.tsx [Client Component Browser]
+    ./src/components/PopularDestinations.tsx [Server Component]
+    ./src/app/[locale]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/data/siteData.ts [Client Component SSR]
+    ./src/data/getSiteData.ts [Client Component SSR]
+    ./src/components/PopularDestinations.tsx [Client Component SSR]
+    ./src/components/PopularDestinations.tsx [Server Component]
+    ./src/app/[locale]/page.tsx [Server Component]
+[00:34:39.660] Server  LOG      ✓ Compiled in 42ms
+[00:34:40.668] Browser ERROR   ./src/data/siteDataFr.ts:170:9
+Parsing ecmascript source code failed
+  168 |             ]
+  169 |         }
+> 170 |         },
+      |         ^
+  171 |     {
+  172 |         id: "circuit-3-days-taliouine",
+  173 |         name: "Circuit 3 Jours - Taliouine et Capitale du Safran",
+
+Expected ',', got '}'
+
+Import traces:
+  Server Component:
+    ./src/data/siteDataFr.ts
+    ./src/data/getSiteData.ts
+    ./src/app/[locale]/page.tsx
+
+  Client Component Browser:
+    ./src/data/siteDataFr.ts [Client Component Browser]
+    ./src/data/getSiteData.ts [Client Component Browser]
+    ./src/components/PopularDestinations.tsx [Client Component Browser]
+    ./src/components/PopularDestinations.tsx [Server Component]
+    ./src/app/[locale]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/data/siteDataFr.ts [Client Component SSR]
+    ./src/data/getSiteData.ts [Client Component SSR]
+    ./src/components/PopularDestinations.tsx [Client Component SSR]
+    ./src/components/PopularDestinations.tsx [Server Component]
+    ./src/app/[locale]/page.tsx [Server Component]
+[00:51:19.903] Server  LOG      ✓ Compiled in 79ms
+[00:51:57.006] Server  LOG      ✓ Compiled in 41ms
+[00:52:06.995] Server  LOG      ✓ Compiled in 37ms
+[00:56:07.657] Server  LOG      ✓ Compiled in 87ms
+[00:56:16.584] Server  LOG      ✓ Compiled in 67ms
+[01:00:49.528] Server  LOG      ✓ Compiled in 67ms
+[01:00:57.454] Server  LOG      ✓ Compiled in 35ms

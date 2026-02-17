@@ -24,7 +24,8 @@ export const ServiceDetailMobile = ({
     itinerary = [],
     subItems = [],
     locale,
-    gallery = []
+    gallery = [],
+    pricing = []
 }: ServiceDetailProps) => {
     const [activeTab, setActiveTab] = useState<'overview' | 'itinerary' | 'details'>('overview');
     const [isBookingOpen, setIsBookingOpen] = useState(false);
@@ -425,6 +426,7 @@ export const ServiceDetailMobile = ({
                                     serviceName={title}
                                     serviceType={type}
                                     basePrice={price}
+                                    pricingTiers={pricing}
                                     variants={subItems.map(item => ({
                                         id: item.id,
                                         name: item.type,

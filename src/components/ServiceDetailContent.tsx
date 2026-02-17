@@ -35,6 +35,11 @@ export interface ServiceDetailProps {
     subItems?: SubItem[];
     locale: string;
     gallery?: string[];
+    pricing?: {
+        minPeople: number;
+        maxPeople: number;
+        pricePerPerson: number;
+    }[];
 }
 
 import { ServiceDetailMobile } from '@/components/ServiceDetailMobile';
@@ -52,7 +57,8 @@ export const ServiceDetailContent = ({
     itinerary = [],
     subItems = [],
     locale,
-    gallery = []
+    gallery = [],
+    pricing = []
 }: ServiceDetailProps) => {
     const [activeDay, setActiveDay] = useState(0);
     const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -90,6 +96,7 @@ export const ServiceDetailContent = ({
                     subItems={subItems}
                     locale={locale}
                     gallery={gallery}
+                    pricing={pricing}
                     id=""
                 />
             </div>
@@ -398,6 +405,7 @@ export const ServiceDetailContent = ({
                                     serviceName={title}
                                     serviceType={type}
                                     basePrice={price}
+                                    pricingTiers={pricing}
                                     variants={subItems.map(item => ({
                                         id: item.id,
                                         name: item.type,

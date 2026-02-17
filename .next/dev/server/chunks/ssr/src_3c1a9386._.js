@@ -1439,12 +1439,6 @@ const siteData = {
                     maxPeople: 5,
                     pricePerPerson: 690
                 },
-                // The prompt says: "De 2 per a 5 per. 690€". "De 5 per a ..... 495€".
-                // In 3 days: "De 2 per a 5 per. 380€ par personne". Explicit "par personne".
-                // In 8 days: "1650€ de 2 per a 4 per". This format suggests TOTAL or per GROUP? No, likely per person but the text is ambiguous.
-                // However, usually these tours are priced per person. 690 EUR pp for 5 days private tour is reasonable (138/day). 1650 EUR pp for 8 days (206/day) is also possible for luxury.
-                // BUT "1650€ de 2 per a 4 per" could mean "Total price for the group"? No, that's too cheap (1650/4 = 412 for 8 days = 50/day).
-                // Let's assume Price Per Person.
                 {
                     minPeople: 6,
                     maxPeople: 20,
@@ -1616,6 +1610,144 @@ const siteData = {
                     description: "Visit of Marrakech. Dinner show in Agafay desert. Return around 10pm."
                 }
             ]
+        },
+        {
+            id: "circuit-3-days-taliouine",
+            name: "3 Days Circuit - Taliouine Saffron Capital",
+            duration: "3_days",
+            image: "/images/ouarzazate/cristiano-pinto-knB5iCogf5Q-unsplash.jpg",
+            gallery: [
+                "/images/ouarzazate/abdou-faiz-mBo2EUfJ7sY-unsplash.jpg",
+                "/images/ouarzazate/hassan-ouajbir-INcADDyMwwo-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 4,
+                    pricePerPerson: 350
+                },
+                {
+                    minPeople: 5,
+                    maxPeople: 20,
+                    pricePerPerson: 258
+                }
+            ],
+            includes: [
+                "Air-conditioned van transport",
+                "Accommodation (Half Board) in Taliouine & Ait Ben Haddou",
+                "Guide in Ait Ben Haddou"
+            ],
+            excludes: [
+                "Lunches",
+                "Entrance fees (Studio/Kasbah)",
+                "Tips"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Marrakech - Taliouine",
+                    description: "Departure via Lake Lalla Takerkoust, Kik Plateau, Moulay Brahim, and Asni. Lunch at Tizi n'Test. Overnight in Taliouine (Half Board)."
+                },
+                {
+                    day: 2,
+                    title: "Taliouine - Ait Ben Haddou",
+                    description: "Travel via Taznakht. Visit Ouarzazate Cinema Studio and Kasbah. Overnight in Ait Ben Haddou (Half Board)."
+                },
+                {
+                    day: 3,
+                    title: "Ait Ben Haddou - Marrakech",
+                    description: "Visit UNESCO Heritage Kasbah Ait Ben Haddou. Route to Telouet for lunch. Return to Marrakech via Tichka Pass (2260m)."
+                }
+            ]
+        },
+        {
+            id: "day-trip-three-valleys",
+            name: "Day Trip - Three Valleys & Atlas Waterfalls",
+            duration: "1_day",
+            image: "/images/ourika/hassan-ahrouch-CfmIZwBvxNY-unsplash.jpg",
+            gallery: [
+                "/images/ourika/matthew-fainman-3yonP2JaGTU-unsplash.jpg",
+                "/images/ourika/abdelhamid-azoui-BGU0uaY0tJs-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 4,
+                    pricePerPerson: 69
+                },
+                {
+                    minPeople: 5,
+                    maxPeople: 20,
+                    pricePerPerson: 48
+                }
+            ],
+            includes: [
+                "Private transport",
+                "Local Guide",
+                "Meal (Lunch)",
+                "Tea at a local home"
+            ],
+            excludes: [
+                "Tips",
+                "Drinks"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Three Valleys Excursion",
+                    description: "Departure 8:30am. Visit Lake Lalla Takerkoust, Kik Plateau, Moulay Brahim, Asni. Afternoon in Ourika Valley, visit Berber house. Lunch by the river. 1h guided walk to waterfalls. Return around 5:30pm."
+                }
+            ]
+        },
+        {
+            id: "circuit-3-days-coast",
+            name: "3 Days Circuit - Essaouira, Agadir & Taroudant",
+            duration: "3_days",
+            image: "/images/essaouira/hamza-omlacho-M9GO4Gsd2SM-unsplash.jpg",
+            gallery: [
+                "/images/essaouira/rigel-No_Y3bn4lNQ-unsplash.jpg",
+                "/images/essaouira/youssef-aboutaleb-ad1FM2Xj0QQ-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 4,
+                    pricePerPerson: 467
+                },
+                {
+                    minPeople: 5,
+                    maxPeople: 20,
+                    pricePerPerson: 320
+                }
+            ],
+            includes: [
+                "Private transport",
+                "Guide in Essaouira",
+                "Guide in Taroudant",
+                "Accommodation (Half Board)"
+            ],
+            excludes: [
+                "Lunches",
+                "Drinks",
+                "Tips"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Marrakech - Essaouira",
+                    description: "Departure 8:30am. Arrive in Essaouira, lunch, 3h guided city tour. Overnight in Essaouira (Half Board)."
+                },
+                {
+                    day: 2,
+                    title: "Essaouira - Agadir",
+                    description: "Scenic coastal drive to Agadir. Lunch. Visit Agadir Oufella, Souk El Had, and the coast. Overnight in Agadir (Half Board)."
+                },
+                {
+                    day: 3,
+                    title: "Agadir - Taroudant - Marrakech",
+                    description: "Travel to Taroudant, visit ancient city. Lunch. Return to Marrakech via Tizi n'Test."
+                }
+            ]
         }
     ],
     activities: {
@@ -1651,10 +1783,24 @@ const siteData = {
                 location: "Agafay",
                 price: 25,
                 duration: "1_hour",
-                image: "/images/camel-riding/oussama-rahib-f7F8URbIx08-unsplash.jpg",
+                image: "/images/camel-riding/camel-ride-sunset.jpeg",
                 gallery: [
+                    "/images/camel-riding/camel-ride-sunset.jpeg",
                     "/images/camel-riding/peter-thomas-PotqZeNaUZ4-unsplash.jpg",
                     "/images/camel-riding/sheila-c-KuXu8rx_1-8-unsplash.jpg"
+                ]
+            },
+            {
+                id: "balloon-sunrise",
+                type: "balloon",
+                location: "Marrakech",
+                price: 155,
+                duration: "morning",
+                image: "/images/airballon/balloon-flight-1.jpeg",
+                gallery: [
+                    "/images/airballon/balloon-flight-2.jpeg",
+                    "/images/airballon/balloon-flight-1.jpeg",
+                    "/images/airballon/danai-tsoutreli-3NAlBV5PlmE-unsplash.jpg"
                 ]
             }
         ],
@@ -1672,14 +1818,14 @@ const siteData = {
         {
             id: "private",
             name: "Private Transport",
-            image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070",
+            image: "/images/transport/private-transport.jpeg",
             description: "Comfortable private vehicle with professional driver",
             price: 50
         },
         {
             id: "airport",
             name: "Airport Transport",
-            image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074",
+            image: "/images/transport/airport-transport.jpeg",
             description: "Reliable airport transfers, meet & greet service",
             price: 30
         }
@@ -1980,6 +2126,144 @@ const siteDataFr = {
                     description: "Visite de Marrakech et dîner spectacle au désert d agafay. Retour vers 22h."
                 }
             ]
+        },
+        {
+            id: "circuit-3-days-taliouine",
+            name: "Circuit 3 Jours - Taliouine et Capitale du Safran",
+            duration: "3_days",
+            image: "/images/ouarzazate/cristiano-pinto-knB5iCogf5Q-unsplash.jpg",
+            gallery: [
+                "/images/ouarzazate/abdou-faiz-mBo2EUfJ7sY-unsplash.jpg",
+                "/images/ouarzazate/hassan-ouajbir-INcADDyMwwo-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 4,
+                    pricePerPerson: 350
+                },
+                {
+                    minPeople: 5,
+                    maxPeople: 20,
+                    pricePerPerson: 258
+                }
+            ],
+            includes: [
+                "Transport van climatisé",
+                "Hébergement en demi pension (Taliouine, Ait Ben Haddou)",
+                "Guide à Ait Ben Haddou"
+            ],
+            excludes: [
+                "Déjeuner",
+                "Entré de studio et kasbah",
+                "Pourboires"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Marrakech - Taliouine",
+                    description: "Départ de Marrakech via le lac Lalla Takerkoust, le plateau de Kik, Moulay Brahim et Asni. Déjeuner à Tizi n'Test. Nuit à Taliouine (Demi pension)."
+                },
+                {
+                    day: 2,
+                    title: "Taliouine - Ait Ben Haddou",
+                    description: "Taliouine vers Ait Ben Haddou via Taznakhte. Visite de Ouarzazate (Studio et Kasbah). Nuit à Ait Ben Haddou (Demi pension)."
+                },
+                {
+                    day: 3,
+                    title: "Ait Ben Haddou - Marrakech",
+                    description: "Visite de la Kasbah Ait Ben Haddou (patrimoine mondial de l'UNESCO). Route vers Telouet pour le déjeuner. Retour à Marrakech via le col de Tichka."
+                }
+            ]
+        },
+        {
+            id: "day-trip-three-valleys",
+            name: "Excursion Trois Vallées",
+            duration: "1_day",
+            image: "/images/ourika/hassan-ahrouch-CfmIZwBvxNY-unsplash.jpg",
+            gallery: [
+                "/images/ourika/matthew-fainman-3yonP2JaGTU-unsplash.jpg",
+                "/images/ourika/abdelhamid-azoui-BGU0uaY0tJs-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 4,
+                    pricePerPerson: 69
+                },
+                {
+                    minPeople: 5,
+                    maxPeople: 20,
+                    pricePerPerson: 48
+                }
+            ],
+            includes: [
+                "Transport en privé",
+                "Guide Local",
+                "Repas",
+                "Thé chez l'habitant"
+            ],
+            excludes: [
+                "Pourboires",
+                "Boissons"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Les Trois Vallées",
+                    description: "Départ vers 8h30, retour vers 17h30. Lac Lalla Takerkoust, plateau de Kik, Moulay Brahim et Asni. Après-midi vallée de l'Ourika, visite maison berbère. Déjeuner au bord de la rivière. Balade d'une heure avec guide local aux cascades."
+                }
+            ]
+        },
+        {
+            id: "circuit-3-days-coast",
+            name: "Circuit 3 Jours - Essaouira, Agadir & Taroudant",
+            duration: "3_days",
+            image: "/images/essaouira/hamza-omlacho-M9GO4Gsd2SM-unsplash.jpg",
+            gallery: [
+                "/images/essaouira/rigel-No_Y3bn4lNQ-unsplash.jpg",
+                "/images/essaouira/youssef-aboutaleb-ad1FM2Xj0QQ-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 4,
+                    pricePerPerson: 467
+                },
+                {
+                    minPeople: 5,
+                    maxPeople: 20,
+                    pricePerPerson: 320
+                }
+            ],
+            includes: [
+                "Transport en privé",
+                "Guide à Essaouira",
+                "Guide à Taroudant",
+                "Hébergement Demi Pension"
+            ],
+            excludes: [
+                "Déjeuner",
+                "Boissons",
+                "Pourboires"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Marrakech - Essaouira",
+                    description: "Départ vers Essaouira vers 8h30. Arrivée, déjeuner, visite de la ville avec guide local (3h). Nuit à Essaouira (Demi pension)."
+                },
+                {
+                    day: 2,
+                    title: "Essaouira - Agadir",
+                    description: "Départ vers Agadir par la route côtière. Déjeuner. Visite d'Agadir Oufella, Souk El Had, la côte. Nuit à Agadir (Demi pension)."
+                },
+                {
+                    day: 3,
+                    title: "Agadir - Taroudant - Marrakech",
+                    description: "Départ vers Taroudant, visite de la partie ancienne. Déjeuner. Retour à Marrakech via Tizi n'Test. Fin de service."
+                }
+            ]
         }
     ],
     activities: {
@@ -2015,10 +2299,24 @@ const siteDataFr = {
                 location: "Agafay",
                 price: 25,
                 duration: "1_hour",
-                image: "/images/camel-riding/oussama-rahib-f7F8URbIx08-unsplash.jpg",
+                image: "/images/camel-riding/camel-ride-sunset.jpeg",
                 gallery: [
+                    "/images/camel-riding/camel-ride-sunset.jpeg",
                     "/images/camel-riding/peter-thomas-PotqZeNaUZ4-unsplash.jpg",
                     "/images/camel-riding/sheila-c-KuXu8rx_1-8-unsplash.jpg"
+                ]
+            },
+            {
+                id: "balloon-sunrise",
+                type: "balloon",
+                location: "Marrakech",
+                price: 155,
+                duration: "matin",
+                image: "/images/airballon/balloon-flight-1.jpeg",
+                gallery: [
+                    "/images/airballon/balloon-flight-2.jpeg",
+                    "/images/airballon/balloon-flight-1.jpeg",
+                    "/images/airballon/danai-tsoutreli-3NAlBV5PlmE-unsplash.jpg"
                 ]
             }
         ],
@@ -2036,14 +2334,14 @@ const siteDataFr = {
         {
             id: "private",
             name: "Transport privé",
-            image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070",
+            image: "/images/transport/private-transport.jpeg",
             description: "Véhicule privé confortable avec chauffeur professionnel",
             price: 50
         },
         {
             id: "airport",
             name: "Transfert aéroport",
-            image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074",
+            image: "/images/transport/airport-transport.jpeg",
             description: "Transferts aéroport fiables, service d'accueil",
             price: 30
         }
@@ -2255,7 +2553,7 @@ const PopularDestinations = ({ locale, dict })=>{
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10",
+                    className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16",
                     children: featuredTours.map((tour, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                             initial: {
                                 opacity: 0,
@@ -2274,139 +2572,136 @@ const PopularDestinations = ({ locale, dict })=>{
                             },
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                 href: `/${locale}/tours/${tour.id}`,
-                                className: "block group",
+                                className: "block group h-full",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "relative h-[450px] md:h-[500px] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300",
+                                    className: "relative h-[550px] rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                            src: tour.image,
-                                            alt: tour.name,
-                                            fill: true,
-                                            className: "object-cover group-hover:scale-110 transition-transform duration-700"
-                                        }, void 0, false, {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "absolute inset-0",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                    src: tour.image,
+                                                    alt: tour.name,
+                                                    fill: true,
+                                                    className: "object-cover group-hover:scale-110 transition-transform duration-1000 ease-out"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/PopularDestinations.tsx",
+                                                    lineNumber: 57,
+                                                    columnNumber: 41
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/PopularDestinations.tsx",
+                                                    lineNumber: 63,
+                                                    columnNumber: 41
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "[project]/src/components/PopularDestinations.tsx",
                                             lineNumber: 56,
                                             columnNumber: 37
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/PopularDestinations.tsx",
-                                            lineNumber: 64,
-                                            columnNumber: 37
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "absolute top-5 left-5 flex items-center gap-2",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "bg-white/20 backdrop-blur-md text-white px-4 py-2 rounded-full text-xs font-medium flex items-center gap-1.5",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
-                                                        className: "w-3.5 h-3.5"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                        lineNumber: 69,
-                                                        columnNumber: 45
-                                                    }, ("TURBOPACK compile-time value", void 0)),
-                                                    tour.duration.replace('_', ' ')
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                lineNumber: 68,
-                                                columnNumber: 41
-                                            }, ("TURBOPACK compile-time value", void 0))
+                                            className: "absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-90"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/PopularDestinations.tsx",
                                             lineNumber: 67,
                                             columnNumber: 37
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "absolute bottom-0 left-0 right-0 p-6",
+                                            className: "absolute top-6 left-6 right-6 flex items-start justify-between",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "bg-white/10 backdrop-blur-md border border-white/20 text-white px-4 py-2 rounded-full text-xs font-medium uppercase tracking-wider flex items-center gap-1.5",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
+                                                        className: "w-3.5 h-3.5"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/PopularDestinations.tsx",
+                                                        lineNumber: 72,
+                                                        columnNumber: 45
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    tour.duration.replace('_', ' ')
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/PopularDestinations.tsx",
+                                                lineNumber: 71,
+                                                columnNumber: 41
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/PopularDestinations.tsx",
+                                            lineNumber: 70,
+                                            columnNumber: 37
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "absolute bottom-0 left-0 right-0 p-8 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex items-center gap-1.5 text-white/70 text-sm mb-2",
+                                                    className: "inline-flex items-center gap-1.5 text-primary text-xs font-bold uppercase tracking-widest mb-3",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
                                                             className: "w-3.5 h-3.5"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                            lineNumber: 78,
+                                                            lineNumber: 81,
                                                             columnNumber: 45
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: t('morocco')
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                            lineNumber: 79,
+                                                            lineNumber: 82,
                                                             columnNumber: 45
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                    lineNumber: 77,
+                                                    lineNumber: 80,
                                                     columnNumber: 41
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "text-xl md:text-2xl font-medium text-white font-poppins mb-4 leading-tight",
+                                                    className: "text-2xl md:text-3xl font-medium text-white font-poppins mb-6 leading-tight group-hover:text-white/90 transition-colors",
                                                     children: tour.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                    lineNumber: 83,
+                                                    lineNumber: 86,
                                                     columnNumber: 41
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex items-center justify-between",
+                                                    className: "flex items-center justify-between border-t border-white/10 pt-6 mt-2",
                                                     children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "text-white/60 text-xs block",
-                                                                    children: t('from')
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                                    lineNumber: 90,
-                                                                    columnNumber: 49
-                                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "text-white text-2xl font-bold",
-                                                                    children: [
-                                                                        "€",
-                                                                        tour.pricing ? Math.min(...tour.pricing.map((p)=>p.pricePerPerson)) : tour.price
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                                    lineNumber: 91,
-                                                                    columnNumber: 49
-                                                                }, ("TURBOPACK compile-time value", void 0))
-                                                            ]
-                                                        }, void 0, true, {
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-white/80 text-sm font-medium group-hover:text-white transition-colors",
+                                                            children: t('viewAll')
+                                                        }, void 0, false, {
                                                             fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                            lineNumber: 89,
+                                                            lineNumber: 92,
                                                             columnNumber: 45
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "w-12 h-12 rounded-full bg-white flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300",
+                                                            className: "w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:border-white transition-all duration-300",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
-                                                                className: "w-5 h-5 text-neutral-dark group-hover:text-white transition-colors"
+                                                                className: "w-4 h-4 text-white group-hover:text-black transition-colors"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                                lineNumber: 94,
+                                                                lineNumber: 96,
                                                                 columnNumber: 49
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                            lineNumber: 93,
+                                                            lineNumber: 95,
                                                             columnNumber: 45
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/PopularDestinations.tsx",
-                                                    lineNumber: 88,
+                                                    lineNumber: 91,
                                                     columnNumber: 41
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/PopularDestinations.tsx",
-                                            lineNumber: 75,
+                                            lineNumber: 78,
                                             columnNumber: 37
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
@@ -2450,18 +2745,18 @@ const PopularDestinations = ({ locale, dict })=>{
                                 className: "w-4 h-4 group-hover:translate-x-1 transition-transform"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/PopularDestinations.tsx",
-                                lineNumber: 116,
+                                lineNumber: 118,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/PopularDestinations.tsx",
-                        lineNumber: 111,
+                        lineNumber: 113,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/src/components/PopularDestinations.tsx",
-                    lineNumber: 105,
+                    lineNumber: 107,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0))
             ]

@@ -128,34 +128,38 @@ export const ServicesListing = ({ locale }: ServicesListingProps) => {
 
     // Helper function to determine the correct route for an item
     const getItemRoute = (item: any) => {
-        // Check if item has pricing array (tours)
-        if (item.pricing && Array.isArray(item.pricing)) {
+        // Check if item exists in tours
+        if (data.tours.some((t: any) => t.id === item.id)) {
             return 'tours';
+        }
+        // Check if item exists in transport
+        if (data.transport.some((t: any) => t.id === item.id)) {
+            return 'transport';
         }
         // Check if item has type property (activities)
         if (item.type && typeof item.type === 'string') {
             return 'activities';
         }
-        // Check if item has included/excluded arrays (packages)
-        if (item.included || item.excluded) {
+        // Check if item exists in packages
+        if (data.packages && data.packages.some((p: any) => p.id === item.id)) {
             return 'packages';
-        }
-        // Check if item has capacity (transport)
-        if (item.capacity) {
-            return 'transport';
         }
         // Fallback to active category route
         return categories.find(c => c.id === activeCategory)?.route || 'services';
     };
 
     const renderPrice = (item: any, categoryId: string) => {
-        if (categoryId === 'tours' && item.pricing && item.pricing[0]) {
-            const p = item.pricing[0] as any;
+        // Check if it's a tour (has pricing array)
+        if (item.pricing && Array.isArray(item.pricing) && item.pricing.length > 0) {
+            const p = item.pricing[0] as any; // Get base price (first tier)
             return p.totalPrice ? `€${p.totalPrice}` : `€${p.pricePerPerson}/p`;
         }
-        if (categoryId === 'packages' || categoryId === 'activities') {
-            return item.price ? `€${item.price}` : t('onRequest');
+
+        // Check if it's an activity or package (has price property)
+        if (item.price) {
+            return `€${item.price}`;
         }
+
         return t('onRequest');
     };
 
@@ -313,7 +317,9 @@ export const ServicesListing = ({ locale }: ServicesListingProps) => {
                                                 {/* Footer */}
                                                 <div className="flex items-center justify-between pt-4 border-t border-neutral-100">
                                                     <div>
-                                                        <span className="text-neutral-400 text-xs">{t('startingFrom')}</span>
+                                                        <span className="text-neutral-400 text-xs">
+                                                            {item.pricing ? t('price') : t('startingFrom')}
+                                                        </span>
                                                         <span className="block text-xl font-bold text-primary">
                                                             {renderPrice(item, activeCategory)}
                                                         </span>

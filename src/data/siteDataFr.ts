@@ -166,6 +166,120 @@ export const siteDataFr = {
                     description: "Visite de Marrakech et dîner spectacle au désert d agafay. Retour vers 22h."
                 }
             ]
+        },
+        {
+            id: "circuit-3-days-taliouine",
+            name: "Circuit 3 Jours - Taliouine et Capitale du Safran",
+            duration: "3_days",
+            image: "/images/ouarzazate/cristiano-pinto-knB5iCogf5Q-unsplash.jpg",
+            gallery: [
+                "/images/ouarzazate/abdou-faiz-mBo2EUfJ7sY-unsplash.jpg",
+                "/images/ouarzazate/hassan-ouajbir-INcADDyMwwo-unsplash.jpg"
+            ],
+            pricing: [
+                { minPeople: 2, maxPeople: 4, pricePerPerson: 350 },
+                { minPeople: 5, maxPeople: 20, pricePerPerson: 258 }
+            ],
+            includes: [
+                "Transport van climatisé",
+                "Hébergement en demi pension (Taliouine, Ait Ben Haddou)",
+                "Guide à Ait Ben Haddou"
+            ],
+            excludes: [
+                "Déjeuner",
+                "Entré de studio et kasbah",
+                "Pourboires"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Marrakech - Taliouine",
+                    description: "Départ de Marrakech via le lac Lalla Takerkoust, le plateau de Kik, Moulay Brahim et Asni. Déjeuner à Tizi n'Test. Nuit à Taliouine (Demi pension)."
+                },
+                {
+                    day: 2,
+                    title: "Taliouine - Ait Ben Haddou",
+                    description: "Taliouine vers Ait Ben Haddou via Taznakhte. Visite de Ouarzazate (Studio et Kasbah). Nuit à Ait Ben Haddou (Demi pension)."
+                },
+                {
+                    day: 3,
+                    title: "Ait Ben Haddou - Marrakech",
+                    description: "Visite de la Kasbah Ait Ben Haddou (patrimoine mondial de l'UNESCO). Route vers Telouet pour le déjeuner. Retour à Marrakech via le col de Tichka."
+                }
+            ]
+        },
+        {
+            id: "day-trip-three-valleys",
+            name: "Excursion Trois Vallées",
+            duration: "1_day",
+            image: "/images/ourika/hassan-ahrouch-CfmIZwBvxNY-unsplash.jpg",
+            gallery: [
+                "/images/ourika/matthew-fainman-3yonP2JaGTU-unsplash.jpg",
+                "/images/ourika/abdelhamid-azoui-BGU0uaY0tJs-unsplash.jpg"
+            ],
+            pricing: [
+                { minPeople: 2, maxPeople: 4, pricePerPerson: 69 },
+                { minPeople: 5, maxPeople: 20, pricePerPerson: 48 }
+            ],
+            includes: [
+                "Transport en privé",
+                "Guide Local",
+                "Repas",
+                "Thé chez l'habitant"
+            ],
+            excludes: [
+                "Pourboires",
+                "Boissons"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Les Trois Vallées",
+                    description: "Départ vers 8h30, retour vers 17h30. Lac Lalla Takerkoust, plateau de Kik, Moulay Brahim et Asni. Après-midi vallée de l'Ourika, visite maison berbère. Déjeuner au bord de la rivière. Balade d'une heure avec guide local aux cascades."
+                }
+            ]
+        },
+        {
+            id: "circuit-3-days-coast",
+            name: "Circuit 3 Jours - Essaouira, Agadir & Taroudant",
+            duration: "3_days",
+            image: "/images/essaouira/hamza-omlacho-M9GO4Gsd2SM-unsplash.jpg",
+            gallery: [
+                "/images/essaouira/rigel-No_Y3bn4lNQ-unsplash.jpg",
+                "/images/essaouira/youssef-aboutaleb-ad1FM2Xj0QQ-unsplash.jpg"
+            ],
+            pricing: [
+                { minPeople: 2, maxPeople: 4, pricePerPerson: 467 },
+                { minPeople: 5, maxPeople: 20, pricePerPerson: 320 }
+            ],
+            includes: [
+                "Transport en privé",
+                "Guide à Essaouira",
+                "Guide à Taroudant",
+                "Hébergement Demi Pension"
+            ],
+            excludes: [
+                "Déjeuner",
+                "Boissons",
+                "Pourboires"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Marrakech - Essaouira",
+                    description: "Départ vers Essaouira vers 8h30. Arrivée, déjeuner, visite de la ville avec guide local (3h). Nuit à Essaouira (Demi pension)."
+                },
+                {
+                    day: 2,
+                    title: "Essaouira - Agadir",
+                    description: "Départ vers Agadir par la route côtière. Déjeuner. Visite d'Agadir Oufella, Souk El Had, la côte. Nuit à Agadir (Demi pension)."
+                },
+                {
+                    day: 3,
+                    title: "Agadir - Taroudant - Marrakech",
+                    description: "Départ vers Taroudant, visite de la partie ancienne. Déjeuner. Retour à Marrakech via Tizi n'Test. Fin de service."
+                }
+            ]
         }
     ],
 
@@ -194,10 +308,24 @@ export const siteDataFr = {
                 location: "Agafay",
                 price: 25,
                 duration: "1_hour",
-                image: "/images/camel-riding/oussama-rahib-f7F8URbIx08-unsplash.jpg",
+                image: "/images/camel-riding/camel-ride-sunset.jpeg",
                 gallery: [
+                    "/images/camel-riding/camel-ride-sunset.jpeg",
                     "/images/camel-riding/peter-thomas-PotqZeNaUZ4-unsplash.jpg",
                     "/images/camel-riding/sheila-c-KuXu8rx_1-8-unsplash.jpg"
+                ]
+            },
+            {
+                id: "balloon-sunrise",
+                type: "balloon",
+                location: "Marrakech",
+                price: 155,
+                duration: "matin",
+                image: "/images/airballon/balloon-flight-1.jpeg",
+                gallery: [
+                    "/images/airballon/balloon-flight-2.jpeg",
+                    "/images/airballon/balloon-flight-1.jpeg",
+                    "/images/airballon/danai-tsoutreli-3NAlBV5PlmE-unsplash.jpg"
                 ]
             }
         ],
@@ -216,14 +344,14 @@ export const siteDataFr = {
         {
             id: "private",
             name: "Transport privé",
-            image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070",
+            image: "/images/transport/private-transport.jpeg",
             description: "Véhicule privé confortable avec chauffeur professionnel",
             price: 50
         },
         {
             id: "airport",
             name: "Transfert aéroport",
-            image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074",
+            image: "/images/transport/airport-transport.jpeg",
             description: "Transferts aéroport fiables, service d'accueil",
             price: 30
         }

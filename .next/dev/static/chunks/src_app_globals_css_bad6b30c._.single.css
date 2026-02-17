@@ -633,6 +633,10 @@
     left: calc(var(--spacing) * 5);
   }
 
+  .left-6 {
+    left: calc(var(--spacing) * 6);
+  }
+
   .left-8 {
     left: calc(var(--spacing) * 8);
   }
@@ -1023,6 +1027,10 @@
     height: 500px;
   }
 
+  .h-\[550px\] {
+    height: 550px;
+  }
+
   .h-auto {
     height: auto;
   }
@@ -1211,6 +1219,10 @@
     min-width: calc(var(--spacing) * 10);
   }
 
+  .min-w-\[20px\] {
+    min-width: 20px;
+  }
+
   .min-w-\[180px\] {
     min-width: 180px;
   }
@@ -1262,6 +1274,11 @@
 
   .translate-y-1\/3 {
     --tw-translate-y: calc(1 / 3 * 100%);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+
+  .translate-y-2 {
+    --tw-translate-y: calc(var(--spacing) * 2);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
 
@@ -1649,6 +1666,16 @@
   @supports (color: color-mix(in lab, red, red)) {
     .bg-black\/0 {
       background-color: color-mix(in oklab, var(--color-black) 0%, transparent);
+    }
+  }
+
+  .bg-black\/10 {
+    background-color: #0000001a;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-black\/10 {
+      background-color: color-mix(in oklab, var(--color-black) 10%, transparent);
     }
   }
 
@@ -3056,6 +3083,24 @@
   }
 
   @media (hover: hover) {
+    .group-hover\:border-white:is(:where(.group):hover *) {
+      border-color: var(--color-white);
+    }
+  }
+
+  @media (hover: hover) {
+    .group-hover\:bg-black\/0:is(:where(.group):hover *) {
+      background-color: #0000;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .group-hover\:bg-black\/0:is(:where(.group):hover *) {
+        background-color: color-mix(in oklab, var(--color-black) 0%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
     .group-hover\:bg-black\/10:is(:where(.group):hover *) {
       background-color: #0000001a;
     }
@@ -3104,6 +3149,12 @@
   }
 
   @media (hover: hover) {
+    .group-hover\:text-black:is(:where(.group):hover *) {
+      color: var(--color-black);
+    }
+  }
+
+  @media (hover: hover) {
     .group-hover\:text-primary:is(:where(.group):hover *) {
       color: var(--color-primary);
     }
@@ -3112,6 +3163,18 @@
   @media (hover: hover) {
     .group-hover\:text-white:is(:where(.group):hover *) {
       color: var(--color-white);
+    }
+  }
+
+  @media (hover: hover) {
+    .group-hover\:text-white\/90:is(:where(.group):hover *) {
+      color: #ffffffe6;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .group-hover\:text-white\/90:is(:where(.group):hover *) {
+        color: color-mix(in oklab, var(--color-white) 90%, transparent);
+      }
     }
   }
 

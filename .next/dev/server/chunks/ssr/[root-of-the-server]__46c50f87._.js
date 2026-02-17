@@ -299,7 +299,7 @@ const siteConfig = {
         type: 'TravelAgency',
         priceRange: '$$',
         address: {
-            streetAddress: 'Marrakech Medina',
+            streetAddress: "Num 23, Rue Ennakhil, M'hamid",
             addressLocality: 'Marrakech',
             addressRegion: 'Marrakech-Safi',
             postalCode: '40000',

@@ -27,12 +27,6 @@ const siteData = {
                     maxPeople: 5,
                     pricePerPerson: 690
                 },
-                // The prompt says: "De 2 per a 5 per. 690€". "De 5 per a ..... 495€".
-                // In 3 days: "De 2 per a 5 per. 380€ par personne". Explicit "par personne".
-                // In 8 days: "1650€ de 2 per a 4 per". This format suggests TOTAL or per GROUP? No, likely per person but the text is ambiguous.
-                // However, usually these tours are priced per person. 690 EUR pp for 5 days private tour is reasonable (138/day). 1650 EUR pp for 8 days (206/day) is also possible for luxury.
-                // BUT "1650€ de 2 per a 4 per" could mean "Total price for the group"? No, that's too cheap (1650/4 = 412 for 8 days = 50/day).
-                // Let's assume Price Per Person.
                 {
                     minPeople: 6,
                     maxPeople: 20,
@@ -204,6 +198,144 @@ const siteData = {
                     description: "Visit of Marrakech. Dinner show in Agafay desert. Return around 10pm."
                 }
             ]
+        },
+        {
+            id: "circuit-3-days-taliouine",
+            name: "3 Days Circuit - Taliouine Saffron Capital",
+            duration: "3_days",
+            image: "/images/ouarzazate/cristiano-pinto-knB5iCogf5Q-unsplash.jpg",
+            gallery: [
+                "/images/ouarzazate/abdou-faiz-mBo2EUfJ7sY-unsplash.jpg",
+                "/images/ouarzazate/hassan-ouajbir-INcADDyMwwo-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 4,
+                    pricePerPerson: 350
+                },
+                {
+                    minPeople: 5,
+                    maxPeople: 20,
+                    pricePerPerson: 258
+                }
+            ],
+            includes: [
+                "Air-conditioned van transport",
+                "Accommodation (Half Board) in Taliouine & Ait Ben Haddou",
+                "Guide in Ait Ben Haddou"
+            ],
+            excludes: [
+                "Lunches",
+                "Entrance fees (Studio/Kasbah)",
+                "Tips"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Marrakech - Taliouine",
+                    description: "Departure via Lake Lalla Takerkoust, Kik Plateau, Moulay Brahim, and Asni. Lunch at Tizi n'Test. Overnight in Taliouine (Half Board)."
+                },
+                {
+                    day: 2,
+                    title: "Taliouine - Ait Ben Haddou",
+                    description: "Travel via Taznakht. Visit Ouarzazate Cinema Studio and Kasbah. Overnight in Ait Ben Haddou (Half Board)."
+                },
+                {
+                    day: 3,
+                    title: "Ait Ben Haddou - Marrakech",
+                    description: "Visit UNESCO Heritage Kasbah Ait Ben Haddou. Route to Telouet for lunch. Return to Marrakech via Tichka Pass (2260m)."
+                }
+            ]
+        },
+        {
+            id: "day-trip-three-valleys",
+            name: "Day Trip - Three Valleys & Atlas Waterfalls",
+            duration: "1_day",
+            image: "/images/ourika/hassan-ahrouch-CfmIZwBvxNY-unsplash.jpg",
+            gallery: [
+                "/images/ourika/matthew-fainman-3yonP2JaGTU-unsplash.jpg",
+                "/images/ourika/abdelhamid-azoui-BGU0uaY0tJs-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 4,
+                    pricePerPerson: 69
+                },
+                {
+                    minPeople: 5,
+                    maxPeople: 20,
+                    pricePerPerson: 48
+                }
+            ],
+            includes: [
+                "Private transport",
+                "Local Guide",
+                "Meal (Lunch)",
+                "Tea at a local home"
+            ],
+            excludes: [
+                "Tips",
+                "Drinks"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Three Valleys Excursion",
+                    description: "Departure 8:30am. Visit Lake Lalla Takerkoust, Kik Plateau, Moulay Brahim, Asni. Afternoon in Ourika Valley, visit Berber house. Lunch by the river. 1h guided walk to waterfalls. Return around 5:30pm."
+                }
+            ]
+        },
+        {
+            id: "circuit-3-days-coast",
+            name: "3 Days Circuit - Essaouira, Agadir & Taroudant",
+            duration: "3_days",
+            image: "/images/essaouira/hamza-omlacho-M9GO4Gsd2SM-unsplash.jpg",
+            gallery: [
+                "/images/essaouira/rigel-No_Y3bn4lNQ-unsplash.jpg",
+                "/images/essaouira/youssef-aboutaleb-ad1FM2Xj0QQ-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 4,
+                    pricePerPerson: 467
+                },
+                {
+                    minPeople: 5,
+                    maxPeople: 20,
+                    pricePerPerson: 320
+                }
+            ],
+            includes: [
+                "Private transport",
+                "Guide in Essaouira",
+                "Guide in Taroudant",
+                "Accommodation (Half Board)"
+            ],
+            excludes: [
+                "Lunches",
+                "Drinks",
+                "Tips"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Marrakech - Essaouira",
+                    description: "Departure 8:30am. Arrive in Essaouira, lunch, 3h guided city tour. Overnight in Essaouira (Half Board)."
+                },
+                {
+                    day: 2,
+                    title: "Essaouira - Agadir",
+                    description: "Scenic coastal drive to Agadir. Lunch. Visit Agadir Oufella, Souk El Had, and the coast. Overnight in Agadir (Half Board)."
+                },
+                {
+                    day: 3,
+                    title: "Agadir - Taroudant - Marrakech",
+                    description: "Travel to Taroudant, visit ancient city. Lunch. Return to Marrakech via Tizi n'Test."
+                }
+            ]
         }
     ],
     activities: {
@@ -239,10 +371,24 @@ const siteData = {
                 location: "Agafay",
                 price: 25,
                 duration: "1_hour",
-                image: "/images/camel-riding/oussama-rahib-f7F8URbIx08-unsplash.jpg",
+                image: "/images/camel-riding/camel-ride-sunset.jpeg",
                 gallery: [
+                    "/images/camel-riding/camel-ride-sunset.jpeg",
                     "/images/camel-riding/peter-thomas-PotqZeNaUZ4-unsplash.jpg",
                     "/images/camel-riding/sheila-c-KuXu8rx_1-8-unsplash.jpg"
+                ]
+            },
+            {
+                id: "balloon-sunrise",
+                type: "balloon",
+                location: "Marrakech",
+                price: 155,
+                duration: "morning",
+                image: "/images/airballon/balloon-flight-1.jpeg",
+                gallery: [
+                    "/images/airballon/balloon-flight-2.jpeg",
+                    "/images/airballon/balloon-flight-1.jpeg",
+                    "/images/airballon/danai-tsoutreli-3NAlBV5PlmE-unsplash.jpg"
                 ]
             }
         ],
@@ -260,14 +406,14 @@ const siteData = {
         {
             id: "private",
             name: "Private Transport",
-            image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070",
+            image: "/images/transport/private-transport.jpeg",
             description: "Comfortable private vehicle with professional driver",
             price: 50
         },
         {
             id: "airport",
             name: "Airport Transport",
-            image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074",
+            image: "/images/transport/airport-transport.jpeg",
             description: "Reliable airport transfers, meet & greet service",
             price: 30
         }
@@ -571,6 +717,144 @@ const siteDataFr = {
                     description: "Visite de Marrakech et dîner spectacle au désert d agafay. Retour vers 22h."
                 }
             ]
+        },
+        {
+            id: "circuit-3-days-taliouine",
+            name: "Circuit 3 Jours - Taliouine et Capitale du Safran",
+            duration: "3_days",
+            image: "/images/ouarzazate/cristiano-pinto-knB5iCogf5Q-unsplash.jpg",
+            gallery: [
+                "/images/ouarzazate/abdou-faiz-mBo2EUfJ7sY-unsplash.jpg",
+                "/images/ouarzazate/hassan-ouajbir-INcADDyMwwo-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 4,
+                    pricePerPerson: 350
+                },
+                {
+                    minPeople: 5,
+                    maxPeople: 20,
+                    pricePerPerson: 258
+                }
+            ],
+            includes: [
+                "Transport van climatisé",
+                "Hébergement en demi pension (Taliouine, Ait Ben Haddou)",
+                "Guide à Ait Ben Haddou"
+            ],
+            excludes: [
+                "Déjeuner",
+                "Entré de studio et kasbah",
+                "Pourboires"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Marrakech - Taliouine",
+                    description: "Départ de Marrakech via le lac Lalla Takerkoust, le plateau de Kik, Moulay Brahim et Asni. Déjeuner à Tizi n'Test. Nuit à Taliouine (Demi pension)."
+                },
+                {
+                    day: 2,
+                    title: "Taliouine - Ait Ben Haddou",
+                    description: "Taliouine vers Ait Ben Haddou via Taznakhte. Visite de Ouarzazate (Studio et Kasbah). Nuit à Ait Ben Haddou (Demi pension)."
+                },
+                {
+                    day: 3,
+                    title: "Ait Ben Haddou - Marrakech",
+                    description: "Visite de la Kasbah Ait Ben Haddou (patrimoine mondial de l'UNESCO). Route vers Telouet pour le déjeuner. Retour à Marrakech via le col de Tichka."
+                }
+            ]
+        },
+        {
+            id: "day-trip-three-valleys",
+            name: "Excursion Trois Vallées",
+            duration: "1_day",
+            image: "/images/ourika/hassan-ahrouch-CfmIZwBvxNY-unsplash.jpg",
+            gallery: [
+                "/images/ourika/matthew-fainman-3yonP2JaGTU-unsplash.jpg",
+                "/images/ourika/abdelhamid-azoui-BGU0uaY0tJs-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 4,
+                    pricePerPerson: 69
+                },
+                {
+                    minPeople: 5,
+                    maxPeople: 20,
+                    pricePerPerson: 48
+                }
+            ],
+            includes: [
+                "Transport en privé",
+                "Guide Local",
+                "Repas",
+                "Thé chez l'habitant"
+            ],
+            excludes: [
+                "Pourboires",
+                "Boissons"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Les Trois Vallées",
+                    description: "Départ vers 8h30, retour vers 17h30. Lac Lalla Takerkoust, plateau de Kik, Moulay Brahim et Asni. Après-midi vallée de l'Ourika, visite maison berbère. Déjeuner au bord de la rivière. Balade d'une heure avec guide local aux cascades."
+                }
+            ]
+        },
+        {
+            id: "circuit-3-days-coast",
+            name: "Circuit 3 Jours - Essaouira, Agadir & Taroudant",
+            duration: "3_days",
+            image: "/images/essaouira/hamza-omlacho-M9GO4Gsd2SM-unsplash.jpg",
+            gallery: [
+                "/images/essaouira/rigel-No_Y3bn4lNQ-unsplash.jpg",
+                "/images/essaouira/youssef-aboutaleb-ad1FM2Xj0QQ-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 4,
+                    pricePerPerson: 467
+                },
+                {
+                    minPeople: 5,
+                    maxPeople: 20,
+                    pricePerPerson: 320
+                }
+            ],
+            includes: [
+                "Transport en privé",
+                "Guide à Essaouira",
+                "Guide à Taroudant",
+                "Hébergement Demi Pension"
+            ],
+            excludes: [
+                "Déjeuner",
+                "Boissons",
+                "Pourboires"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Marrakech - Essaouira",
+                    description: "Départ vers Essaouira vers 8h30. Arrivée, déjeuner, visite de la ville avec guide local (3h). Nuit à Essaouira (Demi pension)."
+                },
+                {
+                    day: 2,
+                    title: "Essaouira - Agadir",
+                    description: "Départ vers Agadir par la route côtière. Déjeuner. Visite d'Agadir Oufella, Souk El Had, la côte. Nuit à Agadir (Demi pension)."
+                },
+                {
+                    day: 3,
+                    title: "Agadir - Taroudant - Marrakech",
+                    description: "Départ vers Taroudant, visite de la partie ancienne. Déjeuner. Retour à Marrakech via Tizi n'Test. Fin de service."
+                }
+            ]
         }
     ],
     activities: {
@@ -606,10 +890,24 @@ const siteDataFr = {
                 location: "Agafay",
                 price: 25,
                 duration: "1_hour",
-                image: "/images/camel-riding/oussama-rahib-f7F8URbIx08-unsplash.jpg",
+                image: "/images/camel-riding/camel-ride-sunset.jpeg",
                 gallery: [
+                    "/images/camel-riding/camel-ride-sunset.jpeg",
                     "/images/camel-riding/peter-thomas-PotqZeNaUZ4-unsplash.jpg",
                     "/images/camel-riding/sheila-c-KuXu8rx_1-8-unsplash.jpg"
+                ]
+            },
+            {
+                id: "balloon-sunrise",
+                type: "balloon",
+                location: "Marrakech",
+                price: 155,
+                duration: "matin",
+                image: "/images/airballon/balloon-flight-1.jpeg",
+                gallery: [
+                    "/images/airballon/balloon-flight-2.jpeg",
+                    "/images/airballon/balloon-flight-1.jpeg",
+                    "/images/airballon/danai-tsoutreli-3NAlBV5PlmE-unsplash.jpg"
                 ]
             }
         ],
@@ -627,14 +925,14 @@ const siteDataFr = {
         {
             id: "private",
             name: "Transport privé",
-            image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070",
+            image: "/images/transport/private-transport.jpeg",
             description: "Véhicule privé confortable avec chauffeur professionnel",
             price: 50
         },
         {
             id: "airport",
             name: "Transfert aéroport",
-            image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074",
+            image: "/images/transport/airport-transport.jpeg",
             description: "Transferts aéroport fiables, service d'accueil",
             price: 30
         }
@@ -921,32 +1219,34 @@ const ServicesListing = ({ locale })=>{
     };
     // Helper function to determine the correct route for an item
     const getItemRoute = (item)=>{
-        // Check if item has pricing array (tours)
-        if (item.pricing && Array.isArray(item.pricing)) {
+        // Check if item exists in tours
+        if (data.tours.some((t)=>t.id === item.id)) {
             return 'tours';
+        }
+        // Check if item exists in transport
+        if (data.transport.some((t)=>t.id === item.id)) {
+            return 'transport';
         }
         // Check if item has type property (activities)
         if (item.type && typeof item.type === 'string') {
             return 'activities';
         }
-        // Check if item has included/excluded arrays (packages)
-        if (item.included || item.excluded) {
+        // Check if item exists in packages
+        if (data.packages && data.packages.some((p)=>p.id === item.id)) {
             return 'packages';
-        }
-        // Check if item has capacity (transport)
-        if (item.capacity) {
-            return 'transport';
         }
         // Fallback to active category route
         return categories.find((c)=>c.id === activeCategory)?.route || 'services';
     };
     const renderPrice = (item, categoryId)=>{
-        if (categoryId === 'tours' && item.pricing && item.pricing[0]) {
-            const p = item.pricing[0];
+        // Check if it's a tour (has pricing array)
+        if (item.pricing && Array.isArray(item.pricing) && item.pricing.length > 0) {
+            const p = item.pricing[0]; // Get base price (first tier)
             return p.totalPrice ? `€${p.totalPrice}` : `€${p.pricePerPerson}/p`;
         }
-        if (categoryId === 'packages' || categoryId === 'activities') {
-            return item.price ? `€${item.price}` : t('onRequest');
+        // Check if it's an activity or package (has price property)
+        if (item.price) {
+            return `€${item.price}`;
         }
         return t('onRequest');
     };
@@ -968,20 +1268,20 @@ const ServicesListing = ({ locale })=>{
                                 priority: true
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                lineNumber: 170,
+                                lineNumber: 174,
                                 columnNumber: 21
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/70"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                lineNumber: 177,
+                                lineNumber: 181,
                                 columnNumber: 21
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ServicesListing.tsx",
-                        lineNumber: 169,
+                        lineNumber: 173,
                         columnNumber: 17
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1007,7 +1307,7 @@ const ServicesListing = ({ locale })=>{
                                             children: t('tag')
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ServicesListing.tsx",
-                                            lineNumber: 188,
+                                            lineNumber: 192,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -1020,13 +1320,13 @@ const ServicesListing = ({ locale })=>{
                                                     children: t('titlePart2')
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ServicesListing.tsx",
-                                                    lineNumber: 192,
+                                                    lineNumber: 196,
                                                     columnNumber: 51
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ServicesListing.tsx",
-                                            lineNumber: 191,
+                                            lineNumber: 195,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1034,7 +1334,7 @@ const ServicesListing = ({ locale })=>{
                                             children: t('subtitle')
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ServicesListing.tsx",
-                                            lineNumber: 194,
+                                            lineNumber: 198,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1047,30 +1347,30 @@ const ServicesListing = ({ locale })=>{
                                                             className: "w-4 h-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ServicesListing.tsx",
-                                                            lineNumber: 209,
+                                                            lineNumber: 213,
                                                             columnNumber: 41
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         getCategoryLabel(cat.id)
                                                     ]
                                                 }, cat.id, true, {
                                                     fileName: "[project]/src/components/ServicesListing.tsx",
-                                                    lineNumber: 201,
+                                                    lineNumber: 205,
                                                     columnNumber: 37
                                                 }, ("TURBOPACK compile-time value", void 0)))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ServicesListing.tsx",
-                                            lineNumber: 199,
+                                            lineNumber: 203,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ServicesListing.tsx",
-                                    lineNumber: 183,
+                                    lineNumber: 187,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                lineNumber: 182,
+                                lineNumber: 186,
                                 columnNumber: 21
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1090,24 +1390,24 @@ const ServicesListing = ({ locale })=>{
                                     className: "w-8 h-8 text-white/60"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ServicesListing.tsx",
-                                    lineNumber: 223,
+                                    lineNumber: 227,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                lineNumber: 218,
+                                lineNumber: 222,
                                 columnNumber: 21
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ServicesListing.tsx",
-                        lineNumber: 181,
+                        lineNumber: 185,
                         columnNumber: 17
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/ServicesListing.tsx",
-                lineNumber: 167,
+                lineNumber: 171,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1135,7 +1435,7 @@ const ServicesListing = ({ locale })=>{
                                                 children: getCategoryLabel(activeCategory)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                                lineNumber: 241,
+                                                lineNumber: 245,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1143,13 +1443,13 @@ const ServicesListing = ({ locale })=>{
                                                 children: getCategoryDescription(activeCategory)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                                lineNumber: 244,
+                                                lineNumber: 248,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ServicesListing.tsx",
-                                        lineNumber: 240,
+                                        lineNumber: 244,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1161,24 +1461,24 @@ const ServicesListing = ({ locale })=>{
                                                 className: "w-4 h-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                                lineNumber: 253,
+                                                lineNumber: 257,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ServicesListing.tsx",
-                                        lineNumber: 248,
+                                        lineNumber: 252,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                lineNumber: 239,
+                                lineNumber: 243,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0))
                         }, activeCategory, false, {
                             fileName: "[project]/src/components/ServicesListing.tsx",
-                            lineNumber: 233,
+                            lineNumber: 237,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -1228,7 +1528,7 @@ const ServicesListing = ({ locale })=>{
                                                                 className: "object-cover group-hover:scale-105 transition-transform duration-500"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                                                lineNumber: 282,
+                                                                lineNumber: 286,
                                                                 columnNumber: 49
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1238,14 +1538,14 @@ const ServicesListing = ({ locale })=>{
                                                                         className: "w-3 h-3 text-primary"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/ServicesListing.tsx",
-                                                                        lineNumber: 290,
+                                                                        lineNumber: 294,
                                                                         columnNumber: 53
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     activeCategory === 'tours' && item.duration ? item.duration.replace('_', ' ') : activeCategory === 'activities' ? '2-4 hours' : activeCategory === 'packages' ? 'Full day' : 'Flexible'
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                                                lineNumber: 289,
+                                                                lineNumber: 293,
                                                                 columnNumber: 49
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1255,20 +1555,20 @@ const ServicesListing = ({ locale })=>{
                                                                         className: "w-3 h-3 text-yellow-500 fill-yellow-500"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/ServicesListing.tsx",
-                                                                        lineNumber: 299,
+                                                                        lineNumber: 303,
                                                                         columnNumber: 53
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     "4.9"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                                                lineNumber: 298,
+                                                                lineNumber: 302,
                                                                 columnNumber: 49
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/ServicesListing.tsx",
-                                                        lineNumber: 281,
+                                                        lineNumber: 285,
                                                         columnNumber: 45
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1279,7 +1579,7 @@ const ServicesListing = ({ locale })=>{
                                                                 children: item.name || item.type
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                                                lineNumber: 306,
+                                                                lineNumber: 310,
                                                                 columnNumber: 49
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1287,7 +1587,7 @@ const ServicesListing = ({ locale })=>{
                                                                 children: item.desc || item.description || `Experience the best of Morocco.`
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                                                lineNumber: 309,
+                                                                lineNumber: 313,
                                                                 columnNumber: 49
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1297,10 +1597,10 @@ const ServicesListing = ({ locale })=>{
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                 className: "text-neutral-400 text-xs",
-                                                                                children: t('startingFrom')
+                                                                                children: item.pricing ? t('price') : t('startingFrom')
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                                                                lineNumber: 316,
+                                                                                lineNumber: 320,
                                                                                 columnNumber: 57
                                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1308,13 +1608,13 @@ const ServicesListing = ({ locale })=>{
                                                                                 children: renderPrice(item, activeCategory)
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                                                                lineNumber: 317,
+                                                                                lineNumber: 323,
                                                                                 columnNumber: 57
                                                                             }, ("TURBOPACK compile-time value", void 0))
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/components/ServicesListing.tsx",
-                                                                        lineNumber: 315,
+                                                                        lineNumber: 319,
                                                                         columnNumber: 53
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1325,51 +1625,51 @@ const ServicesListing = ({ locale })=>{
                                                                                 className: "w-4 h-4 group-hover:translate-x-1 transition-transform"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                                                                lineNumber: 323,
+                                                                                lineNumber: 329,
                                                                                 columnNumber: 57
                                                                             }, ("TURBOPACK compile-time value", void 0))
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/components/ServicesListing.tsx",
-                                                                        lineNumber: 321,
+                                                                        lineNumber: 327,
                                                                         columnNumber: 53
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                                                lineNumber: 314,
+                                                                lineNumber: 318,
                                                                 columnNumber: 49
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/ServicesListing.tsx",
-                                                        lineNumber: 305,
+                                                        lineNumber: 309,
                                                         columnNumber: 45
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                                lineNumber: 279,
+                                                lineNumber: 283,
                                                 columnNumber: 41
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ServicesListing.tsx",
-                                            lineNumber: 275,
+                                            lineNumber: 279,
                                             columnNumber: 37
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, item.id, false, {
                                         fileName: "[project]/src/components/ServicesListing.tsx",
-                                        lineNumber: 269,
+                                        lineNumber: 273,
                                         columnNumber: 33
                                     }, ("TURBOPACK compile-time value", void 0)))
                             }, activeCategory, false, {
                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                lineNumber: 260,
+                                lineNumber: 264,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/components/ServicesListing.tsx",
-                            lineNumber: 259,
+                            lineNumber: 263,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1385,29 +1685,29 @@ const ServicesListing = ({ locale })=>{
                                         className: "w-4 h-4 group-hover:translate-x-1 transition-transform"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ServicesListing.tsx",
-                                        lineNumber: 341,
+                                        lineNumber: 347,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                lineNumber: 336,
+                                lineNumber: 342,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/components/ServicesListing.tsx",
-                            lineNumber: 335,
+                            lineNumber: 341,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ServicesListing.tsx",
-                    lineNumber: 230,
+                    lineNumber: 234,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/ServicesListing.tsx",
-                lineNumber: 229,
+                lineNumber: 233,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1422,7 +1722,7 @@ const ServicesListing = ({ locale })=>{
                                 children: t('ctaTitle')
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                lineNumber: 351,
+                                lineNumber: 357,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1430,7 +1730,7 @@ const ServicesListing = ({ locale })=>{
                                 children: t('ctaDescription')
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                lineNumber: 354,
+                                lineNumber: 360,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1442,35 +1742,35 @@ const ServicesListing = ({ locale })=>{
                                         className: "w-4 h-4 group-hover:translate-x-1 transition-transform"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ServicesListing.tsx",
-                                        lineNumber: 362,
+                                        lineNumber: 368,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ServicesListing.tsx",
-                                lineNumber: 357,
+                                lineNumber: 363,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ServicesListing.tsx",
-                        lineNumber: 350,
+                        lineNumber: 356,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/src/components/ServicesListing.tsx",
-                    lineNumber: 349,
+                    lineNumber: 355,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/ServicesListing.tsx",
-                lineNumber: 348,
+                lineNumber: 354,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/ServicesListing.tsx",
-        lineNumber: 165,
+        lineNumber: 169,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
