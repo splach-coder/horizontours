@@ -491,6 +491,7 @@ const siteConfig = {
     description: 'Discover Morocco with Trust Drivers - Premium private tours, desert adventures, and luxury transport in Marrakech. Explore the Sahara, Atlas Mountains, and Imperial Cities with expert local guides.',
     // URLs
     url: process.env.NEXT_PUBLIC_SITE_URL || 'https://trustdrivers.tours',
+    googleReviews: 'https://maps.app.goo.gl/67E2E3rrsTejR5CA6?g_st=awb',
     // Localization
     defaultLocale: 'en',
     locales: [

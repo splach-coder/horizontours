@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Card } from './ui/Card';
+import { siteConfig } from '@/config/site';
 
 interface Review {
     id: string;
@@ -51,7 +52,7 @@ export const Reviews: React.FC<ReviewsProps> = ({ reviews, title = "What our gue
                     ))}
                 </div>
                 <div className="text-center mt-10">
-                    <a href="#" className="text-primary font-medium hover:underline">View all reviews on Google Maps &rarr;</a>
+                    <a href={siteConfig.googleReviews} target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">View all reviews on Google Maps &rarr;</a>
                 </div>
             </div>
         </section>

@@ -651,7 +651,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$mo
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$modules$2f$autoplay$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Autoplay$3e$__ = __turbopack_context__.i("[project]/node_modules/swiper/modules/autoplay.mjs [app-client] (ecmascript) <export default as Autoplay>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-client] (ecmascript) <export default as Star>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/config/site.ts [app-client] (ecmascript)");
 'use client';
+;
 ;
 ;
 ;
@@ -670,7 +672,7 @@ const GoogleIcon = ({ className })=>/*#__PURE__*/ (0, __TURBOPACK__imported__mod
                 fill: "#4285F4"
             }, void 0, false, {
                 fileName: "[project]/src/components/ReviewsSlider.tsx",
-                lineNumber: 14,
+                lineNumber: 16,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -678,7 +680,7 @@ const GoogleIcon = ({ className })=>/*#__PURE__*/ (0, __TURBOPACK__imported__mod
                 fill: "#34A853"
             }, void 0, false, {
                 fileName: "[project]/src/components/ReviewsSlider.tsx",
-                lineNumber: 15,
+                lineNumber: 17,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -686,7 +688,7 @@ const GoogleIcon = ({ className })=>/*#__PURE__*/ (0, __TURBOPACK__imported__mod
                 fill: "#FBBC05"
             }, void 0, false, {
                 fileName: "[project]/src/components/ReviewsSlider.tsx",
-                lineNumber: 16,
+                lineNumber: 18,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -694,13 +696,13 @@ const GoogleIcon = ({ className })=>/*#__PURE__*/ (0, __TURBOPACK__imported__mod
                 fill: "#EA4335"
             }, void 0, false, {
                 fileName: "[project]/src/components/ReviewsSlider.tsx",
-                lineNumber: 17,
+                lineNumber: 19,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/ReviewsSlider.tsx",
-        lineNumber: 13,
+        lineNumber: 15,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 _c = GoogleIcon;
@@ -733,7 +735,7 @@ const ReviewsSlider = ({ reviews })=>{
                                     className: "w-10 h-10"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                    lineNumber: 52,
+                                    lineNumber: 54,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -743,7 +745,7 @@ const ReviewsSlider = ({ reviews })=>{
                                             children: "Google Reviews"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                            lineNumber: 54,
+                                            lineNumber: 56,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -751,19 +753,19 @@ const ReviewsSlider = ({ reviews })=>{
                                             children: "See what travelers say about us"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                            lineNumber: 55,
+                                            lineNumber: 57,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                    lineNumber: 53,
+                                    lineNumber: 55,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/ReviewsSlider.tsx",
-                            lineNumber: 51,
+                            lineNumber: 53,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -777,7 +779,7 @@ const ReviewsSlider = ({ reviews })=>{
                                             children: avgRating
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                            lineNumber: 62,
+                                            lineNumber: 64,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -788,18 +790,18 @@ const ReviewsSlider = ({ reviews })=>{
                                                     className: `w-4 h-4 ${i < Math.round(Number(avgRating)) ? 'fill-[#FBBC05] text-[#FBBC05]' : 'text-gray-300'}`
                                                 }, i, false, {
                                                     fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                                    lineNumber: 65,
+                                                    lineNumber: 67,
                                                     columnNumber: 37
                                                 }, ("TURBOPACK compile-time value", void 0)))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                            lineNumber: 63,
+                                            lineNumber: 65,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                    lineNumber: 61,
+                                    lineNumber: 63,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -813,7 +815,7 @@ const ReviewsSlider = ({ reviews })=>{
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                            lineNumber: 73,
+                                            lineNumber: 75,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -821,25 +823,25 @@ const ReviewsSlider = ({ reviews })=>{
                                             children: "Reviews"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                            lineNumber: 74,
+                                            lineNumber: 76,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                    lineNumber: 72,
+                                    lineNumber: 74,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/ReviewsSlider.tsx",
-                            lineNumber: 60,
+                            lineNumber: 62,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ReviewsSlider.tsx",
-                    lineNumber: 44,
+                    lineNumber: 46,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Swiper"], {
@@ -899,7 +901,7 @@ const ReviewsSlider = ({ reviews })=>{
                                                         children: review.author.charAt(0).toUpperCase()
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                                        lineNumber: 108,
+                                                        lineNumber: 110,
                                                         columnNumber: 41
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -909,7 +911,7 @@ const ReviewsSlider = ({ reviews })=>{
                                                                 children: review.author
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                                                lineNumber: 112,
+                                                                lineNumber: 114,
                                                                 columnNumber: 45
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -917,32 +919,32 @@ const ReviewsSlider = ({ reviews })=>{
                                                                 children: review.date
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                                                lineNumber: 113,
+                                                                lineNumber: 115,
                                                                 columnNumber: 45
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                                        lineNumber: 111,
+                                                        lineNumber: 113,
                                                         columnNumber: 41
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                                lineNumber: 106,
+                                                lineNumber: 108,
                                                 columnNumber: 37
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(GoogleIcon, {
                                                 className: "w-5 h-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                                lineNumber: 116,
+                                                lineNumber: 118,
                                                 columnNumber: 37
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                        lineNumber: 105,
+                                        lineNumber: 107,
                                         columnNumber: 33
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -953,12 +955,12 @@ const ReviewsSlider = ({ reviews })=>{
                                                 className: `w-4 h-4 ${i < review.rating ? 'fill-[#FBBC05] text-[#FBBC05]' : 'text-gray-200'}`
                                             }, i, false, {
                                                 fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                                lineNumber: 122,
+                                                lineNumber: 124,
                                                 columnNumber: 41
                                             }, ("TURBOPACK compile-time value", void 0)))
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                        lineNumber: 120,
+                                        lineNumber: 122,
                                         columnNumber: 33
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -966,7 +968,7 @@ const ReviewsSlider = ({ reviews })=>{
                                         children: review.comment
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                        lineNumber: 130,
+                                        lineNumber: 132,
                                         columnNumber: 33
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -976,34 +978,34 @@ const ReviewsSlider = ({ reviews })=>{
                                             children: "Posted on Google"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                            lineNumber: 136,
+                                            lineNumber: 138,
                                             columnNumber: 37
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                        lineNumber: 135,
+                                        lineNumber: 137,
                                         columnNumber: 33
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                lineNumber: 97,
+                                lineNumber: 99,
                                 columnNumber: 29
                             }, ("TURBOPACK compile-time value", void 0))
                         }, review.id, false, {
                             fileName: "[project]/src/components/ReviewsSlider.tsx",
-                            lineNumber: 96,
+                            lineNumber: 98,
                             columnNumber: 25
                         }, ("TURBOPACK compile-time value", void 0)))
                 }, void 0, false, {
                     fileName: "[project]/src/components/ReviewsSlider.tsx",
-                    lineNumber: 80,
+                    lineNumber: 82,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "text-center mt-8",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                        href: "https://g.page/r/YOUR_GOOGLE_PLACE_ID/review",
+                        href: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$config$2f$site$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["siteConfig"].googleReviews,
                         target: "_blank",
                         rel: "noopener noreferrer",
                         className: "inline-flex items-center gap-2 text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors",
@@ -1012,30 +1014,30 @@ const ReviewsSlider = ({ reviews })=>{
                                 className: "w-4 h-4"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ReviewsSlider.tsx",
-                                lineNumber: 151,
+                                lineNumber: 153,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0)),
                             "Write a review on Google"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ReviewsSlider.tsx",
-                        lineNumber: 145,
+                        lineNumber: 147,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/src/components/ReviewsSlider.tsx",
-                    lineNumber: 144,
+                    lineNumber: 146,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/ReviewsSlider.tsx",
-            lineNumber: 41,
+            lineNumber: 43,
             columnNumber: 13
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/components/ReviewsSlider.tsx",
-        lineNumber: 40,
+        lineNumber: 42,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };

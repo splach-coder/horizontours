@@ -8,6 +8,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { motion } from 'framer-motion';
 
+import { siteConfig } from '@/config/site';
+
 // Google "G" Icon
 const GoogleIcon = ({ className }: { className?: string }) => (
     <svg viewBox="0 0 24 24" className={className} xmlns="http://www.w3.org/2000/svg">
@@ -143,7 +145,7 @@ export const ReviewsSlider: React.FC<ReviewsSliderProps> = ({ reviews }) => {
                 {/* Write a Review CTA */}
                 <div className="text-center mt-8">
                     <a
-                        href="https://g.page/r/YOUR_GOOGLE_PLACE_ID/review"
+                        href={siteConfig.googleReviews}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors"

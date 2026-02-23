@@ -6,6 +6,7 @@ export const siteConfig = {
 
     // URLs
     url: process.env.NEXT_PUBLIC_SITE_URL || 'https://trustdrivers.tours',
+    googleReviews: 'https://maps.app.goo.gl/67E2E3rrsTejR5CA6?g_st=awb',
 
     // Localization
     defaultLocale: 'en',
