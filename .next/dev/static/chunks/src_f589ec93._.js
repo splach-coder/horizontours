@@ -10,14 +10,17 @@ const siteData = {
     currency: "EUR",
     location: "Marrakech",
     tours: [
+        // ─────────────────────────────────────────────
+        // MULTI-DAY CIRCUITS
+        // ─────────────────────────────────────────────
         {
             id: "circuit-5-days-south",
             name: "5 Days Circuit - The Great South & Desert",
             duration: "5_days",
             image: "/images/merzouga/merzouga1.jpg",
             gallery: [
-                "/images/ouarzazate/cristiano-pinto-knB5iCogf5Q-unsplash.jpg",
                 "/images/merzouga/merzouga2.jpg",
+                "/images/ouarzazate/abdou-faiz-mBo2EUfJ7sY-unsplash.jpg",
                 "/images/merzouga/merzouga3.jpg",
                 "/images/Zagoura/kristijan-nikodinovski-RfK4AQchykw-unsplash.jpg"
             ],
@@ -73,51 +76,58 @@ const siteData = {
         },
         {
             id: "circuit-3-days-merzouga",
-            name: "3 Days Circuit - Merzouga Desert",
+            name: "3 Days Circuit - Merzouga Desert (2 Nights Outside)",
             duration: "3_days",
             image: "/images/merzouga/merzouga4.jpg",
             gallery: [
-                "/images/ouarzazate/abdou-faiz-mBo2EUfJ7sY-unsplash.jpg",
                 "/images/merzouga/merzouga5.jpg",
-                "/images/camel-riding/peter-thomas-nF8-ekoE0qw-unsplash.jpg"
+                "/images/ouarzazate/cristiano-pinto-knB5iCogf5Q-unsplash.jpg",
+                "/images/camel-riding/camel-ride-sunset.jpeg",
+                "/images/merzouga/merzouga6.jpg"
             ],
             pricing: [
                 {
                     minPeople: 2,
-                    maxPeople: 5,
-                    pricePerPerson: 380
+                    maxPeople: 3,
+                    pricePerPerson: 318
                 },
                 {
-                    minPeople: 6,
+                    minPeople: 4,
+                    maxPeople: 7,
+                    pricePerPerson: 265
+                },
+                {
+                    minPeople: 8,
                     maxPeople: 20,
-                    pricePerPerson: 263
-                } // "De 5 per a ......"
+                    pricePerPerson: 165
+                }
             ],
             includes: [
-                "Private air-conditioned van with chauffeur",
+                "Private air-conditioned van with driver",
                 "Camel ride",
                 "Guide in Ait Ben Haddou",
-                "Accommodation"
+                "Accommodation (Half Board)"
             ],
             excludes: [
                 "Lunches",
+                "Personal expenses",
                 "Tips"
             ],
             itinerary: [
                 {
                     day: 1,
                     title: "Marrakech - Boumalne Dades",
-                    description: "Departure from Marrakech via Tichka Pass (2260m). Lunch at Ait Ben Haddou, visit the Kasbah with local guide. Continue via Ouarzazate to Boumalne Dades. Overnight in hotel (Half Board)."
+                    description: "Departure from Marrakech via Tichka Pass (2260m). Lunch at Ait Ben Haddou, visit the Kasbah with a local guide. Continue via Ouarzazate to Boumalne Dades. Overnight in hotel (Half Board)."
                 },
                 {
                     day: 2,
                     title: "Boumalne Dades - Merzouga",
-                    description: "Visit Dades Gorges. Arrival at Tinghir, visit Todra Gorges. Lunch on the way to Arfoud. Arrival in Merzouga, camel ride to the camp. Overnight in camp."
+                    description: "Visit Dades Gorges. Arrival at Tinghir, visit Todra Gorges. Lunch on the way to Arfoud. Arrival in Merzouga, camel ride to the desert camp. Overnight in camp."
                 },
                 {
                     day: 3,
                     title: "Merzouga - Marrakech",
-                    description: "Return by camel to the inn for breakfast. Return to Marrakech, arriving around 8pm."
+                    description: "Return by camel to the inn for breakfast. Return trip to Marrakech, arriving around 8pm."
                 }
             ]
         },
@@ -127,11 +137,11 @@ const siteData = {
             duration: "8_days",
             image: "/images/fes/hazy-momo-YSTtLgsvRa8-unsplash.jpg",
             gallery: [
-                "/images/merzouga/merzouga1.jpg",
-                "/images/fes/mauro-lima-mPD9BJ_QGXw-unsplash.jpg",
+                "/images/merzouga/merzouga3.jpg",
+                "/images/fes/ben-ostrower-bjNv5Bg6h4U-unsplash.jpg",
                 "/images/rabat/niklas-VqouWpsuziE-unsplash.jpg",
                 "/images/casablanca/oussama-rahib-NNECQHl9bJc-unsplash.jpg",
-                "/images/marrakech/marrakech1.jpg"
+                "/images/marrakech/marrakech3.jpg"
             ],
             pricing: [
                 {
@@ -190,7 +200,7 @@ const siteData = {
                 {
                     day: 7,
                     title: "Rabat - Marrakech",
-                    description: "Rabat to Marrakech. Visit Rabat (Chellah, Kasbah des Oudayas, huge avenues). Arrival in Casablanca, lunch, visit Hassan II Mosque, Corniche. Drive to Marrakech. Overnight in Marrakech."
+                    description: "Rabat to Marrakech. Visit Rabat (Chellah, Kasbah des Oudayas, grand avenues). Arrival in Casablanca, lunch, visit Hassan II Mosque and Corniche. Drive to Marrakech. Overnight in Marrakech."
                 },
                 {
                     day: 8,
@@ -203,10 +213,11 @@ const siteData = {
             id: "circuit-3-days-taliouine",
             name: "3 Days Circuit - Taliouine Saffron Capital",
             duration: "3_days",
-            image: "/images/ouarzazate/cristiano-pinto-knB5iCogf5Q-unsplash.jpg",
+            image: "/images/ouarzazate/hassan-ouajbir-INcADDyMwwo-unsplash.jpg",
             gallery: [
                 "/images/ouarzazate/abdou-faiz-mBo2EUfJ7sY-unsplash.jpg",
-                "/images/ouarzazate/hassan-ouajbir-INcADDyMwwo-unsplash.jpg"
+                "/images/ouarzazate/cristiano-pinto-knB5iCogf5Q-unsplash.jpg",
+                "/images/ouarzazate/abdou-faiz-lA-P8-vagrI-unsplash.jpg"
             ],
             pricing: [
                 {
@@ -249,51 +260,14 @@ const siteData = {
             ]
         },
         {
-            id: "day-trip-three-valleys",
-            name: "Day Trip - Three Valleys & Atlas Waterfalls",
-            duration: "1_day",
-            image: "/images/ourika/hassan-ahrouch-CfmIZwBvxNY-unsplash.jpg",
-            gallery: [
-                "/images/ourika/matthew-fainman-3yonP2JaGTU-unsplash.jpg",
-                "/images/ourika/abdelhamid-azoui-BGU0uaY0tJs-unsplash.jpg"
-            ],
-            pricing: [
-                {
-                    minPeople: 2,
-                    maxPeople: 4,
-                    pricePerPerson: 69
-                },
-                {
-                    minPeople: 5,
-                    maxPeople: 20,
-                    pricePerPerson: 48
-                }
-            ],
-            includes: [
-                "Private transport",
-                "Local Guide",
-                "Meal (Lunch)",
-                "Tea at a local home"
-            ],
-            excludes: [
-                "Tips",
-                "Drinks"
-            ],
-            itinerary: [
-                {
-                    day: 1,
-                    title: "Three Valleys Excursion",
-                    description: "Departure 8:30am. Visit Lake Lalla Takerkoust, Kik Plateau, Moulay Brahim, Asni. Afternoon in Ourika Valley, visit Berber house. Lunch by the river. 1h guided walk to waterfalls. Return around 5:30pm."
-                }
-            ]
-        },
-        {
             id: "circuit-3-days-coast",
             name: "3 Days Circuit - Essaouira, Agadir & Taroudant",
             duration: "3_days",
-            image: "/images/essaouira/hamza-omlacho-M9GO4Gsd2SM-unsplash.jpg",
+            image: "/images/essaouira/rigel-No_Y3bn4lNQ-unsplash.jpg",
             gallery: [
-                "/images/essaouira/rigel-No_Y3bn4lNQ-unsplash.jpg",
+                "/images/essaouira/hamza-omlacho-M9GO4Gsd2SM-unsplash.jpg",
+                "/images/essaouira/pete-bread-4eZeMUKdV-8-unsplash.jpg",
+                "/images/essaouira/rigel-hppgLk1gxho-unsplash.jpg",
                 "/images/essaouira/youssef-aboutaleb-ad1FM2Xj0QQ-unsplash.jpg"
             ],
             pricing: [
@@ -336,6 +310,417 @@ const siteData = {
                     description: "Travel to Taroudant, visit ancient city. Lunch. Return to Marrakech via Tizi n'Test."
                 }
             ]
+        },
+        // ─────────────────────────────────────────────
+        // MARRAKECH STAY PACKS
+        // ─────────────────────────────────────────────
+        {
+            id: "pack-4-days-marrakech",
+            name: "4-Day Marrakech Stay Pack",
+            duration: "4_days",
+            image: "/images/marrakech/marrakech2.jpg",
+            gallery: [
+                "/images/marrakech/marrakech4.jpg",
+                "/images/ourika/hassan-ahrouch-CfmIZwBvxNY-unsplash.jpg",
+                "/images/quad-biking/haris-khan-v40H7tLOZII-unsplash.jpg",
+                "/images/camel-riding/camel-ride-sunset.jpeg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 5,
+                    pricePerPerson: 163
+                },
+                {
+                    minPeople: 6,
+                    maxPeople: 20,
+                    pricePerPerson: 119
+                }
+            ],
+            includes: [
+                "Airport transfers (arrival & departure)",
+                "6h Marrakech city tour by private vehicle (ramparts, palm grove, grand avenues, Majorelle Garden, Menara Garden, Bahia Palace, Saadian Tombs)",
+                "Three Valleys & Berber Villages day trip (Kik Plateau, Moulay Brahim, Asni, Ourika Valley, Berber house, Argan cooperative, waterfall walk, riverside lunch)",
+                "Agafay Desert afternoon & evening (1h quad, camel ride, dinner show, pool access)",
+                "French/English speaking driver",
+                "Air-conditioned private van"
+            ],
+            excludes: [
+                "Meals (except riverside lunch at Ourika)",
+                "Monument & garden entrance fees",
+                "Personal expenses",
+                "Tips"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Arrival & Airport Transfer",
+                    description: "Welcome to Marrakech! Private airport transfer to your accommodation. Free time to settle in and explore at your own pace."
+                },
+                {
+                    day: 2,
+                    title: "Marrakech City Tour (6h)",
+                    description: "Discover Marrakech by private vehicle over 6 hours: tour of the ramparts, circuit of the palm grove, grand avenues, Majorelle Garden, Menara Garden, Bahia Palace and Saadian Tombs. Driver speaks French and English."
+                },
+                {
+                    day: 3,
+                    title: "Three Valleys & Berber Villages",
+                    description: "Departure at 8:30am. Visit Lake Lalla Takerkoust, Kik Plateau, Moulay Brahim and Asni. Afternoon in the Ourika Valley: visit a Berber house, the Argan cooperative, riverside lunch at Setti Fatma, and a guided walk to the waterfalls. Return around 5:30pm."
+                },
+                {
+                    day: 4,
+                    title: "Agafay Desert Afternoon & Airport Transfer",
+                    description: "Departure at 2pm for the Agafay Desert: 1h quad biking, camel ride, pool access, sunset, and a spectacular dinner show. Return around 10pm. Private airport transfer for your departure."
+                }
+            ]
+        },
+        {
+            id: "pack-5-days-marrakech",
+            name: "5-Day Marrakech Stay Pack",
+            duration: "5_days",
+            image: "/images/marrakech/marrakech5.jpg",
+            gallery: [
+                "/images/marrakech/marrakech7.jpg",
+                "/images/ourika/hassan-ahrouch-CfmIZwBvxNY-unsplash.jpg",
+                "/images/quad-biking/haris-khan-v40H7tLOZII-unsplash.jpg",
+                "/images/essaouira/rigel-No_Y3bn4lNQ-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 5,
+                    pricePerPerson: 195
+                },
+                {
+                    minPeople: 6,
+                    maxPeople: 20,
+                    pricePerPerson: 146
+                }
+            ],
+            includes: [
+                "Airport transfers (arrival & departure)",
+                "6h Marrakech city tour by private vehicle",
+                "Agafay Desert afternoon & evening (1h quad, camel ride, dinner show, pool access)",
+                "Three Valleys & Berber Villages full day (Kik Plateau, Moulay Brahim, Asni, Ourika Valley, local guide, riverside lunch, Argan cooperative)",
+                "Essaouira full day by private van (round trip)",
+                "Air-conditioned private van"
+            ],
+            excludes: [
+                "Lunch in Marrakech",
+                "Monument & garden entrance fees",
+                "Lunch in Essaouira",
+                "Personal expenses",
+                "Tips"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Arrival & Airport Transfer",
+                    description: "Welcome to Marrakech! Private airport transfer to your accommodation. Free time to explore."
+                },
+                {
+                    day: 2,
+                    title: "Marrakech City Tour (6h)",
+                    description: "Discover Marrakech by private vehicle over 6 hours: ramparts tour, palm grove circuit, grand avenues, Majorelle Garden, Menara Garden, Bahia Palace and Saadian Tombs."
+                },
+                {
+                    day: 3,
+                    title: "Agafay Desert Afternoon & Evening",
+                    description: "Departure at 2pm for the Agafay Desert: 1h quad biking, camel ride, pool access, stunning sunset and a spectacular dinner show. Return around 10pm."
+                },
+                {
+                    day: 4,
+                    title: "Three Valleys & Berber Villages",
+                    description: "Departure at 8:30am. Visit Lake Lalla Takerkoust, Kik Plateau, Moulay Brahim and Asni. Afternoon in the Ourika Valley: visit a Berber house, Argan cooperative, riverside lunch at Setti Fatma, guided waterfall walk. Return around 5:30pm."
+                },
+                {
+                    day: 5,
+                    title: "Essaouira Full Day & Airport Transfer",
+                    description: "Departure at 8am for the charming blue city of Essaouira. Explore the medina, ramparts and fishing port. Return around 7pm. Private airport transfer for your departure."
+                }
+            ]
+        },
+        // ─────────────────────────────────────────────
+        // DAY TRIPS & EXCURSIONS
+        // ─────────────────────────────────────────────
+        {
+            id: "day-trip-three-valleys",
+            name: "Day Trip - Three Valleys & Berber Villages",
+            duration: "1_day",
+            image: "/images/ourika/hassan-ahrouch-CfmIZwBvxNY-unsplash.jpg",
+            gallery: [
+                "/images/ourika/matthew-fainman-3yonP2JaGTU-unsplash.jpg",
+                "/images/ourika/abdelhamid-azoui-BGU0uaY0tJs-unsplash.jpg",
+                "/images/ourika/abderrahman-kamal-MilM52Qj32g-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 3,
+                    pricePerPerson: 65
+                },
+                {
+                    minPeople: 4,
+                    maxPeople: 6,
+                    pricePerPerson: 43
+                },
+                {
+                    minPeople: 7,
+                    maxPeople: 20,
+                    pricePerPerson: 32
+                }
+            ],
+            includes: [
+                "Private air-conditioned van",
+                "French/English speaking driver",
+                "Local guide (waterfall walk)",
+                "Lunch by the riverside (Setti Fatma)",
+                "Berber house visit",
+                "Argan oil cooperative visit",
+                "Tea at a local home"
+            ],
+            excludes: [
+                "Drinks",
+                "Personal expenses",
+                "Tips"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Three Valleys & Berber Villages",
+                    description: "Departure at 8:30am. Drive via Lake Lalla Takerkoust, Kik Plateau, Moulay Brahim and Asni. Afternoon in the Ourika Valley: visit a Berber house, discover the Argan oil cooperative, enjoy lunch by the river at Setti Fatma, then take a guided walk up to the waterfall. Tea at a local home included. Return to Marrakech around 5:30pm."
+                }
+            ]
+        },
+        {
+            id: "excursion-ourika-valley",
+            name: "Ourika Valley - Full Day with Lunch & Guide",
+            duration: "1_day",
+            image: "/images/ourika/abdelhamid-azoui-BGU0uaY0tJs-unsplash.jpg",
+            gallery: [
+                "/images/ourika/hassan-ahrouch-CfmIZwBvxNY-unsplash.jpg",
+                "/images/ourika/matthew-fainman-3yonP2JaGTU-unsplash.jpg",
+                "/images/ourika/abderrahman-kamal-MilM52Qj32g-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 3,
+                    pricePerPerson: 45
+                },
+                {
+                    minPeople: 4,
+                    maxPeople: 7,
+                    pricePerPerson: 32
+                },
+                {
+                    minPeople: 8,
+                    maxPeople: 20,
+                    pricePerPerson: 20
+                }
+            ],
+            includes: [
+                "Private transport (air-conditioned van)",
+                "Local guide (waterfall walk)",
+                "Lunch",
+                "Tea at a local home"
+            ],
+            excludes: [
+                "Drinks",
+                "Personal expenses",
+                "Tips"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Ourika Valley",
+                    description: "Departure at 9am. Drive to the beautiful Ourika Valley. Visit a local Berber home, enjoy a guided walk to discover the impressive waterfalls, and have lunch by the river. Tea at a local home. Return to Marrakech around 4:30pm."
+                }
+            ]
+        },
+        {
+            id: "excursion-essaouira",
+            name: "Essaouira Day Trip - Private Transport",
+            duration: "1_day",
+            image: "/images/essaouira/pete-bread-4eZeMUKdV-8-unsplash.jpg",
+            gallery: [
+                "/images/essaouira/rigel-ibisQEDxODo-unsplash.jpg",
+                "/images/essaouira/hamza-omlacho-M9GO4Gsd2SM-unsplash.jpg",
+                "/images/essaouira/mostapha-abidour-h9L1GfDgp0s-unsplash.jpg",
+                "/images/essaouira/youssef-aboutaleb-ad1FM2Xj0QQ-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 3,
+                    pricePerPerson: 57
+                },
+                {
+                    minPeople: 4,
+                    maxPeople: 20,
+                    pricePerPerson: 37
+                }
+            ],
+            includes: [
+                "Private air-conditioned van (round trip)"
+            ],
+            excludes: [
+                "Lunch",
+                "Drinks",
+                "Personal expenses",
+                "Tips"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Essaouira",
+                    description: "Departure at 8am for the charming blue and white city of Essaouira. Explore the UNESCO-listed medina, the fishing port, the ramparts, and the vibrant art scene at your own pace. Return to Marrakech around 7pm."
+                }
+            ]
+        },
+        {
+            id: "excursion-agafay-afternoon",
+            name: "Agafay Desert Afternoon & Dinner Show",
+            duration: "1_day",
+            image: "/images/camel-riding/camel-ride-sunset.jpeg",
+            gallery: [
+                "/images/quad-biking/haris-khan-v40H7tLOZII-unsplash.jpg",
+                "/images/quad-biking/devon-janse-van-rensburg-08HCHS7EULI-unsplash.jpg",
+                "/images/camel-riding/dan-calderwood-7CPopIsaCkc-unsplash.jpg",
+                "/images/quad-biking/nils-5RfEgsnxeHo-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 4,
+                    pricePerPerson: 75
+                },
+                {
+                    minPeople: 5,
+                    maxPeople: 15,
+                    pricePerPerson: 63
+                },
+                {
+                    minPeople: 16,
+                    maxPeople: 50,
+                    pricePerPerson: 53
+                }
+            ],
+            includes: [
+                "1h quad biking",
+                "Camel ride",
+                "Dinner show",
+                "Argan oil cooperative visit",
+                "Pool access",
+                "Private transport (pickup & drop-off)"
+            ],
+            excludes: [
+                "Personal expenses",
+                "Tips"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Agafay Desert Afternoon",
+                    description: "Departure at 3pm. Arrive in the Agafay Desert for an unforgettable afternoon and evening: visit the Argan oil cooperative, enjoy 1h of quad biking across the lunar landscape, take a camel ride at sunset, cool off with pool access, then indulge in a spectacular dinner show under the stars. Return to Marrakech around 10pm."
+                }
+            ]
+        },
+        {
+            id: "excursion-imlil",
+            name: "Imlil Day Trip - Atlas Mountains & Argan Village",
+            duration: "1_day",
+            image: "/images/ourika/matthew-fainman-3yonP2JaGTU-unsplash.jpg",
+            gallery: [
+                "/images/ourika/abdelhamid-azoui-BGU0uaY0tJs-unsplash.jpg",
+                "/images/ourika/abderrahman-kamal-MilM52Qj32g-unsplash.jpg",
+                "/images/ourika/hassan-ahrouch-CfmIZwBvxNY-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 3,
+                    pricePerPerson: 68
+                },
+                {
+                    minPeople: 4,
+                    maxPeople: 10,
+                    pricePerPerson: 39
+                },
+                {
+                    minPeople: 11,
+                    maxPeople: 30,
+                    pricePerPerson: 29
+                }
+            ],
+            includes: [
+                "Lunch at a local home",
+                "Local guide (2h guided walk)",
+                "Argan oil cooperative visit",
+                "Private air-conditioned van"
+            ],
+            excludes: [
+                "Drinks",
+                "Personal expenses",
+                "Tips"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Imlil, Atlas Mountains",
+                    description: "Departure at 8:30am. Drive to Imlil via the scenic Atlas Mountain roads. Visit the Argan oil cooperative. Enjoy a 2-hour guided walk through Berber villages with breathtaking mountain views. Lunch at a local family home. Return via Moulay Brahim, Kik Plateau, and Lake Lalla Takerkoust. Arrive back in Marrakech around 4:30pm."
+                }
+            ]
+        },
+        {
+            id: "excursion-imlil-agafay",
+            name: "Imlil & Agafay - Full Day & Dinner Show",
+            duration: "1_day",
+            image: "/images/ourika/abderrahman-kamal-MilM52Qj32g-unsplash.jpg",
+            gallery: [
+                "/images/ourika/matthew-fainman-3yonP2JaGTU-unsplash.jpg",
+                "/images/camel-riding/camel-ride-sunset.jpeg",
+                "/images/quad-biking/haris-khan-v40H7tLOZII-unsplash.jpg",
+                "/images/quad-biking/devon-janse-van-rensburg-08HCHS7EULI-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 4,
+                    pricePerPerson: 110
+                },
+                {
+                    minPeople: 5,
+                    maxPeople: 10,
+                    pricePerPerson: 85
+                },
+                {
+                    minPeople: 11,
+                    maxPeople: 30,
+                    pricePerPerson: 63
+                }
+            ],
+            includes: [
+                "Lunch at Imlil (local home)",
+                "Local guide in Imlil (2h guided walk)",
+                "Tea at the women's Argan cooperative",
+                "1h quad biking at Agafay",
+                "Camel ride at Agafay",
+                "Dinner show at Agafay",
+                "Private transport"
+            ],
+            excludes: [
+                "Drinks at Imlil",
+                "Personal expenses",
+                "Tips"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Imlil & Agafay - Mountains to Desert",
+                    description: "Departure at 8am toward Imlil via Tahanaoute. Visit the women's Argan oil cooperative and continue to Asni. Arrive at Imlil and begin a 2-hour guided walk through stunning Berber mountain scenery. Lunch at a local family home. Afternoon: head to the Agafay Desert via Kik Plateau and Lake Lalla Takerkoust. Enjoy 1h quad biking, a camel ride at sunset, pool access, then an unforgettable dinner show under the stars. Return to Marrakech around 10pm."
+                }
+            ]
         }
     ],
     activities: {
@@ -352,7 +737,7 @@ const siteData = {
             }
         ],
         experiences: [
-            /* Keeping generic experiences as placeholder/filler */ {
+            {
                 id: "quad-agafay",
                 type: "quad",
                 location: "Agafay",
@@ -404,18 +789,88 @@ const siteData = {
     },
     transport: [
         {
-            id: "private",
-            name: "Private Transport",
-            image: "/images/transport/private-transport.jpeg",
-            description: "Comfortable private vehicle with professional driver",
-            price: 50
+            id: "airport",
+            name: "Airport Transfer",
+            image: "/images/transport/airport-transport.jpeg",
+            description: "Reliable airport meet & greet service. Our driver waits for you at arrivals and takes you directly to your destination in comfort.",
+            dayRate: 200,
+            nightRate: 300,
+            currency: "MAD",
+            note: "Marrakech RAK Airport"
         },
         {
-            id: "airport",
-            name: "Airport Transport",
-            image: "/images/transport/airport-transport.jpeg",
-            description: "Reliable airport transfers, meet & greet service",
-            price: 30
+            id: "private",
+            name: "Private Transfers",
+            image: "/images/transport/private-transport.jpeg",
+            description: "Comfortable private vehicle with a professional driver for intercity and regional transfers across Morocco.",
+            currency: "MAD",
+            destinations: [
+                {
+                    name: "Agadir",
+                    price1to7: 1600,
+                    price7plus: 2300
+                },
+                {
+                    name: "Casablanca Airport",
+                    price1to7: 1600,
+                    price7plus: 2200
+                },
+                {
+                    name: "Casablanca City",
+                    price1to7: 1800,
+                    price7plus: 2400
+                },
+                {
+                    name: "Essaouira",
+                    price1to7: 1100,
+                    price7plus: 1600
+                },
+                {
+                    name: "Ouarzazate",
+                    price1to7: 1500,
+                    price7plus: 2300
+                },
+                {
+                    name: "Imlil",
+                    price1to7: 700,
+                    price7plus: 1200
+                },
+                {
+                    name: "Agafay",
+                    price1to7: 600,
+                    price7plus: 1100
+                },
+                {
+                    name: "El Jadida",
+                    price1to7: 1400,
+                    price7plus: 1900
+                },
+                {
+                    name: "Safi",
+                    price1to7: 1400,
+                    price7plus: 1900
+                },
+                {
+                    name: "Ourika",
+                    price1to7: 600,
+                    price7plus: 1100
+                },
+                {
+                    name: "Tanger",
+                    price1to7: 4500,
+                    price7plus: 5600
+                },
+                {
+                    name: "Fès",
+                    price1to7: 3800,
+                    price7plus: 4800
+                },
+                {
+                    name: "Rabat",
+                    price1to7: 2100,
+                    price7plus: 3000
+                }
+            ]
         }
     ],
     packages: [],
@@ -530,14 +985,17 @@ const siteDataFr = {
     currency: "EUR",
     location: "Marrakech",
     tours: [
+        // ─────────────────────────────────────────────
+        // CIRCUITS MULTI-JOURS
+        // ─────────────────────────────────────────────
         {
             id: "circuit-5-days-south",
-            name: "Circuit 5 jours 4 nuit a l'extérieur - Le Grand Sud",
+            name: "Circuit 5 jours 4 nuits à l'extérieur - Le Grand Sud & Désert",
             duration: "5_days",
             image: "/images/merzouga/merzouga1.jpg",
             gallery: [
-                "/images/ouarzazate/cristiano-pinto-knB5iCogf5Q-unsplash.jpg",
                 "/images/merzouga/merzouga2.jpg",
+                "/images/ouarzazate/abdou-faiz-mBo2EUfJ7sY-unsplash.jpg",
                 "/images/merzouga/merzouga3.jpg",
                 "/images/Zagoura/kristijan-nikodinovski-RfK4AQchykw-unsplash.jpg"
             ],
@@ -554,104 +1012,111 @@ const siteDataFr = {
                 }
             ],
             includes: [
-                "Transport en privé van climatisé avec chauffeur parle français ou anglais",
-                "Balade Dromadaire",
-                "Guide a ait ben hadou",
-                "Accommodation en Demi pension (Ouarzazate, Tinghir, Merzouga, Zagora)"
+                "Transport en privé van climatisé avec chauffeur parlant français et anglais",
+                "Balade en dromadaire",
+                "Guide à Aït Ben Haddou",
+                "Hébergement en demi-pension (Ouarzazate, Tinghir, Camp Merzouga, Zagora)"
             ],
             excludes: [
-                "Déjeuner",
+                "Déjeuners",
                 "Pourboires"
             ],
             itinerary: [
                 {
                     day: 1,
                     title: "Marrakech - Ouarzazate",
-                    description: "Départ de Marrakech le premier jour vers 8h, visite du kasbah ait ben hadou et studio de cinéma a Ouarzazate kasbah taourirt. Passez la nuit a Ouarzazate hôtel en Demi pension."
+                    description: "Départ de Marrakech vers 8h. Visite de la Kasbah Aït Ben Haddou, du Studio de cinéma à Ouarzazate et de la Kasbah Taourirt. Nuit à Ouarzazate (demi-pension)."
                 },
                 {
                     day: 2,
                     title: "Ouarzazate - Tinghir",
-                    description: "Départ de Ouarzazate vers 8h. Arrivé a boumalne dedes visite du gourge dades. Prends la route vers tinghir déjeuner et visite du gorge et palmeraie du draa. La nuit a tinghir en demi pension."
+                    description: "Départ d'Ouarzazate vers 8h. Arrivée à Boumalne Dadès, visite des Gorges du Dadès. Route vers Tinghir, déjeuner, visite des Gorges du Todgha et de la palmeraie du Draa. Nuit à Tinghir (demi-pension)."
                 },
                 {
                     day: 3,
                     title: "Tinghir - Merzouga",
-                    description: "Le 3 ème jour prendre la route vers 8h30 Via arfoud. Arrivé a merzouga prend les Dromadaire nuit dans un camp."
+                    description: "Départ vers 8h30 via Arfoud. Arrivée à Merzouga, balade en dromadaire, nuit dans un camp du désert."
                 },
                 {
                     day: 4,
                     title: "Merzouga - Zagora",
-                    description: "Le lendemain retour a l auberge en dos de dromadaire déjeuner et départ vers zagoura via alnif nkob tazarine. Passé la nuit a zagoura."
+                    description: "Retour à l'auberge en dromadaire pour le petit-déjeuner. Départ vers Zagora via Alnif, Nkob, Tazarine. Nuit à Zagora."
                 },
                 {
                     day: 5,
                     title: "Zagora - Marrakech",
-                    description: "Retour a Marrakech."
+                    description: "Retour à Marrakech."
                 }
             ]
         },
         {
             id: "circuit-3-days-merzouga",
-            name: "Les trois jours Merzouga 2 nuit a l'extérieur",
+            name: "Les 3 jours Merzouga - 2 nuits à l'extérieur",
             duration: "3_days",
             image: "/images/merzouga/merzouga4.jpg",
             gallery: [
-                "/images/ouarzazate/abdou-faiz-mBo2EUfJ7sY-unsplash.jpg",
                 "/images/merzouga/merzouga5.jpg",
-                "/images/camel-riding/peter-thomas-nF8-ekoE0qw-unsplash.jpg"
+                "/images/ouarzazate/cristiano-pinto-knB5iCogf5Q-unsplash.jpg",
+                "/images/camel-riding/camel-ride-sunset.jpeg",
+                "/images/merzouga/merzouga6.jpg"
             ],
             pricing: [
                 {
                     minPeople: 2,
-                    maxPeople: 5,
-                    pricePerPerson: 380
+                    maxPeople: 3,
+                    pricePerPerson: 318
                 },
                 {
-                    minPeople: 6,
+                    minPeople: 4,
+                    maxPeople: 7,
+                    pricePerPerson: 265
+                },
+                {
+                    minPeople: 8,
                     maxPeople: 20,
-                    pricePerPerson: 263
+                    pricePerPerson: 165
                 }
             ],
             includes: [
                 "Transport en privé van climatisé avec chauffeur",
-                "Balade Dromadaire",
-                "Guide a ait ben hadou",
-                "Accommodation"
+                "Balade en dromadaire",
+                "Guide à Aït Ben Haddou",
+                "Hébergement en demi-pension"
             ],
             excludes: [
-                "Déjeuner",
+                "Déjeuners",
+                "Dépenses personnelles",
                 "Pourboires"
             ],
             itinerary: [
                 {
                     day: 1,
-                    title: "Marrakech - Boumalne Dades",
-                    description: "Départ de Marrakech via le col de tichka 2260 m. Déjeuner a ait ben hadou visite du kasbah avec un guide local. Après midi prend la route via Ouarzazate arrive a boumalne dades nuit dans un hôtel en demi pension."
+                    title: "Marrakech - Boumalne Dadès",
+                    description: "Départ de Marrakech via le col de Tichka (2260 m). Déjeuner à Aït Ben Haddou, visite de la Kasbah avec un guide local. Après-midi : route via Ouarzazate jusqu'à Boumalne Dadès. Nuit à l'hôtel en demi-pension."
                 },
                 {
                     day: 2,
-                    title: "Boumalne Dades - Merzouga",
-                    description: "Visite du gorge dades. Arrivé a tinghir visite du gorge todgha. L après midi déjeuner pendant le chemin vers arfoud. Arrivé a merzouga prend le Dromadaire pour aller dormir dans un camp."
+                    title: "Boumalne Dadès - Merzouga",
+                    description: "Visite des Gorges du Dadès. Arrivée à Tinghir, visite des Gorges du Todgha. Déjeuner sur la route vers Arfoud. Arrivée à Merzouga, balade en dromadaire jusqu'au camp. Nuit dans le camp du désert."
                 },
                 {
                     day: 3,
                     title: "Merzouga - Marrakech",
-                    description: "Retour en Dromadaire vers l auberge prendre le petit déjeuner. Et retour a Marrakech. Vers 20h."
+                    description: "Retour en dromadaire vers l'auberge pour le petit-déjeuner. Retour à Marrakech, arrivée vers 20h."
                 }
             ]
         },
         {
             id: "circuit-8-days-imperial",
-            name: "Circuit désert et Villes impérials 8j 6 nuits",
+            name: "Circuit Désert et Villes Impériales - 8 jours 6 nuits",
             duration: "8_days",
             image: "/images/fes/hazy-momo-YSTtLgsvRa8-unsplash.jpg",
             gallery: [
-                "/images/merzouga/merzouga1.jpg",
-                "/images/fes/mauro-lima-mPD9BJ_QGXw-unsplash.jpg",
+                "/images/merzouga/merzouga3.jpg",
+                "/images/fes/ben-ostrower-bjNv5Bg6h4U-unsplash.jpg",
                 "/images/rabat/niklas-VqouWpsuziE-unsplash.jpg",
                 "/images/casablanca/oussama-rahib-NNECQHl9bJc-unsplash.jpg",
-                "/images/marrakech/marrakech1.jpg"
+                "/images/marrakech/marrakech3.jpg"
             ],
             pricing: [
                 {
@@ -667,65 +1132,67 @@ const siteDataFr = {
             ],
             includes: [
                 "Transport en privé van avec chauffeur",
-                "Guide locaux",
-                "Balade Dromadaire a merzouga"
+                "Guides locaux",
+                "Balade en dromadaire à Merzouga",
+                "Hébergement en demi-pension"
             ],
             excludes: [
-                "Entrés de monuments",
-                "Déjeuner",
+                "Entrées des monuments",
+                "Déjeuners",
                 "Pourboires"
             ],
             itinerary: [
                 {
                     day: 1,
                     title: "Marrakech - Ouarzazate",
-                    description: "Départ de Marrakech vers 9h vers ait ben hadou via col de tichka 2260m. Visite du kasbah avec un guide Local, déjeuner et continue vers Ouarzazate nuit et hôtel en demi pension."
+                    description: "Départ de Marrakech vers 9h via le col de Tichka (2260m). Visite de la Kasbah Aït Ben Haddou avec guide local, déjeuner. Continue vers Ouarzazate. Nuit à l'hôtel (demi-pension)."
                 },
                 {
                     day: 2,
                     title: "Ouarzazate - Tinghir",
-                    description: "Ouarzazate vers la vallée du roses. Arrive au gorge dades visite et continue vers tinghir déjeuner et visite du gorge todgha et palmeraie du draa. Nuit a tinghir hôtel en demi pension."
+                    description: "Ouarzazate vers la Vallée des Roses. Arrivée aux Gorges du Dadès, visite. Continue vers Tinghir, déjeuner, visite des Gorges du Todgha et palmeraie du Draa. Nuit à Tinghir (demi-pension)."
                 },
                 {
                     day: 3,
                     title: "Tinghir - Merzouga",
-                    description: "Tinghir vers arfoud déjeuner pendant le chemin. Arrivé a merzouga après midi the de bienvenu et prends Dromadaire pour aller au bivouac nuit."
+                    description: "Tinghir vers Arfoud, déjeuner sur la route. Arrivée à Merzouga, thé de bienvenue, balade en dromadaire jusqu'au bivouac. Nuit."
                 },
                 {
                     day: 4,
-                    title: "Merzouga - Fes",
-                    description: "Merzouga Fes via midelt ifran. Nuit dans un hôtel en demi pension."
+                    title: "Merzouga - Fès",
+                    description: "Merzouga vers Fès via Midelt et Ifrane. Nuit à l'hôtel (demi-pension)."
                 },
                 {
                     day: 5,
-                    title: "Visite de Fes",
-                    description: "Visite de Fes toute la journée extérieur et fameuse médina avec un guide Local. Nuit dans un hôtel en demi pension."
+                    title: "Visite de Fès",
+                    description: "Journée complète de visite de Fès (extérieur et médina) avec guide local. Nuit à l'hôtel (demi-pension)."
                 },
                 {
                     day: 6,
-                    title: "Fes - Rabat",
-                    description: "Fes Rabat. Visite de volubilis et moulay driss. Visite de Meknès avec un guide local. Déjeuner a Meknès. La nuit a rabat dans un hôtel en demi pension."
+                    title: "Fès - Rabat",
+                    description: "Fès vers Rabat. Visite de Volubilis et Moulay Idriss. Visite de Meknès avec guide local, déjeuner à Meknès. Nuit à Rabat (demi-pension)."
                 },
                 {
                     day: 7,
                     title: "Rabat - Marrakech",
-                    description: "Rabat Marrakech. Visite de rabat challat kasbah lodaya grandes avenues. Arrivé a casa déjeuner et visite de la mousque hassan 2 la corniche. Prend la route vers Marrakech nuit a Marrakech."
+                    description: "Rabat vers Marrakech. Visite de Rabat (Chellah, Kasbah des Oudayas, grandes avenues). Arrivée à Casablanca, déjeuner, visite de la Mosquée Hassan II et de la Corniche. Route vers Marrakech. Nuit à Marrakech."
                 },
                 {
                     day: 8,
                     title: "Marrakech & Agafay",
-                    description: "Visite de Marrakech et dîner spectacle au désert d agafay. Retour vers 22h."
+                    description: "Visite de Marrakech. Dîner spectacle au désert d'Agafay. Retour vers 22h."
                 }
             ]
         },
         {
             id: "circuit-3-days-taliouine",
-            name: "Circuit 3 Jours - Taliouine et Capitale du Safran",
+            name: "Circuit 3 Jours - Taliouine & Capitale du Safran",
             duration: "3_days",
-            image: "/images/ouarzazate/cristiano-pinto-knB5iCogf5Q-unsplash.jpg",
+            image: "/images/ouarzazate/hassan-ouajbir-INcADDyMwwo-unsplash.jpg",
             gallery: [
                 "/images/ouarzazate/abdou-faiz-mBo2EUfJ7sY-unsplash.jpg",
-                "/images/ouarzazate/hassan-ouajbir-INcADDyMwwo-unsplash.jpg"
+                "/images/ouarzazate/cristiano-pinto-knB5iCogf5Q-unsplash.jpg",
+                "/images/ouarzazate/abdou-faiz-lA-P8-vagrI-unsplash.jpg"
             ],
             pricing: [
                 {
@@ -741,68 +1208,29 @@ const siteDataFr = {
             ],
             includes: [
                 "Transport van climatisé",
-                "Hébergement en demi pension (Taliouine, Ait Ben Haddou)",
-                "Guide à Ait Ben Haddou"
+                "Hébergement en demi-pension (Taliouine & Aït Ben Haddou)",
+                "Guide à Aït Ben Haddou"
             ],
             excludes: [
-                "Déjeuner",
-                "Entré de studio et kasbah",
+                "Déjeuners",
+                "Entrées studio et kasbah",
                 "Pourboires"
             ],
             itinerary: [
                 {
                     day: 1,
                     title: "Marrakech - Taliouine",
-                    description: "Départ de Marrakech via le lac Lalla Takerkoust, le plateau de Kik, Moulay Brahim et Asni. Déjeuner à Tizi n'Test. Nuit à Taliouine (Demi pension)."
+                    description: "Départ de Marrakech via le lac Lalla Takerkoust, le plateau de Kik, Moulay Brahim et Asni. Déjeuner à Tizi n'Test. Nuit à Taliouine (demi-pension)."
                 },
                 {
                     day: 2,
-                    title: "Taliouine - Ait Ben Haddou",
-                    description: "Taliouine vers Ait Ben Haddou via Taznakhte. Visite de Ouarzazate (Studio et Kasbah). Nuit à Ait Ben Haddou (Demi pension)."
+                    title: "Taliouine - Aït Ben Haddou",
+                    description: "Route via Taznakht. Visite du Studio de cinéma d'Ouarzazate et de la Kasbah. Nuit à Aït Ben Haddou (demi-pension)."
                 },
                 {
                     day: 3,
-                    title: "Ait Ben Haddou - Marrakech",
-                    description: "Visite de la Kasbah Ait Ben Haddou (patrimoine mondial de l'UNESCO). Route vers Telouet pour le déjeuner. Retour à Marrakech via le col de Tichka."
-                }
-            ]
-        },
-        {
-            id: "day-trip-three-valleys",
-            name: "Excursion Trois Vallées",
-            duration: "1_day",
-            image: "/images/ourika/hassan-ahrouch-CfmIZwBvxNY-unsplash.jpg",
-            gallery: [
-                "/images/ourika/matthew-fainman-3yonP2JaGTU-unsplash.jpg",
-                "/images/ourika/abdelhamid-azoui-BGU0uaY0tJs-unsplash.jpg"
-            ],
-            pricing: [
-                {
-                    minPeople: 2,
-                    maxPeople: 4,
-                    pricePerPerson: 69
-                },
-                {
-                    minPeople: 5,
-                    maxPeople: 20,
-                    pricePerPerson: 48
-                }
-            ],
-            includes: [
-                "Transport en privé",
-                "Guide Local",
-                "Repas",
-                "Thé chez l'habitant"
-            ],
-            excludes: [
-                "Pourboires",
-                "Boissons"
-            ],
-            itinerary: [
-                {
-                    day: 1,
-                    title: "Les Trois Vallées",
-                    description: "Départ vers 8h30, retour vers 17h30. Lac Lalla Takerkoust, plateau de Kik, Moulay Brahim et Asni. Après-midi vallée de l'Ourika, visite maison berbère. Déjeuner au bord de la rivière. Balade d'une heure avec guide local aux cascades."
+                    title: "Aït Ben Haddou - Marrakech",
+                    description: "Visite de la Kasbah Aït Ben Haddou (Patrimoine mondial de l'UNESCO). Route vers Telouet pour le déjeuner. Retour à Marrakech via le col de Tichka (2260m)."
                 }
             ]
         },
@@ -810,9 +1238,11 @@ const siteDataFr = {
             id: "circuit-3-days-coast",
             name: "Circuit 3 Jours - Essaouira, Agadir & Taroudant",
             duration: "3_days",
-            image: "/images/essaouira/hamza-omlacho-M9GO4Gsd2SM-unsplash.jpg",
+            image: "/images/essaouira/rigel-No_Y3bn4lNQ-unsplash.jpg",
             gallery: [
-                "/images/essaouira/rigel-No_Y3bn4lNQ-unsplash.jpg",
+                "/images/essaouira/hamza-omlacho-M9GO4Gsd2SM-unsplash.jpg",
+                "/images/essaouira/pete-bread-4eZeMUKdV-8-unsplash.jpg",
+                "/images/essaouira/rigel-hppgLk1gxho-unsplash.jpg",
                 "/images/essaouira/youssef-aboutaleb-ad1FM2Xj0QQ-unsplash.jpg"
             ],
             pricing: [
@@ -831,10 +1261,10 @@ const siteDataFr = {
                 "Transport en privé",
                 "Guide à Essaouira",
                 "Guide à Taroudant",
-                "Hébergement Demi Pension"
+                "Hébergement demi-pension"
             ],
             excludes: [
-                "Déjeuner",
+                "Déjeuners",
                 "Boissons",
                 "Pourboires"
             ],
@@ -842,17 +1272,428 @@ const siteDataFr = {
                 {
                     day: 1,
                     title: "Marrakech - Essaouira",
-                    description: "Départ vers Essaouira vers 8h30. Arrivée, déjeuner, visite de la ville avec guide local (3h). Nuit à Essaouira (Demi pension)."
+                    description: "Départ vers 8h30. Arrivée à Essaouira, déjeuner, visite guidée de la ville (3h). Nuit à Essaouira (demi-pension)."
                 },
                 {
                     day: 2,
                     title: "Essaouira - Agadir",
-                    description: "Départ vers Agadir par la route côtière. Déjeuner. Visite d'Agadir Oufella, Souk El Had, la côte. Nuit à Agadir (Demi pension)."
+                    description: "Route côtière panoramique jusqu'à Agadir. Déjeuner. Visite d'Agadir Oufella, Souk El Had et la côte. Nuit à Agadir (demi-pension)."
                 },
                 {
                     day: 3,
                     title: "Agadir - Taroudant - Marrakech",
-                    description: "Départ vers Taroudant, visite de la partie ancienne. Déjeuner. Retour à Marrakech via Tizi n'Test. Fin de service."
+                    description: "Route vers Taroudant, visite de la cité ancienne. Déjeuner. Retour à Marrakech via Tizi n'Test."
+                }
+            ]
+        },
+        // ─────────────────────────────────────────────
+        // PACKS SÉJOUR MARRAKECH
+        // ─────────────────────────────────────────────
+        {
+            id: "pack-4-days-marrakech",
+            name: "Pack 4 Jours de Séjour à Marrakech",
+            duration: "4_days",
+            image: "/images/marrakech/marrakech2.jpg",
+            gallery: [
+                "/images/marrakech/marrakech4.jpg",
+                "/images/ourika/hassan-ahrouch-CfmIZwBvxNY-unsplash.jpg",
+                "/images/quad-biking/haris-khan-v40H7tLOZII-unsplash.jpg",
+                "/images/camel-riding/camel-ride-sunset.jpeg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 5,
+                    pricePerPerson: 163
+                },
+                {
+                    minPeople: 6,
+                    maxPeople: 20,
+                    pricePerPerson: 119
+                }
+            ],
+            includes: [
+                "Transferts aéroport arrivée et départ",
+                "Visite de ville 6h en véhicule privé (tour du rempart, circuit de la palmeraie, grands avenues, Jardin Majorelle, Jardin de la Menara, Palais Bahia, Tombeaux Saadiens)",
+                "Les 3 Vallées et villages berbères (plateau de Kik, Moulay Brahim, Asni, vallée de l'Ourika, maison berbère, coopérative de l'argan, cascades avec guide, repas au bord de la rivière)",
+                "Désert d'Agafay après-midi et soirée (1h quad, balade dromadaire, dîner spectacle, accès piscine)",
+                "Chauffeur parlant français et anglais",
+                "Van climatisé en privé"
+            ],
+            excludes: [
+                "Repas (sauf déjeuner à l'Ourika)",
+                "Entrées des monuments et jardins",
+                "Dépenses personnelles",
+                "Pourboires"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Arrivée & Transfert aéroport",
+                    description: "Bienvenue à Marrakech ! Transfert privé de l'aéroport vers votre hébergement. Temps libre pour vous installer et découvrir la ville à votre rythme."
+                },
+                {
+                    day: 2,
+                    title: "Visite de Ville de Marrakech (6h)",
+                    description: "Découvrez Marrakech en véhicule privé pendant 6 heures : tour du rempart, circuit de la palmeraie, grands avenues, Jardin Majorelle, Jardin de la Menara, Palais Bahia et Tombeaux Saadiens. Chauffeur parlant français et anglais."
+                },
+                {
+                    day: 3,
+                    title: "Les 3 Vallées et Villages Berbères",
+                    description: "Départ vers 8h30. Visite du lac Lalla Takerkoust, plateau de Kik, Moulay Brahim et Asni. Après-midi dans la vallée de l'Ourika : visite d'une maison berbère, coopérative de l'argan, déjeuner au bord de la rivière à Setti Fatma, balade avec guide local jusqu'aux cascades. Retour vers 17h30."
+                },
+                {
+                    day: 4,
+                    title: "Désert d'Agafay Après-midi & Transfert aéroport",
+                    description: "Départ vers 14h pour le désert d'Agafay : 1h de quad, balade en dromadaire, accès piscine, coucher de soleil et dîner spectacle. Retour vers 22h. Transfert privé vers l'aéroport pour votre départ."
+                }
+            ]
+        },
+        {
+            id: "pack-5-days-marrakech",
+            name: "Pack 5 Jours de Séjour à Marrakech",
+            duration: "5_days",
+            image: "/images/marrakech/marrakech5.jpg",
+            gallery: [
+                "/images/marrakech/marrakech7.jpg",
+                "/images/ourika/hassan-ahrouch-CfmIZwBvxNY-unsplash.jpg",
+                "/images/quad-biking/haris-khan-v40H7tLOZII-unsplash.jpg",
+                "/images/essaouira/rigel-No_Y3bn4lNQ-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 5,
+                    pricePerPerson: 195
+                },
+                {
+                    minPeople: 6,
+                    maxPeople: 20,
+                    pricePerPerson: 146
+                }
+            ],
+            includes: [
+                "Transferts aéroport arrivée et départ",
+                "Visite de ville 6h en véhicule privé",
+                "Désert d'Agafay après-midi et soirée (1h quad, balade dromadaire, dîner spectacle, accès piscine)",
+                "Les 3 Vallées et villages berbères journée complète (plateau de Kik, Moulay Brahim, Asni, vallée de l'Ourika, guide local, déjeuner au bord de la rivière, coopérative de l'argan)",
+                "Essaouira pour la journée en van privé aller-retour",
+                "Van climatisé en privé"
+            ],
+            excludes: [
+                "Déjeuner à Marrakech",
+                "Entrées des monuments et jardins",
+                "Déjeuner à Essaouira",
+                "Dépenses personnelles",
+                "Pourboires"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Arrivée & Transfert aéroport",
+                    description: "Bienvenue à Marrakech ! Transfert privé de l'aéroport vers votre hébergement. Temps libre pour explorer."
+                },
+                {
+                    day: 2,
+                    title: "Visite de Ville de Marrakech (6h)",
+                    description: "Découvrez Marrakech en véhicule privé pendant 6h : tour du rempart, circuit de la palmeraie, grands avenues, Jardin Majorelle, Jardin de la Menara, Palais Bahia et Tombeaux Saadiens."
+                },
+                {
+                    day: 3,
+                    title: "Désert d'Agafay Après-midi & Soirée",
+                    description: "Départ vers 14h pour le désert d'Agafay : 1h de quad, balade en dromadaire, accès piscine, coucher de soleil époustouflant et dîner spectacle inoubliable. Retour vers 22h."
+                },
+                {
+                    day: 4,
+                    title: "Les 3 Vallées et Villages Berbères",
+                    description: "Départ vers 8h30. Visite du lac Lalla Takerkoust, plateau de Kik, Moulay Brahim et Asni. Après-midi dans la vallée de l'Ourika : maison berbère, coopérative de l'argan, déjeuner au bord de la rivière à Setti Fatma, balade guidée jusqu'aux cascades. Retour vers 17h30."
+                },
+                {
+                    day: 5,
+                    title: "Essaouira Journée Complète & Transfert aéroport",
+                    description: "Départ vers 8h pour la charmante ville bleue d'Essaouira. Explorez la médina, les remparts et le port de pêche. Retour vers 19h. Transfert privé vers l'aéroport pour votre départ."
+                }
+            ]
+        },
+        // ─────────────────────────────────────────────
+        // EXCURSIONS À LA JOURNÉE
+        // ─────────────────────────────────────────────
+        {
+            id: "day-trip-three-valleys",
+            name: "Les 3 Vallées et Villages Berbères",
+            duration: "1_day",
+            image: "/images/ourika/hassan-ahrouch-CfmIZwBvxNY-unsplash.jpg",
+            gallery: [
+                "/images/ourika/matthew-fainman-3yonP2JaGTU-unsplash.jpg",
+                "/images/ourika/abdelhamid-azoui-BGU0uaY0tJs-unsplash.jpg",
+                "/images/ourika/abderrahman-kamal-MilM52Qj32g-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 3,
+                    pricePerPerson: 65
+                },
+                {
+                    minPeople: 4,
+                    maxPeople: 6,
+                    pricePerPerson: 43
+                },
+                {
+                    minPeople: 7,
+                    maxPeople: 20,
+                    pricePerPerson: 32
+                }
+            ],
+            includes: [
+                "Van climatisé en privé",
+                "Chauffeur parlant français ou anglais",
+                "Guide local (balade aux cascades)",
+                "Déjeuner au bord de la rivière (Setti Fatma)",
+                "Visite d'une maison berbère",
+                "Visite de la coopérative de l'huile d'argan",
+                "Thé chez l'habitant"
+            ],
+            excludes: [
+                "Boissons",
+                "Dépenses personnelles",
+                "Pourboires"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Les 3 Vallées et Villages Berbères",
+                    description: "Départ vers 8h30. Route via le lac Lalla Takerkoust, le plateau de Kik, Moulay Brahim et Asni. Après-midi dans la vallée de l'Ourika : visite d'une maison berbère, découverte de la coopérative de l'huile d'argan, déjeuner au bord de la rivière à Setti Fatma, puis balade guidée jusqu'aux cascades. Thé chez l'habitant inclus. Retour à Marrakech vers 17h30."
+                }
+            ]
+        },
+        {
+            id: "excursion-ourika-valley",
+            name: "Vallée de l'Ourika - Journée avec Repas & Guide",
+            duration: "1_day",
+            image: "/images/ourika/abdelhamid-azoui-BGU0uaY0tJs-unsplash.jpg",
+            gallery: [
+                "/images/ourika/hassan-ahrouch-CfmIZwBvxNY-unsplash.jpg",
+                "/images/ourika/matthew-fainman-3yonP2JaGTU-unsplash.jpg",
+                "/images/ourika/abderrahman-kamal-MilM52Qj32g-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 3,
+                    pricePerPerson: 45
+                },
+                {
+                    minPeople: 4,
+                    maxPeople: 7,
+                    pricePerPerson: 32
+                },
+                {
+                    minPeople: 8,
+                    maxPeople: 20,
+                    pricePerPerson: 20
+                }
+            ],
+            includes: [
+                "Transport en privé (van climatisé)",
+                "Guide local (balade aux cascades)",
+                "Déjeuner",
+                "Thé chez l'habitant"
+            ],
+            excludes: [
+                "Boissons",
+                "Dépenses personnelles",
+                "Pourboires"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Vallée de l'Ourika",
+                    description: "Départ vers 9h. Route jusqu'à la magnifique vallée de l'Ourika. Visite d'une maison berbère, balade guidée jusqu'aux cascades impressionnantes, déjeuner au bord de la rivière. Thé chez l'habitant. Retour à Marrakech vers 16h30."
+                }
+            ]
+        },
+        {
+            id: "excursion-essaouira",
+            name: "Essaouira pour la Journée - Transport Privé",
+            duration: "1_day",
+            image: "/images/essaouira/pete-bread-4eZeMUKdV-8-unsplash.jpg",
+            gallery: [
+                "/images/essaouira/rigel-ibisQEDxODo-unsplash.jpg",
+                "/images/essaouira/hamza-omlacho-M9GO4Gsd2SM-unsplash.jpg",
+                "/images/essaouira/mostapha-abidour-h9L1GfDgp0s-unsplash.jpg",
+                "/images/essaouira/youssef-aboutaleb-ad1FM2Xj0QQ-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 3,
+                    pricePerPerson: 57
+                },
+                {
+                    minPeople: 4,
+                    maxPeople: 20,
+                    pricePerPerson: 37
+                }
+            ],
+            includes: [
+                "Van climatisé en privé (aller-retour)"
+            ],
+            excludes: [
+                "Déjeuner",
+                "Boissons",
+                "Dépenses personnelles",
+                "Pourboires"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Essaouira",
+                    description: "Départ vers 8h pour la charmante ville bleue et blanche d'Essaouira. Explorez la médina classée à l'UNESCO, le port de pêche, les remparts et la scène artistique vibrante à votre rythme. Retour à Marrakech vers 19h."
+                }
+            ]
+        },
+        {
+            id: "excursion-agafay-afternoon",
+            name: "Désert d'Agafay Après-midi & Dîner Spectacle",
+            duration: "1_day",
+            image: "/images/camel-riding/camel-ride-sunset.jpeg",
+            gallery: [
+                "/images/quad-biking/haris-khan-v40H7tLOZII-unsplash.jpg",
+                "/images/quad-biking/devon-janse-van-rensburg-08HCHS7EULI-unsplash.jpg",
+                "/images/camel-riding/dan-calderwood-7CPopIsaCkc-unsplash.jpg",
+                "/images/quad-biking/nils-5RfEgsnxeHo-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 4,
+                    pricePerPerson: 75
+                },
+                {
+                    minPeople: 5,
+                    maxPeople: 15,
+                    pricePerPerson: 63
+                },
+                {
+                    minPeople: 16,
+                    maxPeople: 50,
+                    pricePerPerson: 53
+                }
+            ],
+            includes: [
+                "1h de quad",
+                "Balade en dromadaire",
+                "Dîner spectacle",
+                "Visite de la coopérative de l'huile d'argan",
+                "Accès piscine",
+                "Transport en privé (prise en charge)"
+            ],
+            excludes: [
+                "Dépenses personnelles",
+                "Pourboires"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Désert d'Agafay Après-midi",
+                    description: "Départ vers 15h. Arrivée dans le désert d'Agafay pour une après-midi et soirée inoubliables : visite de la coopérative de l'huile d'argan, 1h de quad dans le paysage lunaire, balade en dromadaire au coucher du soleil, accès piscine, puis un spectaculaire dîner spectacle sous les étoiles. Retour à Marrakech vers 22h."
+                }
+            ]
+        },
+        {
+            id: "excursion-imlil",
+            name: "Imlil pour la Journée - Atlas & Village d'Argan",
+            duration: "1_day",
+            image: "/images/ourika/matthew-fainman-3yonP2JaGTU-unsplash.jpg",
+            gallery: [
+                "/images/ourika/abdelhamid-azoui-BGU0uaY0tJs-unsplash.jpg",
+                "/images/ourika/abderrahman-kamal-MilM52Qj32g-unsplash.jpg",
+                "/images/ourika/hassan-ahrouch-CfmIZwBvxNY-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 3,
+                    pricePerPerson: 68
+                },
+                {
+                    minPeople: 4,
+                    maxPeople: 10,
+                    pricePerPerson: 39
+                },
+                {
+                    minPeople: 11,
+                    maxPeople: 30,
+                    pricePerPerson: 29
+                }
+            ],
+            includes: [
+                "Déjeuner chez l'habitant",
+                "Guide local (balade de 2h)",
+                "Visite de la coopérative de l'huile d'argan",
+                "Van climatisé en privé"
+            ],
+            excludes: [
+                "Boissons",
+                "Dépenses personnelles",
+                "Pourboires"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Imlil, Atlas",
+                    description: "Départ vers 8h30. Route jusqu'à Imlil via les routes panoramiques de l'Atlas. Visite de la coopérative de l'huile d'argan. Balade guidée de 2h à travers les villages berbères avec des vues époustouflantes sur les montagnes. Déjeuner chez une famille locale. Retour via Moulay Brahim, le plateau de Kik et le lac Lalla Takerkoust. Arrivée à Marrakech vers 16h30."
+                }
+            ]
+        },
+        {
+            id: "excursion-imlil-agafay",
+            name: "Imlil & Agafay - Journée Complète & Dîner Spectacle",
+            duration: "1_day",
+            image: "/images/ourika/abderrahman-kamal-MilM52Qj32g-unsplash.jpg",
+            gallery: [
+                "/images/ourika/matthew-fainman-3yonP2JaGTU-unsplash.jpg",
+                "/images/camel-riding/camel-ride-sunset.jpeg",
+                "/images/quad-biking/haris-khan-v40H7tLOZII-unsplash.jpg",
+                "/images/quad-biking/devon-janse-van-rensburg-08HCHS7EULI-unsplash.jpg"
+            ],
+            pricing: [
+                {
+                    minPeople: 2,
+                    maxPeople: 4,
+                    pricePerPerson: 110
+                },
+                {
+                    minPeople: 5,
+                    maxPeople: 10,
+                    pricePerPerson: 85
+                },
+                {
+                    minPeople: 11,
+                    maxPeople: 30,
+                    pricePerPerson: 63
+                }
+            ],
+            includes: [
+                "Déjeuner à Imlil (chez l'habitant)",
+                "Guide local à Imlil (balade de 2h)",
+                "Thé à la coopérative féminine de l'argan",
+                "1h de quad à Agafay",
+                "Balade en dromadaire à Agafay",
+                "Dîner spectacle à Agafay",
+                "Transport en privé"
+            ],
+            excludes: [
+                "Boissons à Imlil",
+                "Dépenses personnelles",
+                "Pourboires"
+            ],
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Imlil & Agafay - De la Montagne au Désert",
+                    description: "Départ vers 8h direction Imlil via Tahanaoute. Visite de la coopérative féminine de l'huile d'argan, puis continue via Asni jusqu'à Imlil. Commencez une balade de 2h avec un guide local dans les paysages berbères de montagne. Déjeuner chez une famille locale. Après-midi : route vers le désert d'Agafay via le plateau de Kik et le lac Lalla Takerkoust. Profitez d'1h de quad, d'une balade en dromadaire au coucher du soleil, de l'accès piscine, puis d'un dîner spectacle inoubliable sous les étoiles. Retour à Marrakech vers 22h."
                 }
             ]
         }
@@ -871,7 +1712,7 @@ const siteDataFr = {
             }
         ],
         experiences: [
-            /* Same as EN */ {
+            {
                 id: "quad-agafay",
                 type: "quad",
                 location: "Agafay",
@@ -923,18 +1764,88 @@ const siteDataFr = {
     },
     transport: [
         {
-            id: "private",
-            name: "Transport privé",
-            image: "/images/transport/private-transport.jpeg",
-            description: "Véhicule privé confortable avec chauffeur professionnel",
-            price: 50
+            id: "airport",
+            name: "Transfert Aéroport",
+            image: "/images/transport/airport-transport.jpeg",
+            description: "Service fiable d'accueil à l'aéroport. Notre chauffeur vous attend à l'arrivée et vous conduit directement à destination en tout confort.",
+            dayRate: 200,
+            nightRate: 300,
+            currency: "MAD",
+            note: "Aéroport Marrakech RAK"
         },
         {
-            id: "airport",
-            name: "Transfert aéroport",
-            image: "/images/transport/airport-transport.jpeg",
-            description: "Transferts aéroport fiables, service d'accueil",
-            price: 30
+            id: "private",
+            name: "Transferts Privés",
+            image: "/images/transport/private-transport.jpeg",
+            description: "Véhicule privé confortable avec chauffeur professionnel pour vos transferts interurbains et régionaux à travers le Maroc.",
+            currency: "MAD",
+            destinations: [
+                {
+                    name: "Agadir",
+                    price1to7: 1600,
+                    price7plus: 2300
+                },
+                {
+                    name: "Aéroport Casablanca",
+                    price1to7: 1600,
+                    price7plus: 2200
+                },
+                {
+                    name: "Casablanca Ville",
+                    price1to7: 1800,
+                    price7plus: 2400
+                },
+                {
+                    name: "Essaouira",
+                    price1to7: 1100,
+                    price7plus: 1600
+                },
+                {
+                    name: "Ouarzazate",
+                    price1to7: 1500,
+                    price7plus: 2300
+                },
+                {
+                    name: "Imlil",
+                    price1to7: 700,
+                    price7plus: 1200
+                },
+                {
+                    name: "Agafay",
+                    price1to7: 600,
+                    price7plus: 1100
+                },
+                {
+                    name: "El Jadida",
+                    price1to7: 1400,
+                    price7plus: 1900
+                },
+                {
+                    name: "Safi",
+                    price1to7: 1400,
+                    price7plus: 1900
+                },
+                {
+                    name: "Ourika",
+                    price1to7: 600,
+                    price7plus: 1100
+                },
+                {
+                    name: "Tanger",
+                    price1to7: 4500,
+                    price7plus: 5600
+                },
+                {
+                    name: "Fès",
+                    price1to7: 3800,
+                    price7plus: 4800
+                },
+                {
+                    name: "Rabat",
+                    price1to7: 2100,
+                    price7plus: 3000
+                }
+            ]
         }
     ],
     packages: [],
